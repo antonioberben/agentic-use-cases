@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useLocation} from '@docusaurus/router';
 import {CASES, LAYOUT, STEP_META, UI, stageN, accents, kindLbl, NW, NH} from './casos';
 import './styles.css';
 
@@ -77,6 +78,7 @@ const EDGE_STATES = [
 export default function ScenarioPlayer() {
   const {i18n} = useDocusaurusContext();
   const lang = i18n.currentLocale === 'en' ? 'en' : 'es'; // sigue el idioma del sitio
+  const location = useLocation();
   const [ci, setCi] = useState(0);
   const [cur, setCur] = useState(0);
   const [idResolved, setIdResolved] = useState(false);
@@ -105,6 +107,13 @@ export default function ScenarioPlayer() {
     return undefined;
   }, [ci, cur, lang, step.badge]);
 
+  // Deep-link por caso: ?case=<id> selecciona el caso (menú de la navbar / enlaces compartibles).
+  useEffect(() => {
+    const id = new URLSearchParams(location.search).get('case');
+    const idx = CASES.findIndex((c) => c.id === id);
+    if (idx >= 0) { setCi(idx); setCur(0); }
+  }, [location.search]);
+
   const vis = (id) => {
     const nd = LAYOUT.find((n) => n.id === id);
     return nd && cur >= nd.ap;
@@ -114,6 +123,15 @@ export default function ScenarioPlayer() {
     if (typeof document === 'undefined') return;
     const elx = document.getElementById(id);
     if (elx) elx.scrollIntoView({behavior: 'smooth', block: 'start'});
+  };
+  const selectCase = (i) => {
+    setCi(i); setCur(0);
+    if (typeof window !== 'undefined') {
+      const u = new URL(window.location.href);
+      u.searchParams.set('case', CASES[i].id);
+      window.history.replaceState(null, '', u.toString());
+    }
+    scrollTo('sp-player');
   };
 
   // ---- badge ----
@@ -154,7 +172,7 @@ export default function ScenarioPlayer() {
           <span className="lbl">{t.caseLbl}</span>
           {CASES.map((cs, i) => (
             <button key={cs.id} className={'cpill' + (i === ci ? ' on' : '')}
-              onClick={() => {setCi(i); setCur(0); scrollTo('sp-player');}}>{P(cs.role)}</button>
+              onClick={() => selectCase(i)}>{P(cs.role)}</button>
           ))}
         </div>
       </div>

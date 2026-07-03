@@ -102,7 +102,19 @@ const config = {
         },
         items: [
           {to: '/capacitacion', label: 'Capacitación', position: 'left'},
-          {to: '/reproductor', label: 'Reproductor', position: 'left'},
+          {
+            type: 'dropdown',
+            label: 'Casos de uso',
+            position: 'left',
+            items: [
+              {label: 'Legal — redlining', to: '/reproductor?case=legal'},
+              {label: 'Finanzas — varianza P&L', to: '/reproductor?case=finanzas'},
+              {label: 'IT/Seguridad — triage SOC', to: '/reproductor?case=soc'},
+              {label: 'Operaciones — diagnóstico', to: '/reproductor?case=ops'},
+              {label: 'Banca — asistente de oficina', to: '/reproductor?case=banca'},
+              {label: '— Ver todos (reproductor) —', to: '/reproductor'},
+            ],
+          },
           {to: '/plan-director/parte-1-contexto-y-necesidad', label: 'Plan Director', position: 'left'},
           {type: 'localeDropdown', position: 'right'},
         ],
