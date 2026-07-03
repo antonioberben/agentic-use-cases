@@ -1,0 +1,64 @@
+# AGENTS.md
+
+> Plantilla vacía. Rellena cada bloque con información concreta de este repositorio. Mantén la sección breve y específica; este archivo es contrato para agentes, no documentación humana.
+
+## 1. Propósito del proyecto
+
+[Dos frases. Qué hace este proyecto y para quién.]
+
+## 2. Estructura del código
+
+[Explica la lógica de organización. No listes archivos; describe directorios y responsabilidades.]
+
+Ejemplo de cómo redactarlo:
+
+- `src/`: lógica de negocio.
+- `src/<módulo>/`: [responsabilidad del módulo].
+- `tests/`: tests automatizados, espejan la estructura de `src/`.
+- `scripts/`: utilidades de desarrollo, no entran en la build de producción.
+
+## 3. Convenciones
+
+- **Idioma del código y comentarios**: [español / inglés].
+- **Nombrado**: [snake_case, camelCase, PascalCase, etc.].
+- **Estilo**: [formateador, configuración, ej. `black` con line-length 100].
+- **Tipos**: [si se usan type hints, qué nivel de cobertura].
+- **Imports**: [orden, agrupación].
+
+## 4. Comandos
+
+```bash
+# Instalación
+[comando exacto]
+
+# Tests
+[comando exacto]
+
+# Formateo
+[comando exacto]
+
+# Lint / análisis estático
+[comando exacto]
+```
+
+## 5. Qué evitar
+
+[Anti-patrones específicos de este repositorio. Mínimo tres entradas reales. Lo que el agente haría mal por defecto.]
+
+- [Anti-patrón 1]
+- [Anti-patrón 2]
+- [Anti-patrón 3]
+
+## 6. Glosario de dominio (opcional pero recomendado)
+
+[Términos con significado específico en este proyecto.]
+
+- **[Término]**: [definición operativa, no académica].
+
+## 7. Cómo añadir una funcionalidad nueva (opcional)
+
+[Receta paso a paso. Útil cuando hay un patrón claro a seguir.]
+
+1. [Paso 1]
+2. [Paso 2]
+3. [Paso 3]

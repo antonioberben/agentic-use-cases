@@ -1,0 +1,93 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e6]:
+      - heading "Zero-Trust Agents for Autonomous Networks" [level=1] [ref=e7]:
+        - text: Zero-Trust Agents
+        - text: for Autonomous Networks
+      - paragraph [ref=e8]: TM Forum Moonshot Catalyst C26.0.933
+  - main [ref=e9]:
+    - generic [ref=e10]:
+      - img [ref=e11]:
+        - generic [ref=e17]: TOOLS
+        - generic [ref=e24]: DATACENTER
+        - generic [ref=e31]: MONITORING
+        - generic [ref=e78]: cladra-agent
+        - generic [ref=e81]: act-agent
+        - generic [ref=e84]: core-diagnostic-agent
+        - generic [ref=e87]: ran-diagnostic-agent
+        - generic [ref=e90]: reporting-agent
+        - generic [ref=e93]: slo-agent
+        - generic [ref=e94]:
+          - generic [ref=e95]: Policy / PCRF
+          - generic [ref=e96]: Policy Registry
+          - generic [ref=e97]: PCRF
+          - generic [ref=e98]: IMS Gateway
+          - generic [ref=e104]: policy-mcp
+        - generic [ref=e105]:
+          - generic [ref=e106]: ITSM / CMDB
+          - generic [ref=e107]: ServiceNow
+          - generic [ref=e108]: CMDB
+          - generic [ref=e109]: Jira ITSM
+          - generic [ref=e110]: Ticketing Sys
+          - generic [ref=e116]: itsm-mcp
+        - generic [ref=e117]:
+          - generic [ref=e118]: Core / IMS
+          - generic [ref=e119]: IMS Gateway
+          - generic [ref=e120]: HSS
+          - generic [ref=e121]: Core xDR
+          - generic [ref=e122]: EPC Core
+          - generic [ref=e128]: core-mcp
+        - generic [ref=e129]:
+          - generic [ref=e130]: RAN / CEM
+          - generic [ref=e131]: RAN KPIs
+          - generic [ref=e132]: eNodeB Metrics
+          - generic [ref=e133]: xDR Records
+          - generic [ref=e134]: CEM Data
+          - generic [ref=e140]: ran-mcp
+        - generic [ref=e141]:
+          - generic [ref=e142]: Prometheus / xDR
+          - generic [ref=e143]: Prometheus
+          - generic [ref=e144]: Grafana
+          - generic [ref=e145]: xDR Records
+          - generic [ref=e146]: SLO Telemetry
+          - generic [ref=e152]: monitoring-mcp
+      - generic [ref=e153]:
+        - button "−" [ref=e154] [cursor=pointer]
+        - button "100%" [ref=e155] [cursor=pointer]
+        - button "+" [ref=e156] [cursor=pointer]
+      - button "Open legend" [ref=e158] [cursor=pointer]:
+        - generic [ref=e159]: ◉
+        - text: Legend
+  - contentinfo [ref=e160]:
+    - generic [ref=e161]:
+      - generic [ref=e162]: Scenario
+      - generic [ref=e163]:
+        - button "S1" [ref=e164] [cursor=pointer]
+        - button "S2" [ref=e165] [cursor=pointer]
+        - button "S3" [ref=e166] [cursor=pointer]
+        - button "S4" [ref=e167] [cursor=pointer]
+        - button "S5" [ref=e168] [cursor=pointer]
+        - button "S6" [ref=e169] [cursor=pointer]
+    - generic [ref=e171]:
+      - generic [ref=e172]:
+        - generic [ref=e173]: Step
+        - generic [ref=e174]:
+          - generic [ref=e175]: —
+          - generic [ref=e176]: of 23
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - img [ref=e180]
+          - generic [ref=e182]: S1 · Governed Autonomy
+        - paragraph [ref=e183]: Happy path — zero-trust governance enabling safe closed-loop remediation
+    - generic [ref=e185]:
+      - button "? Help" [ref=e186] [cursor=pointer]:
+        - generic [ref=e187]: "?"
+        - text: Help
+      - generic [ref=e189]:
+        - button "0.5×" [ref=e190] [cursor=pointer]
+        - button "1×" [ref=e191] [cursor=pointer]
+        - button "2×" [ref=e192] [cursor=pointer]
+      - button "← Previous Step" [disabled] [ref=e194]
+      - button "Next Step →" [ref=e195] [cursor=pointer]
+      - button "⏹" [disabled] [ref=e196]
+      - button "▶" [ref=e197] [cursor=pointer]

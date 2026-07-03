@@ -1,0 +1,87 @@
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(108, 63, 197, 0.18), transparent);
+}
+
+.heroTitle {
+  font-size: 2.6rem;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  max-width: 720px;
+  margin: 0 auto 2rem;
+  font-size: 1.15rem;
+  opacity: 0.85;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.niveles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nivel {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 10px;
+}
+
+.nivelNum {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  line-height: 1;
+}
+
+.nivelEstado {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 0.25rem 0;
+}
+
+.mitad {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border: 1px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+  border-radius: 999px;
+  padding: 0.1rem 0.55rem;
+}
+
+.secciones {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.seccion {
+  display: block;
+  padding: 1.5rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 12px;
+  color: inherit;
+  text-decoration: none;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.seccion:hover {
+  border-color: var(--ifm-color-primary);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: inherit;
+}

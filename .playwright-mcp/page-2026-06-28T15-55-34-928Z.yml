@@ -1,0 +1,1128 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - banner [ref=e3]:
+      - generic [ref=e4]:
+        - link "BuildMVPFast Logo" [ref=e6] [cursor=pointer]:
+          - /url: /
+          - img "BuildMVPFast Logo" [ref=e7]
+        - generic [ref=e8]:
+          - navigation [ref=e9]:
+            - link "Features" [ref=e10] [cursor=pointer]:
+              - /url: /#features
+            - link "How it Works" [ref=e11] [cursor=pointer]:
+              - /url: /#how-it-works
+            - link "Pricing" [ref=e12] [cursor=pointer]:
+              - /url: /#pricing
+            - link "Contact" [ref=e13] [cursor=pointer]:
+              - /url: /contact
+            - link "Follow us on X" [ref=e14] [cursor=pointer]:
+              - /url: https://x.com/WoCStreet
+              - text: Follow us on
+              - img [ref=e15]
+            - button "Search" [ref=e17] [cursor=pointer]:
+              - img [ref=e18]
+              - generic [ref=e21]:
+                - generic [ref=e22]: ⌘
+                - text: K
+          - link "Get Featured" [ref=e24] [cursor=pointer]:
+            - /url: /contact?subject=Get%20Featured%20on%20BuildMVPFast%20Blog%20%26%20Technical%20Guides
+    - main [ref=e25]:
+      - article [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - generic [ref=e29]:
+              - navigation "Breadcrumb" [ref=e30]:
+                - link "Blog" [ref=e31] [cursor=pointer]:
+                  - /url: /blog
+                - img [ref=e32]
+                - generic [ref=e34]: Analysis
+              - generic [ref=e35]:
+                - generic [ref=e36]: "Tags:"
+                - generic [ref=e37]:
+                  - link "AI Agents" [ref=e39] [cursor=pointer]:
+                    - /url: /blog?tag=AI%20Agents
+                  - link "Security" [ref=e42] [cursor=pointer]:
+                    - /url: /blog?tag=Security
+                  - link "Compliance" [ref=e45] [cursor=pointer]:
+                    - /url: /blog?tag=Compliance
+            - 'heading "AI Agent Security Standards: Which Frameworks Actually Matter in 2026" [level=1] [ref=e46]'
+            - paragraph [ref=e47]: Seven different organizations have published AI agent security frameworks in the past year. Here's which ones overlap, which ones conflict, and what to implement first if you're shipping agents to production.
+            - generic [ref=e48]:
+              - generic [ref=e49]:
+                - generic [ref=e50]: BuildMVPFast
+                - time [ref=e52]: May 18, 2026
+                - generic [ref=e54]: 14 min read
+              - generic [ref=e55]:
+                - link "Follow BuildMVPFast on Google" [ref=e56] [cursor=pointer]:
+                  - /url: https://www.google.com/preferences/source?q=buildmvpfast.com
+                  - img [ref=e57]
+                  - text: Follow
+                - button "Add to read later list" [ref=e62] [cursor=pointer]:
+                  - img [ref=e63]
+                  - text: Read later
+                - generic [ref=e65]:
+                  - generic [ref=e66]: Share
+                  - link "Share on X (Twitter)" [ref=e67] [cursor=pointer]:
+                    - /url: https://twitter.com/intent/tweet?text=AI%20Agent%20Security%20Standards%3A%20Which%20Frameworks%20Actually%20Matter%20in%202026&url=https%3A%2F%2Fwww.buildmvpfast.com%2Fblog%2Fai-agent-security-standards-frameworks-2026
+                    - img [ref=e68]
+                  - link "Share on Facebook" [ref=e70] [cursor=pointer]:
+                    - /url: https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.buildmvpfast.com%2Fblog%2Fai-agent-security-standards-frameworks-2026
+                    - img [ref=e71]
+                  - link "Share on LinkedIn" [ref=e73] [cursor=pointer]:
+                    - /url: https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fwww.buildmvpfast.com%2Fblog%2Fai-agent-security-standards-frameworks-2026
+                    - img [ref=e74]
+                  - link "Share on Reddit" [ref=e76] [cursor=pointer]:
+                    - /url: https://www.reddit.com/submit?url=https%3A%2F%2Fwww.buildmvpfast.com%2Fblog%2Fai-agent-security-standards-frameworks-2026&title=AI%20Agent%20Security%20Standards%3A%20Which%20Frameworks%20Actually%20Matter%20in%202026
+                    - img [ref=e77]
+                  - button "Copy link" [ref=e79] [cursor=pointer]:
+                    - img [ref=e80]
+          - navigation "Table of contents" [ref=e82]:
+            - button "In this article" [ref=e83] [cursor=pointer]:
+              - generic [ref=e84]: In this article
+              - img [ref=e85]
+          - 'img "AI Agent Security Standards: Which Frameworks Actually Matter in 2026" [ref=e87]'
+          - generic [ref=e88]:
+            - paragraph [ref=e89]: In the past 12 months, at least seven organizations have published security frameworks, guidance documents, or tooling specifically for AI agent systems. OWASP has its Agentic AI project. NIST launched the AI Agent Standards Initiative through CAISI. The EU AI Act hits full enforcement in August 2026. Cisco open-sourced DefenseClaw. Palo Alto shipped AIRS 3. Google updated SAIF. And smaller players like Lovable have published their own agent security playbooks.
+            - paragraph [ref=e90]: Most recently, Lovable announced a partnership with the AI Underwriting Consortium (AIUC) to create AIUC-1, a certification standard specifically for coding agents. And according to Jeff Sutherland’s Agent Security Framework (ASF), 67% of organizations reported AI agent security incidents in Q2 2026.
+            - paragraph [ref=e91]: "For a SaaS team shipping agents to production, this creates a practical problem: which of these frameworks actually matters, which ones overlap, and what should get implemented first?"
+            - heading "The frameworks, side by side" [level=2] [ref=e92]
+            - table [ref=e95]:
+              - rowgroup [ref=e96]:
+                - row "Framework Publisher Focus Status Cost" [ref=e97]:
+                  - columnheader "Framework" [ref=e98]
+                  - columnheader "Publisher" [ref=e99]
+                  - columnheader "Focus" [ref=e100]
+                  - columnheader "Status" [ref=e101]
+                  - columnheader "Cost" [ref=e102]
+              - rowgroup [ref=e103]:
+                - row "OWASP Agentic AI OWASP Foundation Threat modeling, mitigations Active, community-driven Free" [ref=e104]:
+                  - cell "OWASP Agentic AI" [ref=e105]
+                  - cell "OWASP Foundation" [ref=e106]
+                  - cell "Threat modeling, mitigations" [ref=e107]
+                  - cell "Active, community-driven" [ref=e108]
+                  - cell "Free" [ref=e109]
+                - row "NIST AI Agent Standards NIST CAISI Governance, identity, interoperability In development Free" [ref=e110]:
+                  - cell "NIST AI Agent Standards" [ref=e111]
+                  - cell "NIST CAISI" [ref=e112]
+                  - cell "Governance, identity, interoperability" [ref=e113]
+                  - cell "In development" [ref=e114]
+                  - cell "Free" [ref=e115]
+                - row "EU AI Act European Union Regulation, high-risk classification Enforcement Aug 2026 Compliance cost" [ref=e116]:
+                  - cell "EU AI Act" [ref=e117]
+                  - cell "European Union" [ref=e118]
+                  - cell "Regulation, high-risk classification" [ref=e119]
+                  - cell "Enforcement Aug 2026" [ref=e120]
+                  - cell "Compliance cost" [ref=e121]
+                - row "Cisco DefenseClaw Cisco Agent auditing, AI-BOM GA, open source Free" [ref=e122]:
+                  - cell "Cisco DefenseClaw" [ref=e123]
+                  - cell "Cisco" [ref=e124]
+                  - cell "Agent auditing, AI-BOM" [ref=e125]
+                  - cell "GA, open source" [ref=e126]
+                  - cell "Free" [ref=e127]
+                - row "Palo Alto AIRS 3 Palo Alto Networks Runtime protection, policy enforcement GA, commercial Paid" [ref=e128]:
+                  - cell "Palo Alto AIRS 3" [ref=e129]
+                  - cell "Palo Alto Networks" [ref=e130]
+                  - cell "Runtime protection, policy enforcement" [ref=e131]
+                  - cell "GA, commercial" [ref=e132]
+                  - cell "Paid" [ref=e133]
+                - row "Google SAIF Google Secure AI Framework principles Published Free (guidance)" [ref=e134]:
+                  - cell "Google SAIF" [ref=e135]
+                  - cell "Google" [ref=e136]
+                  - cell "Secure AI Framework principles" [ref=e137]
+                  - cell "Published" [ref=e138]
+                  - cell "Free (guidance)" [ref=e139]
+                - row "AIUC-1 AI Underwriting Consortium Certifiable agent standard GA, audited Certification fee" [ref=e140]:
+                  - cell "AIUC-1" [ref=e141]
+                  - cell "AI Underwriting Consortium" [ref=e142]
+                  - cell "Certifiable agent standard" [ref=e143]
+                  - cell "GA, audited" [ref=e144]
+                  - cell "Certification fee" [ref=e145]
+                - row "MITRE ATLAS MITRE AI threat matrix, TTPs Active Free" [ref=e146]:
+                  - cell "MITRE ATLAS" [ref=e147]
+                  - cell "MITRE" [ref=e148]
+                  - cell "AI threat matrix, TTPs" [ref=e149]
+                  - cell "Active" [ref=e150]
+                  - cell "Free" [ref=e151]
+            - paragraph [ref=e152]: "The table makes the problem visible: some frameworks are actionable engineering guidance (OWASP, DefenseClaw), some are regulatory requirements (EU AI Act), some are governance models (NIST), and some are threat intelligence databases (MITRE ATLAS). They operate at different layers and serve different audiences."
+            - generic [ref=e157]:
+              - paragraph [ref=e158]:
+                - text: Building agents and need
+                - generic [ref=e159]:
+                  - text: security from day one
+                  - img [ref=e160]
+                - text: "? We help founders ship production-ready AI products."
+              - link "ship production-ready AI products" [ref=e162] [cursor=pointer]:
+                - /url: /
+            - 'heading "OWASP Agentic AI: the developer’s starting point" [level=2] [ref=e163]'
+            - paragraph [ref=e164]: OWASP’s Agentic AI project is the most immediately useful framework for engineering teams. It maps specific agent behaviors to security risks and provides concrete mitigations.
+            - paragraph:
+              - img "OWASP Agentic AI Top 10 vulnerability categories for autonomous agent systems"
+            - paragraph [ref=e165]: "The project identifies four primary threat categories for agentic systems:"
+            - paragraph [ref=e166]:
+              - strong [ref=e167]: Excessive agency
+              - text: "is the most common failure mode. An agent with access to a database tool that can read, write, and delete rows when it only needs to read. An agent with shell access that can install packages when it should only run predefined scripts. The mitigation is straightforward: least-privilege scoping on every tool, with explicit allowlists rather than denylists."
+            - paragraph [ref=e168]:
+              - strong [ref=e169]: Prompt injection
+              - text: remains the attack vector that keeps security teams awake. Direct injection (user crafts a malicious prompt) is well-understood. Indirect injection (a document, email, or web page contains instructions the agent follows) is harder to defend against because the attack surface includes every data source the agent can access.
+            - paragraph [ref=e170]:
+              - strong [ref=e171]: Insecure tool use
+              - text: "covers agents that call external APIs without validating inputs, that pass user-controlled data into tool parameters, or that trust tool responses without verification. This is the agent equivalent of SQL injection: the tool layer becomes an attack surface when inputs aren’t sanitized."
+            - paragraph [ref=e172]:
+              - strong [ref=e173]: Data exfiltration through agents
+              - text: happens when an agent reads sensitive information from one context and includes it in tool calls, API requests, or responses to a different user. Multi-tenant agent systems are especially vulnerable because the agent may process data across tenant boundaries without built-in isolation.
+            - paragraph [ref=e174]: "The Agentic Top 10 introduced entirely new vulnerability classes that have no equivalent in traditional LLM security: ASI07 (Insecure Inter-Agent Communication), ASI08 (Cascading Failures in multi-agent chains), and ASI10 (Rogue Agents that deviate from their assigned goals). These reflect the gap between securing a single model and securing a fleet of autonomous agents that coordinate with each other."
+            - paragraph [ref=e175]: OWASP provides a checklist format that development teams can work through sprint by sprint. It does not require enterprise licensing, vendor contracts, or compliance consultants. That practicality is why it belongs at the top of the implementation order.
+            - paragraph [ref=e176]: "For additional context: on May 1, 2026, the Five Eyes intelligence alliance (CISA, NSA, and equivalents from Australia, Canada, New Zealand, and the UK) jointly published “Careful Adoption of Agentic AI Services.” Their core warning: “assume that agentic AI systems may behave unexpectedly and plan deployments accordingly.” When five national security agencies agree that agent systems require new safety assumptions, the framework conversation stops being theoretical."
+            - 'heading "NIST: the governance layer" [level=2] [ref=e177]'
+            - paragraph [ref=e178]: "NIST CAISI launched the AI Agent Standards Initiative in February 2026, covering three domains: agent identity and authentication, agent security and safety, agent interoperability, and (more recently) agent accountability chains."
+            - paragraph [ref=e179]: "Where OWASP tells developers what to build, NIST tells organizations how to govern. The NIST AI Risk Management Framework (AI RMF) defines processes for identifying, assessing, and mitigating AI risks across the organization. The agent-specific additions address:"
+            - list [ref=e180]:
+              - listitem [ref=e181]: How to assign and verify agent identities across organizational boundaries
+              - listitem [ref=e182]: How to establish accountability chains when agents act autonomously
+              - listitem [ref=e183]: How to maintain audit trails for agent decisions and actions
+              - listitem [ref=e184]: How to implement human oversight at appropriate decision points
+            - paragraph [ref=e185]: "For startups and small teams, NIST guidance is aspirational rather than immediately actionable. The governance processes assume organizational structures (risk committees, policy review boards) that a five-person startup does not have. But the principles behind them matter: if an agent makes a consequential decision, someone needs to be accountable, and the decision needs to be traceable."
+            - paragraph [ref=e186]: "The practical takeaway for builders: implement agent action logging from day one. Every tool call, every API request, every decision point should produce a structured log entry with the full context chain. This costs almost nothing to build but becomes critical when a customer asks “why did your agent do that?” or when a regulator requires an audit trail."
+            - generic [ref=e191]:
+              - paragraph [ref=e192]:
+                - text: Want to
+                - generic [ref=e193]:
+                  - text: build AI products
+                  - img [ref=e194]
+                - text: "with security baked in from the start? We ship MVPs in weeks, not months: check our pricing."
+              - link "check our pricing" [ref=e196] [cursor=pointer]:
+                - /url: /#pricing
+            - 'heading "EU AI Act: the regulatory deadline" [level=2] [ref=e197]'
+            - paragraph [ref=e198]:
+              - text: The
+              - link "EU AI Act" [ref=e199] [cursor=pointer]:
+                - /url: /blog/eu-ai-act-high-risk-compliance-saas-august-2026
+              - text: hits full enforcement on August 2, 2026. For teams selling to EU customers, this is not optional guidance. Penalties reach 35 million euros or 7% of global annual turnover.
+            - paragraph [ref=e200]: "AI agents trigger several Act requirements:"
+            - paragraph [ref=e201]:
+              - strong [ref=e202]: Transparency obligations.
+              - text: Users must be informed when they interact with an AI system. If an agent handles customer support, the customer must know they’re talking to AI. If an agent generates content, the content must be labeled as AI-generated.
+            - paragraph [ref=e203]:
+              - strong [ref=e204]: High-risk classification.
+              - text: Agents deployed in regulated sectors (finance, healthcare, hiring, law enforcement) are classified as high-risk AI systems. This triggers mandatory risk assessments, human oversight requirements, accuracy and bias monitoring, and detailed technical documentation.
+            - paragraph [ref=e205]:
+              - strong [ref=e206]: Prohibited practices.
+              - text: Agents that perform real-time remote biometric identification in public spaces, social scoring, or manipulation of behavior through subliminal techniques are banned outright. Most SaaS agents won’t hit these categories, but agents that process biometric data or make decisions about access to services need careful evaluation.
+            - paragraph [ref=e207]: "The practical implementation path: add an AI disclosure to any user-facing agent interaction, document the agent’s intended purpose and risk profile, implement a human escalation path for consequential decisions, and maintain logs sufficient for a regulatory audit."
+            - 'heading "Cisco DefenseClaw: the audit tool" [level=2] [ref=e208]'
+            - paragraph [ref=e209]: While frameworks like OWASP and NIST provide guidance, Cisco DefenseClaw provides tooling. It’s an open-source framework that scans agent configurations and produces actionable findings.
+            - paragraph:
+              - img "Cisco DefenseClaw open-source repository for auditing AI agent security configurations"
+            - paragraph [ref=e210]: "DefenseClaw has three components:"
+            - list [ref=e211]:
+              - listitem [ref=e212]:
+                - paragraph [ref=e213]:
+                  - strong [ref=e214]: Skills Scanner
+                  - text: audits the tools and capabilities an agent has access to. It checks for over-permissioned tools, missing input validation, and tool configurations that could enable data exfiltration.
+              - listitem [ref=e215]:
+                - paragraph [ref=e216]:
+                  - strong [ref=e217]: MCP Scanner
+                  - text: audits Model Context Protocol server configurations. MCP has become the standard for agent-tool communication, and misconfigured MCP servers are a growing attack vector.
+              - listitem [ref=e218]:
+                - paragraph [ref=e219]:
+                  - strong [ref=e220]: AI-BOM Generator
+                  - text: "creates an inventory of every component in the agent system: models, tools, data sources, permissions, and dependencies. This mirrors software SBOMs (Software Bills of Materials) but adds fields for model provenance, tool scopes, and data classification."
+            - paragraph [ref=e221]: Running DefenseClaw against an agent takes roughly five minutes and produces a report that maps directly to OWASP threat categories. For teams that want to adopt a framework but lack the bandwidth for a full security audit, DefenseClaw is the fastest path from “we should do something about agent security” to “we have a documented baseline.”
+            - 'heading "AIUC-1: the first agent-specific certification" [level=2] [ref=e222]'
+            - paragraph [ref=e223]: "In May 2026, Lovable and the AI Underwriting Consortium (AIUC) published a joint white paper proposing AIUC-1 as a security certification standard for coding agents. The standard addresses risks specific to agents that generate and execute code: credential leakage, supply chain contamination, unintended infrastructure changes, and sandbox escape."
+            - blockquote [ref=e224]:
+              - paragraph [ref=e225]:
+                - text: “AIUC-1 is the standard for AI agent security, safety, and reliability. Lovable will be the first in our category to achieve AIUC-1 certification this summer.” —
+                - link "@Lovable" [ref=e226] [cursor=pointer]:
+                  - /url: https://x.com/Lovable/status/2054215581721849907
+                - text: ", May 12, 2026"
+            - paragraph [ref=e227]: "The timing is notable. Weeks before the announcement, a Lovable security incident exposed user credentials when the platform’s code hosting leaked environment variables. Several developers pointed out that the breach illustrated exactly the attack surface the white paper describes: when a coding agent has access to credentials, a hosting vulnerability compromises every project built on that stack."
+            - paragraph [ref=e228]: "AIUC-1 is more substantial than a single company’s white paper. The standard was developed with input from Anthropic, Cisco, MITRE, Stanford, Google Cloud, Microsoft, and 500+ enterprise risk leaders. It covers six domains: data and privacy, security, safety, reliability, accountability, and society. Certification requires 50+ technical, operational, and legal safeguards, lasts 12 months, and includes mandatory quarterly technical testing. Schellman is the first accredited auditor. UiPath and ElevenLabs were among the early companies to achieve certification."
+            - paragraph [ref=e229]: Framework crosswalks already exist mapping AIUC-1 requirements to OWASP LLM Top 10, OWASP Agentic Top 10, NIST AI RMF, ISO 42001, EU AI Act, and MITRE ATLAS. That interoperability makes it more practical than yet another siloed standard.
+            - heading "The real-world attack surface" [level=2] [ref=e230]
+            - paragraph [ref=e231]: "Google DeepMind published the largest empirical study of AI agent manipulation in early 2026, testing 502 participants across eight attack scenarios. The findings went viral for good reason: websites can already detect when an AI agent visits and serve it completely different content than humans see."
+            - paragraph:
+              - img "MCP Scanner GitHub repository for auditing Model Context Protocol server configurations"
+            - paragraph [ref=e232]: Hidden instructions in HTML comments. Malicious commands embedded in image metadata. Jailbreaks injected into PDFs that the agent processes.
+            - paragraph [ref=e233]: This isn’t theoretical. Researchers gave AI agents real email accounts, Discord access, and shell commands for two weeks. The agents deleted mail servers “for security.” They leaked secrets through tool calls. They gaslit each other in multi-agent conversations. Every framework listed in this article attempts to prevent some version of these failures, but the attack surface is expanding faster than the standards can keep up.
+            - paragraph [ref=e234]: The open-source community is responding with specialized tooling. StackOne Defender, a 22MB prompt injection firewall that runs on CPU in roughly 4ms, scans emails, GitHub PRs, documents, and CRM data for injection attempts at 88.7% detection accuracy. ClawSec provides security skills for OpenClaw-based agents. MCP firewalls handle egress control and data loss prevention at the tool layer. These tools fill the gap between framework guidance (“implement input validation”) and practical implementation.
+            - heading "What’s missing from current standards" [level=2] [ref=e235]
+            - paragraph [ref=e236]: Despite the volume of frameworks published in the past year, significant gaps remain.
+            - paragraph [ref=e237]:
+              - strong [ref=e238]: Multi-agent coordination security
+              - text: is barely addressed. Most frameworks assume a single agent acting on behalf of a single user. Production systems increasingly involve agent fleets where agents delegate tasks to other agents, share context, and operate across trust boundaries. The
+              - link "security implications of agent-to-agent communication" [ref=e239] [cursor=pointer]:
+                - /url: /blog/zero-trust-agent-identity-standard-ietf-ai-security-2026
+              - text: are not well-covered by any existing standard.
+            - paragraph [ref=e240]:
+              - strong [ref=e241]: Supply chain risk for agent tools
+              - text: lacks a mature model. When an agent uses an MCP server maintained by a third party, what security guarantees apply? Who is responsible when a tool update introduces a vulnerability? Software supply chain security (SBOMs, Sigstore, SLSA) has mature tooling. Agent tool chain security does not.
+            - paragraph [ref=e242]:
+              - strong [ref=e243]: Benchmarking agent security posture
+              - text: has no standard methodology. There’s no equivalent of PCI DSS compliance levels or SOC 2 Type II reports for agent systems. Teams cannot demonstrate their agent security posture to customers or investors in a standardized way.
+            - paragraph [ref=e244]:
+              - strong [ref=e245]: Cost of compliance
+              - text: is not addressed by any framework. Implementing OWASP recommendations, maintaining NIST-aligned governance processes, and meeting EU AI Act requirements simultaneously is a significant engineering and legal investment. No framework provides a phased implementation path sized for startups.
+            - heading "The implementation priority order" [level=2] [ref=e246]
+            - paragraph [ref=e247]: "For a SaaS team shipping agents to production in 2026, this is the recommended order:"
+            - paragraph [ref=e248]:
+              - strong [ref=e249]: "Week 1: Foundation (zero cost)"
+            - list [ref=e250]:
+              - listitem [ref=e251]: Enable structured logging for every agent action, tool call, and decision point
+              - listitem [ref=e252]: Apply least-privilege scoping to every tool the agent can access
+              - listitem [ref=e253]: Run Cisco DefenseClaw against the current agent configuration and address critical findings
+              - listitem [ref=e254]: Add an AI disclosure to user-facing agent interactions
+            - paragraph [ref=e255]:
+              - strong [ref=e256]: "Month 1: OWASP alignment"
+            - list [ref=e257]:
+              - listitem [ref=e258]: Work through the OWASP Agentic AI checklist, prioritizing excessive agency and insecure tool use
+              - listitem [ref=e259]: Implement input validation on all tool parameters (treat every tool call like an API endpoint)
+              - listitem [ref=e260]:
+                - text: Add
+                - link "prompt injection detection" [ref=e261] [cursor=pointer]:
+                  - /url: /blog/indirect-prompt-injection-ai-agents-hijacked
+                - text: to the agent’s input pipeline
+              - listitem [ref=e262]: Set up monitoring for anomalous agent behavior (unexpected tool calls, unusual data access patterns)
+            - paragraph [ref=e263]:
+              - strong [ref=e264]: "Quarter 1: Governance and compliance"
+            - list [ref=e265]:
+              - listitem [ref=e266]: Document the agent’s risk profile, intended use, and limitations (NIST AI RMF alignment)
+              - listitem [ref=e267]: If selling to EU customers, complete the EU AI Act high-risk assessment
+              - listitem [ref=e268]: Implement human oversight mechanisms for consequential agent decisions
+              - listitem [ref=e269]: Generate and maintain an AI-BOM for every production agent
+            - paragraph [ref=e270]:
+              - strong [ref=e271]: "Ongoing: Red-teaming and evolution"
+            - list [ref=e272]:
+              - listitem [ref=e273]: Run quarterly red-team exercises against agent systems (prompt injection, tool abuse, data exfiltration)
+              - listitem [ref=e274]: Monitor framework updates from OWASP, NIST, and EU regulatory bodies
+              - listitem [ref=e275]: Update the AI-BOM when tools, models, or data sources change
+            - paragraph [ref=e276]: The total cost of Phase 1 and Phase 2 is engineering time only. No vendor contracts, no compliance consultants, no enterprise software purchases. The tools (DefenseClaw, OWASP checklists) are free. The logging and input validation belong in the codebase regardless of security frameworks.
+            - heading "The reality check" [level=2] [ref=e277]
+            - paragraph [ref=e278]: "Here’s a stat that frames the urgency: 85% of enterprises are experimenting with AI agents, but only 5% have moved to production. Of those in production, 80% of IT professionals report witnessing agents perform unauthorized actions. And 41% of organizations have not implemented basic governance controls like human-in-the-loop approvals."
+            - paragraph [ref=e279]: "Every new framework published creates the impression that agent security is unsolved and dangerous. The underlying reality is simpler: the same security principles that protect web applications protect agents. Input validation. Least privilege. Logging. Authentication. Authorization. Monitoring."
+            - paragraph [ref=e280]: What agents add is a new execution context where those principles need to be applied. A web API validates user input at the HTTP boundary. An agent needs to validate input at the tool call boundary. A web app uses RBAC for user permissions. An agent needs scoped permissions for tool access. The principles don’t change. The surface area does.
+            - paragraph [ref=e281]: "The frameworks listed in this article are converging on the same set of controls, expressed in different vocabularies for different audiences. OWASP speaks to developers. NIST speaks to governance teams. The EU AI Act speaks to legal and compliance. Cisco DefenseClaw speaks to security engineers. But the underlying requirements are the same: know what your agent can do, limit it to what it should do, log everything it actually does, and verify that the limits hold under adversarial conditions."
+            - generic [ref=e286]:
+              - paragraph [ref=e287]:
+                - text: Ready to stop researching and
+                - generic [ref=e288]:
+                  - text: start building
+                  - img [ref=e289]
+                - text: "? Book a free MVP strategy call or explore our free tools to get started."
+              - generic [ref=e290]:
+                - link "Book a free MVP strategy call" [ref=e291] [cursor=pointer]:
+                  - /url: https://cal.com/rsriram/buildmvpfast
+                - link "explore our free tools" [ref=e292] [cursor=pointer]:
+                  - /url: /tools
+          - generic [ref=e293]:
+            - heading "Frequently Asked Questions" [level=2] [ref=e294]
+            - generic [ref=e295]:
+              - term [ref=e297]:
+                - button "Which AI agent security standard should I follow first?" [ref=e298] [cursor=pointer]:
+                  - generic [ref=e299]: Which AI agent security standard should I follow first?
+                  - img [ref=e300]
+              - term [ref=e303]:
+                - button "What are the biggest security risks with AI agents?" [ref=e304] [cursor=pointer]:
+                  - generic [ref=e305]: What are the biggest security risks with AI agents?
+                  - img [ref=e306]
+              - term [ref=e309]:
+                - button "Does the EU AI Act apply to AI agents?" [ref=e310] [cursor=pointer]:
+                  - generic [ref=e311]: Does the EU AI Act apply to AI agents?
+                  - img [ref=e312]
+              - term [ref=e315]:
+                - button "What is an AI Bill of Materials and why does it matter?" [ref=e316] [cursor=pointer]:
+                  - generic [ref=e317]: What is an AI Bill of Materials and why does it matter?
+                  - img [ref=e318]
+              - term [ref=e321]:
+                - button "Is there a certification for AI agent security?" [ref=e322] [cursor=pointer]:
+                  - generic [ref=e323]: Is there a certification for AI agent security?
+                  - img [ref=e324]
+          - generic [ref=e330]:
+            - heading "Ready to turn your idea into a product ?" [level=2] [ref=e331]:
+              - text: Ready to turn your idea into a
+              - generic [ref=e332]:
+                - text: product
+                - img [ref=e333]
+              - text: "?"
+            - paragraph [ref=e335]: Stop researching, start shipping. We help founders go from idea to live product in weeks, not months.
+            - generic [ref=e336]:
+              - link "Continue" [ref=e337] [cursor=pointer]:
+                - /url: /
+              - link "See Our Pricing" [ref=e338] [cursor=pointer]:
+                - /url: /#pricing
+          - generic [ref=e339]:
+            - heading "Read next" [level=2] [ref=e340]
+            - paragraph [ref=e341]: Tap + on a card to add it to your Read next list.
+            - generic [ref=e342]:
+              - generic [ref=e343]:
+                - generic [ref=e344]:
+                  - 'link "The AI Bill of Materials (AI-BOM): Why Every AI Product Needs Transparent Model Lineage" [ref=e345] [cursor=pointer]':
+                    - /url: /blog/ai-bill-of-materials-aibom-model-lineage-transparency-2026
+                    - 'img "The AI Bill of Materials (AI-BOM): Why Every AI Product Needs Transparent Model Lineage" [ref=e346]'
+                  - button "Add to read next list" [ref=e348] [cursor=pointer]:
+                    - img [ref=e349]
+                - 'link "Mar 28, 2026 13 min read The AI Bill of Materials (AI-BOM): Why Every AI Product Needs Transparent Model Lineage A developer discovered Cursor was secretly running a Chinese AI model. The AI Bill of Materials is the fix. Here is what every builder needs to know about model lineage transparency in 2026." [ref=e351] [cursor=pointer]':
+                  - /url: /blog/ai-bill-of-materials-aibom-model-lineage-transparency-2026
+                  - generic [ref=e352]:
+                    - time [ref=e353]: Mar 28, 2026
+                    - generic [ref=e355]: 13 min read
+                  - 'heading "The AI Bill of Materials (AI-BOM): Why Every AI Product Needs Transparent Model Lineage" [level=3] [ref=e356]'
+                  - paragraph [ref=e357]: A developer discovered Cursor was secretly running a Chinese AI model. The AI Bill of Materials is the fix. Here is what every builder needs to know about model lineage transparency in 2026.
+              - generic [ref=e358]:
+                - generic [ref=e359]:
+                  - link "The Zero-Trust Standard Every AI Agent Must Follow in 2026" [ref=e360] [cursor=pointer]:
+                    - /url: /blog/zero-trust-agent-identity-standard-ietf-ai-security-2026
+                    - img "The Zero-Trust Standard Every AI Agent Must Follow in 2026" [ref=e361]
+                  - button "Add to read next list" [ref=e363] [cursor=pointer]:
+                    - img [ref=e364]
+                - link "Mar 24, 2026 8 min read The Zero-Trust Standard Every AI Agent Must Follow in 2026 The IETF just published draft-klrc-aiagent-auth-00, a 9-layer framework for AI agent identity. Static API keys are officially dead. Here is what SaaS builders need to implement now." [ref=e366] [cursor=pointer]:
+                  - /url: /blog/zero-trust-agent-identity-standard-ietf-ai-security-2026
+                  - generic [ref=e367]:
+                    - time [ref=e368]: Mar 24, 2026
+                    - generic [ref=e370]: 8 min read
+                  - heading "The Zero-Trust Standard Every AI Agent Must Follow in 2026" [level=3] [ref=e371]
+                  - paragraph [ref=e372]: The IETF just published draft-klrc-aiagent-auth-00, a 9-layer framework for AI agent identity. Static API keys are officially dead. Here is what SaaS builders need to implement now.
+              - generic [ref=e373]:
+                - generic [ref=e374]:
+                  - 'link "AI Double Agents: How Unmanaged AI Agents Are Becoming a New Attack Surface" [ref=e375] [cursor=pointer]':
+                    - /url: /blog/ai-double-agents-unmanaged-ai-attack-surface-2026
+                    - 'img "AI Double Agents: How Unmanaged AI Agents Are Becoming a New Attack Surface" [ref=e376]'
+                  - button "Add to read next list" [ref=e378] [cursor=pointer]:
+                    - img [ref=e379]
+                - 'link "Mar 12, 2026 15 min read AI Double Agents: How Unmanaged AI Agents Are Becoming a New Attack Surface Microsoft''s Cyber Pulse Report reveals 80% of Fortune 500 companies run active AI agents with weak governance. Here''s how unmanaged agents become double agents, real exploits that prove it, and a checklist to lock them down." [ref=e381] [cursor=pointer]':
+                  - /url: /blog/ai-double-agents-unmanaged-ai-attack-surface-2026
+                  - generic [ref=e382]:
+                    - time [ref=e383]: Mar 12, 2026
+                    - generic [ref=e385]: 15 min read
+                  - 'heading "AI Double Agents: How Unmanaged AI Agents Are Becoming a New Attack Surface" [level=3] [ref=e386]'
+                  - paragraph [ref=e387]: Microsoft's Cyber Pulse Report reveals 80% of Fortune 500 companies run active AI agents with weak governance. Here's how unmanaged agents become double agents, real exploits that prove it, and a checklist to lock them down.
+              - generic [ref=e388]:
+                - generic [ref=e389]:
+                  - link "Why 24/7 AI Agents Are Becoming the Default for SaaS Security" [ref=e390] [cursor=pointer]:
+                    - /url: /blog/ai-agents-default-saas-security
+                    - img "Why 24/7 AI Agents Are Becoming the Default for SaaS Security" [ref=e391]
+                  - button "Add to read next list" [ref=e393] [cursor=pointer]:
+                    - img [ref=e394]
+                - link "Feb 22, 2026 8 min read Why 24/7 AI Agents Are Becoming the Default for SaaS Security With 51-second breakout times and a 4.8M cybersecurity workforce gap, always-on AI agents are replacing manual SOC operations. Here's what's driving the shift." [ref=e396] [cursor=pointer]:
+                  - /url: /blog/ai-agents-default-saas-security
+                  - generic [ref=e397]:
+                    - time [ref=e398]: Feb 22, 2026
+                    - generic [ref=e400]: 8 min read
+                  - heading "Why 24/7 AI Agents Are Becoming the Default for SaaS Security" [level=3] [ref=e401]
+                  - paragraph [ref=e402]: With 51-second breakout times and a 4.8M cybersecurity workforce gap, always-on AI agents are replacing manual SOC operations. Here's what's driving the shift.
+              - generic [ref=e403]:
+                - generic [ref=e404]:
+                  - link "AI Agents Are Now SOX Compliance Nightmares for SaaS Companies" [ref=e405] [cursor=pointer]:
+                    - /url: /blog/ai-agents-sox-compliance-risk-2026
+                    - img "AI Agents Are Now SOX Compliance Nightmares for SaaS Companies" [ref=e406]
+                  - button "Add to read next list" [ref=e408] [cursor=pointer]:
+                    - img [ref=e409]
+                - link "Feb 17, 2026 11 min read AI Agents Are Now SOX Compliance Nightmares for SaaS Companies AI agents are breaking SOX internal controls faster than audit teams can adapt. Here's why agentic AI in financial workflows creates Section 404 risk and what SaaS builders should do about it." [ref=e411] [cursor=pointer]:
+                  - /url: /blog/ai-agents-sox-compliance-risk-2026
+                  - generic [ref=e412]:
+                    - time [ref=e413]: Feb 17, 2026
+                    - generic [ref=e415]: 11 min read
+                  - heading "AI Agents Are Now SOX Compliance Nightmares for SaaS Companies" [level=3] [ref=e416]
+                  - paragraph [ref=e417]: AI agents are breaking SOX internal controls faster than audit teams can adapt. Here's why agentic AI in financial workflows creates Section 404 risk and what SaaS builders should do about it.
+              - generic [ref=e418]:
+                - generic [ref=e419]:
+                  - 'link "The FCC Burner Phone Ban: Privacy, Security, and What Developers Should Know" [ref=e420] [cursor=pointer]':
+                    - /url: /blog/fcc-burner-phone-ban-privacy-security-developers-2026
+                    - 'img "The FCC Burner Phone Ban: Privacy, Security, and What Developers Should Know" [ref=e421]'
+                  - button "Add to read next list" [ref=e423] [cursor=pointer]:
+                    - img [ref=e424]
+                - 'link "Jun 20, 2026 14 min read The FCC Burner Phone Ban: Privacy, Security, and What Developers Should Know The FCC didn’t ban burner phones, it proposed something quieter and arguably worse. Here’s what FCC 26-27 actually says, why privacy folks are furious, and the auth lesson founders should have learned years ago." [ref=e426] [cursor=pointer]':
+                  - /url: /blog/fcc-burner-phone-ban-privacy-security-developers-2026
+                  - generic [ref=e427]:
+                    - time [ref=e428]: Jun 20, 2026
+                    - generic [ref=e430]: 14 min read
+                  - 'heading "The FCC Burner Phone Ban: Privacy, Security, and What Developers Should Know" [level=3] [ref=e431]'
+                  - paragraph [ref=e432]: The FCC didn’t ban burner phones, it proposed something quieter and arguably worse. Here’s what FCC 26-27 actually says, why privacy folks are furious, and the auth lesson founders should have learned years ago.
+    - contentinfo [ref=e433]:
+      - generic [ref=e436]:
+        - generic [ref=e437]:
+          - generic [ref=e438]:
+            - img "BuildMVPFast" [ref=e439]
+            - paragraph [ref=e440]: Helping entrepreneurs and startups quickly build and launch SaaS MVPs using modern tools.
+            - generic [ref=e441]:
+              - heading "Explore" [level=4] [ref=e442]
+              - generic [ref=e443]:
+                - link "Features" [ref=e444] [cursor=pointer]:
+                  - /url: /#features
+                - link "How it Works" [ref=e445] [cursor=pointer]:
+                  - /url: /#how-it-works
+                - link "Pricing" [ref=e446] [cursor=pointer]:
+                  - /url: /#pricing
+                - link "Blog" [ref=e447] [cursor=pointer]:
+                  - /url: /blog
+                - link "Articles" [ref=e448] [cursor=pointer]:
+                  - /url: /articles
+                - link "Services" [ref=e449] [cursor=pointer]:
+                  - /url: /services
+                - link "Contact" [ref=e450] [cursor=pointer]:
+                  - /url: /contact
+            - generic [ref=e451]:
+              - heading "Legal" [level=4] [ref=e452]
+              - generic [ref=e453]:
+                - link "Privacy Policy" [ref=e454] [cursor=pointer]:
+                  - /url: /privacy-policy
+                - link "Terms of Service" [ref=e455] [cursor=pointer]:
+                  - /url: /terms-of-service
+                - link "Cookie Policy" [ref=e456] [cursor=pointer]:
+                  - /url: /cookie-policy
+                - link "Content Policy" [ref=e457] [cursor=pointer]:
+                  - /url: /content-policy
+          - generic [ref=e458]:
+            - heading "Glossary" [level=4] [ref=e459]:
+              - link "Glossary" [ref=e460] [cursor=pointer]:
+                - /url: /glossary
+            - list [ref=e461]:
+              - listitem [ref=e462]:
+                - link "What is ARR?" [ref=e463] [cursor=pointer]:
+                  - /url: /glossary/arr-annual-recurring-revenue
+              - listitem [ref=e464]:
+                - link "What is Technical Debt?" [ref=e465] [cursor=pointer]:
+                  - /url: /glossary/technical-debt
+              - listitem [ref=e466]:
+                - link "What is OKRs?" [ref=e467] [cursor=pointer]:
+                  - /url: /glossary/okrs
+              - listitem [ref=e468]:
+                - link "What is Scope Creep?" [ref=e469] [cursor=pointer]:
+                  - /url: /glossary/scope-creep
+              - listitem [ref=e470]:
+                - link "What is a Tech Stack?" [ref=e471] [cursor=pointer]:
+                  - /url: /glossary/tech-stack
+              - listitem [ref=e472]:
+                - link "What is MRR?" [ref=e473] [cursor=pointer]:
+                  - /url: /glossary/mrr-monthly-recurring-revenue
+              - listitem [ref=e474]:
+                - link "What is Churn Rate?" [ref=e475] [cursor=pointer]:
+                  - /url: /glossary/churn-rate
+              - listitem [ref=e476]:
+                - link "What is Burn Rate?" [ref=e477] [cursor=pointer]:
+                  - /url: /glossary/burn-rate
+              - listitem [ref=e478]:
+                - link "What is a Feature Flag?" [ref=e479] [cursor=pointer]:
+                  - /url: /glossary/feature-flag
+              - listitem [ref=e480]:
+                - link "What is a Wireframe?" [ref=e481] [cursor=pointer]:
+                  - /url: /glossary/wireframe
+          - generic [ref=e482]:
+            - heading "Best AI Models" [level=4] [ref=e483]:
+              - link "Best AI Models" [ref=e484] [cursor=pointer]:
+                - /url: /articles/best-llms-2026-guide
+            - list [ref=e485]:
+              - listitem [ref=e486]:
+                - link "Best AI for Content Writing" [ref=e487] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/content-writing-ai
+              - listitem [ref=e488]:
+                - link "Best AI for Coding" [ref=e489] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/coding-ai
+              - listitem [ref=e490]:
+                - link "Best AI for Image Generation" [ref=e491] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/image-generation-ai
+              - listitem [ref=e492]:
+                - link "Best AI for Customer Support" [ref=e493] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/customer-support-ai
+              - listitem [ref=e494]:
+                - link "Best AI for Creative Writing" [ref=e495] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/creative-writing-ai
+              - listitem [ref=e496]:
+                - link "Best AI for Video Generation" [ref=e497] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/video-generation-ai
+              - listitem [ref=e498]:
+                - link "Best AI for Marketing & SEO" [ref=e499] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/marketing-seo-ai
+              - listitem [ref=e500]:
+                - link "Best AI for Audio & Music" [ref=e501] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/audio-music-ai
+              - listitem [ref=e502]:
+                - link "Best AI for Legal" [ref=e503] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/legal-ai
+              - listitem [ref=e504]:
+                - link "Best AI for Education" [ref=e505] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/education-ai
+              - listitem [ref=e506]:
+                - link "Best AI for Data Analysis" [ref=e507] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/data-analysis-ai
+              - listitem [ref=e508]:
+                - link "Best AI for Translation" [ref=e509] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/translation-ai
+              - listitem [ref=e510]:
+                - link "Best AI for Social Media" [ref=e511] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/social-media-ai
+              - listitem [ref=e512]:
+                - link "Best AI for Medical" [ref=e513] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/medical-ai
+              - listitem [ref=e514]:
+                - link "Best AI for Finance" [ref=e515] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/financial-ai
+              - listitem [ref=e516]:
+                - link "Best AI for Business Strategy" [ref=e517] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/business-strategy-ai
+              - listitem [ref=e518]:
+                - link "Best AI for Website Design" [ref=e519] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/website-design-ai
+              - listitem [ref=e520]:
+                - link "Best AI for Technical Docs" [ref=e521] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/technical-docs-ai
+              - listitem [ref=e522]:
+                - link "Best AI for Conversations" [ref=e523] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/conversational-ai
+              - listitem [ref=e524]:
+                - link "Best AI for Research" [ref=e525] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/scientific-research-ai
+        - generic [ref=e526]:
+          - generic [ref=e527]:
+            - heading "Tools" [level=4] [ref=e528]:
+              - link "Tools" [ref=e529] [cursor=pointer]:
+                - /url: /tools
+            - list [ref=e530]:
+              - listitem [ref=e531]:
+                - link "MVP Feature Prioritization" [ref=e532] [cursor=pointer]:
+                  - /url: /tools/mvp-feature-prioritization
+              - listitem [ref=e533]:
+                - link "MVP Cost Estimator" [ref=e534] [cursor=pointer]:
+                  - /url: /tools/mvp-cost-estimator
+              - listitem [ref=e535]:
+                - link "Launch Timeline Planner" [ref=e536] [cursor=pointer]:
+                  - /url: /tools/mvp-launch-timeline
+              - listitem [ref=e537]:
+                - link "Startup Runway Calculator" [ref=e538] [cursor=pointer]:
+                  - /url: /tools/startup-runway-calculator
+              - listitem [ref=e539]:
+                - link "SaaS Metrics Dashboard" [ref=e540] [cursor=pointer]:
+                  - /url: /tools/saas-metrics-calculator
+              - listitem [ref=e541]:
+                - link "Tech Stack Selector" [ref=e542] [cursor=pointer]:
+                  - /url: /tools/mvp-tech-stack-selector
+              - listitem [ref=e543]:
+                - link "Startup Idea Validation" [ref=e544] [cursor=pointer]:
+                  - /url: /tools/startup-idea-validation
+              - listitem [ref=e545]:
+                - link "Startup Name Generator" [ref=e546] [cursor=pointer]:
+                  - /url: /tools/startup-name-generator
+              - listitem [ref=e547]:
+                - link "Landing Page Score" [ref=e548] [cursor=pointer]:
+                  - /url: /tools/landing-page-score
+              - listitem [ref=e549]:
+                - link "Competitor Feature Analyzer" [ref=e550] [cursor=pointer]:
+                  - /url: /tools/competitor-feature-analyzer
+          - generic [ref=e551]:
+            - heading "Compare" [level=4] [ref=e552]:
+              - link "Compare" [ref=e553] [cursor=pointer]:
+                - /url: /compare
+            - list [ref=e554]:
+              - listitem [ref=e555]:
+                - link "Supabase vs Firebase" [ref=e556] [cursor=pointer]:
+                  - /url: /compare/supabase-vs-firebase
+              - listitem [ref=e557]:
+                - link "OpenAI vs Anthropic" [ref=e558] [cursor=pointer]:
+                  - /url: /compare/openai-vs-anthropic
+              - listitem [ref=e559]:
+                - link "Vercel vs Netlify" [ref=e560] [cursor=pointer]:
+                  - /url: /compare/vercel-vs-netlify
+              - listitem [ref=e561]:
+                - link "Clerk vs Auth0" [ref=e562] [cursor=pointer]:
+                  - /url: /compare/clerk-vs-auth0
+              - listitem [ref=e563]:
+                - link "Stripe vs Paddle" [ref=e564] [cursor=pointer]:
+                  - /url: /compare/stripe-vs-paddle
+              - listitem [ref=e565]:
+                - link "Resend vs SendGrid" [ref=e566] [cursor=pointer]:
+                  - /url: /compare/resend-vs-sendgrid
+              - listitem [ref=e567]:
+                - link "Neon vs PlanetScale" [ref=e568] [cursor=pointer]:
+                  - /url: /compare/neon-vs-planetscale
+              - listitem [ref=e569]:
+                - link "Railway vs Fly.io" [ref=e570] [cursor=pointer]:
+                  - /url: /compare/railway-vs-fly-io
+              - listitem [ref=e571]:
+                - link "PostHog vs Mixpanel" [ref=e572] [cursor=pointer]:
+                  - /url: /compare/posthog-vs-mixpanel
+              - listitem [ref=e573]:
+                - link "Vercel vs Cloudflare" [ref=e574] [cursor=pointer]:
+                  - /url: /compare/vercel-vs-cloudflare
+          - generic [ref=e575]:
+            - heading "Alternatives" [level=4] [ref=e576]:
+              - link "Alternatives" [ref=e577] [cursor=pointer]:
+                - /url: /alternatives
+            - list [ref=e578]:
+              - listitem [ref=e579]:
+                - link "Firebase Alternatives" [ref=e580] [cursor=pointer]:
+                  - /url: /alternatives/firebase
+              - listitem [ref=e581]:
+                - link "Supabase Alternatives" [ref=e582] [cursor=pointer]:
+                  - /url: /alternatives/supabase
+              - listitem [ref=e583]:
+                - link "Auth0 Alternatives" [ref=e584] [cursor=pointer]:
+                  - /url: /alternatives/auth0
+              - listitem [ref=e585]:
+                - link "Vercel Alternatives" [ref=e586] [cursor=pointer]:
+                  - /url: /alternatives/vercel
+              - listitem [ref=e587]:
+                - link "Stripe Alternatives" [ref=e588] [cursor=pointer]:
+                  - /url: /alternatives/stripe
+              - listitem [ref=e589]:
+                - link "OpenAI Alternatives" [ref=e590] [cursor=pointer]:
+                  - /url: /alternatives/openai
+              - listitem [ref=e591]:
+                - link "Clerk Alternatives" [ref=e592] [cursor=pointer]:
+                  - /url: /alternatives/clerk
+              - listitem [ref=e593]:
+                - link "Sentry Alternatives" [ref=e594] [cursor=pointer]:
+                  - /url: /alternatives/sentry
+              - listitem [ref=e595]:
+                - link "SendGrid Alternatives" [ref=e596] [cursor=pointer]:
+                  - /url: /alternatives/sendgrid
+              - listitem [ref=e597]:
+                - link "Algolia Alternatives" [ref=e598] [cursor=pointer]:
+                  - /url: /alternatives/algolia
+          - generic [ref=e599]:
+            - heading "Best Stacks" [level=4] [ref=e600]:
+              - link "Best Stacks" [ref=e601] [cursor=pointer]:
+                - /url: /best
+            - list [ref=e602]:
+              - listitem [ref=e603]:
+                - link "AI SaaS" [ref=e604] [cursor=pointer]:
+                  - /url: /best/ai-saas
+              - listitem [ref=e605]:
+                - link "Subscription SaaS" [ref=e606] [cursor=pointer]:
+                  - /url: /best/subscription-saas
+              - listitem [ref=e607]:
+                - link "B2B Dashboard" [ref=e608] [cursor=pointer]:
+                  - /url: /best/b2b-dashboard
+              - listitem [ref=e609]:
+                - link "Marketplace" [ref=e610] [cursor=pointer]:
+                  - /url: /best/marketplace
+              - listitem [ref=e611]:
+                - link "Multi-Tenant SaaS" [ref=e612] [cursor=pointer]:
+                  - /url: /best/multi-tenant-saas
+              - listitem [ref=e613]:
+                - link "AI Chatbot" [ref=e614] [cursor=pointer]:
+                  - /url: /best/ai-chatbot
+              - listitem [ref=e615]:
+                - link "Realtime SaaS" [ref=e616] [cursor=pointer]:
+                  - /url: /best/realtime-saas
+              - listitem [ref=e617]:
+                - link "AI Agent Platform" [ref=e618] [cursor=pointer]:
+                  - /url: /best/ai-agent-platform
+              - listitem [ref=e619]:
+                - link "Internal Tools" [ref=e620] [cursor=pointer]:
+                  - /url: /best/internal-tools
+              - listitem [ref=e621]:
+                - link "Usage-Based SaaS" [ref=e622] [cursor=pointer]:
+                  - /url: /best/usage-based-saas
+          - generic [ref=e623]:
+            - heading "Questions" [level=4] [ref=e624]:
+              - link "Questions" [ref=e625] [cursor=pointer]:
+                - /url: /questions
+            - list [ref=e626]:
+              - listitem [ref=e627]:
+                - link "What is an MVP?" [ref=e628] [cursor=pointer]:
+                  - /url: /questions/what-is-an-mvp
+              - listitem [ref=e629]:
+                - link "How Much Does an MVP Cost?" [ref=e630] [cursor=pointer]:
+                  - /url: /questions/how-much-does-an-mvp-cost
+              - listitem [ref=e631]:
+                - link "How Long to Build an MVP?" [ref=e632] [cursor=pointer]:
+                  - /url: /questions/how-long-does-it-take-to-build-an-mvp
+              - listitem [ref=e633]:
+                - link "What Features in an MVP?" [ref=e634] [cursor=pointer]:
+                  - /url: /questions/what-features-should-be-in-an-mvp
+              - listitem [ref=e635]:
+                - link "Best Database for SaaS?" [ref=e636] [cursor=pointer]:
+                  - /url: /questions/what-is-the-best-database-for-saas
+              - listitem [ref=e637]:
+                - link "Use No-Code for MVP?" [ref=e638] [cursor=pointer]:
+                  - /url: /questions/should-i-use-no-code-for-my-mvp
+              - listitem [ref=e639]:
+                - link "Best SaaS Tech Stack?" [ref=e640] [cursor=pointer]:
+                  - /url: /questions/what-is-the-best-tech-stack-for-saas
+              - listitem [ref=e641]:
+                - link "What is Product-Market Fit?" [ref=e642] [cursor=pointer]:
+                  - /url: /questions/what-is-product-market-fit
+              - listitem [ref=e643]:
+                - link "Supabase vs Firebase?" [ref=e644] [cursor=pointer]:
+                  - /url: /questions/should-i-use-supabase-or-firebase
+              - listitem [ref=e645]:
+                - link "How to Validate Startup Ideas?" [ref=e646] [cursor=pointer]:
+                  - /url: /questions/how-do-i-validate-my-startup-idea
+          - generic [ref=e647]:
+            - heading "App Development" [level=4] [ref=e648]:
+              - link "App Development" [ref=e649] [cursor=pointer]:
+                - /url: /services/mvp-development
+            - list [ref=e650]:
+              - listitem [ref=e651]:
+                - link "App Development Austin" [ref=e652] [cursor=pointer]:
+                  - /url: /services/mvp-development/austin
+              - listitem [ref=e653]:
+                - link "App Developer NYC" [ref=e654] [cursor=pointer]:
+                  - /url: /services/mvp-development/new-york
+              - listitem [ref=e655]:
+                - link "App Development SF" [ref=e656] [cursor=pointer]:
+                  - /url: /services/mvp-development/san-francisco
+              - listitem [ref=e657]:
+                - link "App Development London" [ref=e658] [cursor=pointer]:
+                  - /url: /services/mvp-development/london
+              - listitem [ref=e659]:
+                - link "App Development Miami" [ref=e660] [cursor=pointer]:
+                  - /url: /services/mvp-development/miami
+              - listitem [ref=e661]:
+                - link "App Development Seattle" [ref=e662] [cursor=pointer]:
+                  - /url: /services/mvp-development/seattle
+              - listitem [ref=e663]:
+                - link "App Development Toronto" [ref=e664] [cursor=pointer]:
+                  - /url: /services/mvp-development/toronto
+              - listitem [ref=e665]:
+                - link "App Development Dubai" [ref=e666] [cursor=pointer]:
+                  - /url: /services/mvp-development/dubai
+              - listitem [ref=e667]:
+                - link "App Development Singapore" [ref=e668] [cursor=pointer]:
+                  - /url: /services/mvp-development/singapore
+              - listitem [ref=e669]:
+                - link "App Development Sydney" [ref=e670] [cursor=pointer]:
+                  - /url: /services/mvp-development/sydney
+          - generic [ref=e671]:
+            - heading "Web & AI Dev" [level=4] [ref=e672]:
+              - link "Web & AI Dev" [ref=e673] [cursor=pointer]:
+                - /url: /services/web-app-development
+            - list [ref=e674]:
+              - listitem [ref=e675]:
+                - link "Web Developer New York" [ref=e676] [cursor=pointer]:
+                  - /url: /services/web-app-development/new-york
+              - listitem [ref=e677]:
+                - link "Web Development Toronto" [ref=e678] [cursor=pointer]:
+                  - /url: /services/web-app-development/toronto
+              - listitem [ref=e679]:
+                - link "Web Development Austin" [ref=e680] [cursor=pointer]:
+                  - /url: /services/web-app-development/austin
+              - listitem [ref=e681]:
+                - link "Web Development SF" [ref=e682] [cursor=pointer]:
+                  - /url: /services/web-app-development/san-francisco
+              - listitem [ref=e683]:
+                - link "Web Development London" [ref=e684] [cursor=pointer]:
+                  - /url: /services/web-app-development/london
+              - listitem [ref=e685]:
+                - link "Web Development Berlin" [ref=e686] [cursor=pointer]:
+                  - /url: /services/web-app-development/berlin
+              - listitem [ref=e687]:
+                - link "AI Development Bangalore" [ref=e688] [cursor=pointer]:
+                  - /url: /services/ai-app-development/bangalore
+              - listitem [ref=e689]:
+                - link "AI Development NYC" [ref=e690] [cursor=pointer]:
+                  - /url: /services/ai-app-development/new-york
+              - listitem [ref=e691]:
+                - link "AI Development SF" [ref=e692] [cursor=pointer]:
+                  - /url: /services/ai-app-development/san-francisco
+              - listitem [ref=e693]:
+                - link "AI Development Austin" [ref=e694] [cursor=pointer]:
+                  - /url: /services/ai-app-development/austin
+          - generic [ref=e695]:
+            - heading "API Calculators" [level=4] [ref=e696]:
+              - link "API Calculators" [ref=e697] [cursor=pointer]:
+                - /url: /tools/api-pricing-estimator
+            - list [ref=e698]:
+              - listitem [ref=e699]:
+                - link "OpenAI Pricing" [ref=e700] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/openai
+              - listitem [ref=e701]:
+                - link "Anthropic Pricing" [ref=e702] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/anthropic
+              - listitem [ref=e703]:
+                - link "Stripe Pricing" [ref=e704] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/stripe
+              - listitem [ref=e705]:
+                - link "Supabase Pricing" [ref=e706] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/supabase
+              - listitem [ref=e707]:
+                - link "Vercel Pricing" [ref=e708] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/vercel
+              - listitem [ref=e709]:
+                - link "Firebase Pricing" [ref=e710] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/firebase
+              - listitem [ref=e711]:
+                - link "Twilio Pricing" [ref=e712] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/twilio
+              - listitem [ref=e713]:
+                - link "SendGrid Pricing" [ref=e714] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/sendgrid
+              - listitem [ref=e715]:
+                - link "Clerk Pricing" [ref=e716] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/clerk
+              - listitem [ref=e717]:
+                - link "AWS Pricing" [ref=e718] [cursor=pointer]:
+                  - /url: /tools/api-pricing-estimator/aws
+          - generic [ref=e719]:
+            - heading "API Comparisons" [level=4] [ref=e720]:
+              - link "API Comparisons" [ref=e721] [cursor=pointer]:
+                - /url: /api-costs
+            - list [ref=e722]:
+              - listitem [ref=e723]:
+                - link "Email Pricing" [ref=e724] [cursor=pointer]:
+                  - /url: /api-costs/email
+              - listitem [ref=e725]:
+                - link "Analytics Pricing" [ref=e726] [cursor=pointer]:
+                  - /url: /api-costs/analytics
+              - listitem [ref=e727]:
+                - link "Media / CDN Pricing" [ref=e728] [cursor=pointer]:
+                  - /url: /api-costs/media-cdn
+              - listitem [ref=e729]:
+                - link "AI Search Pricing" [ref=e730] [cursor=pointer]:
+                  - /url: /api-costs/ai-search
+              - listitem [ref=e731]:
+                - link "AI / LLM Pricing" [ref=e732] [cursor=pointer]:
+                  - /url: /api-costs/ai-llm
+              - listitem [ref=e733]:
+                - link "Translation Pricing" [ref=e734] [cursor=pointer]:
+                  - /url: /api-costs/translation
+              - listitem [ref=e735]:
+                - link "Cache / Serverless Data Pricing" [ref=e736] [cursor=pointer]:
+                  - /url: /api-costs/cache
+              - listitem [ref=e737]:
+                - link "AI Image Generation Pricing" [ref=e738] [cursor=pointer]:
+                  - /url: /api-costs/ai-image
+              - listitem [ref=e739]:
+                - link "Realtime Pricing" [ref=e740] [cursor=pointer]:
+                  - /url: /api-costs/realtime
+              - listitem [ref=e741]:
+                - link "Vector Databases Pricing" [ref=e742] [cursor=pointer]:
+                  - /url: /api-costs/vector-db
+          - generic [ref=e743]:
+            - heading "SaaS & Startup" [level=4] [ref=e744]:
+              - link "SaaS & Startup" [ref=e745] [cursor=pointer]:
+                - /url: /services/saas-development
+            - list [ref=e746]:
+              - listitem [ref=e747]:
+                - link "SaaS Development Austin" [ref=e748] [cursor=pointer]:
+                  - /url: /services/saas-development/austin
+              - listitem [ref=e749]:
+                - link "SaaS Development NYC" [ref=e750] [cursor=pointer]:
+                  - /url: /services/saas-development/new-york
+              - listitem [ref=e751]:
+                - link "SaaS Development SF" [ref=e752] [cursor=pointer]:
+                  - /url: /services/saas-development/san-francisco
+              - listitem [ref=e753]:
+                - link "SaaS Development London" [ref=e754] [cursor=pointer]:
+                  - /url: /services/saas-development/london
+              - listitem [ref=e755]:
+                - link "SaaS Development Dubai" [ref=e756] [cursor=pointer]:
+                  - /url: /services/saas-development/dubai
+              - listitem [ref=e757]:
+                - link "Startup Development Austin" [ref=e758] [cursor=pointer]:
+                  - /url: /services/startup-app-development/austin
+              - listitem [ref=e759]:
+                - link "Startup Development NYC" [ref=e760] [cursor=pointer]:
+                  - /url: /services/startup-app-development/new-york
+              - listitem [ref=e761]:
+                - link "Startup Development SF" [ref=e762] [cursor=pointer]:
+                  - /url: /services/startup-app-development/san-francisco
+              - listitem [ref=e763]:
+                - link "Startup Development Miami" [ref=e764] [cursor=pointer]:
+                  - /url: /services/startup-app-development/miami
+              - listitem [ref=e765]:
+                - link "Startup Development Chicago" [ref=e766] [cursor=pointer]:
+                  - /url: /services/startup-app-development/chicago
+        - generic [ref=e767]:
+          - generic [ref=e768]:
+            - heading "AI Automation" [level=4] [ref=e769]:
+              - link "AI Automation" [ref=e770] [cursor=pointer]:
+                - /url: /ai-automation
+            - list [ref=e771]:
+              - listitem [ref=e772]:
+                - link "AI Agents" [ref=e773] [cursor=pointer]:
+                  - /url: /ai-agents
+              - listitem [ref=e774]:
+                - link "AI Sales Automation" [ref=e775] [cursor=pointer]:
+                  - /url: /ai-sales-automation
+              - listitem [ref=e776]:
+                - link "AI Support Automation" [ref=e777] [cursor=pointer]:
+                  - /url: /ai-support-automation
+              - listitem [ref=e778]:
+                - link "AI Workflow Automation" [ref=e779] [cursor=pointer]:
+                  - /url: /ai-workflow-automation
+              - listitem [ref=e780]:
+                - link "OpenClaw Setup" [ref=e781] [cursor=pointer]:
+                  - /url: /openclaw-setup-service
+            - heading "AI by Industry" [level=4] [ref=e782]:
+              - link "AI by Industry" [ref=e783] [cursor=pointer]:
+                - /url: /ai-automation
+            - list [ref=e784]:
+              - listitem [ref=e785]:
+                - link "AI for E-commerce" [ref=e786] [cursor=pointer]:
+                  - /url: /ai-ecommerce
+              - listitem [ref=e787]:
+                - link "AI for Healthcare" [ref=e788] [cursor=pointer]:
+                  - /url: /ai-healthcare
+              - listitem [ref=e789]:
+                - link "AI for Finance" [ref=e790] [cursor=pointer]:
+                  - /url: /ai-finance
+              - listitem [ref=e791]:
+                - link "AI for Legal" [ref=e792] [cursor=pointer]:
+                  - /url: /ai-legal
+              - listitem [ref=e793]:
+                - link "AI for Education" [ref=e794] [cursor=pointer]:
+                  - /url: /ai-education
+              - listitem [ref=e795]:
+                - link "AI for Real Estate" [ref=e796] [cursor=pointer]:
+                  - /url: /ai-real-estate
+          - list [ref=e798]:
+            - listitem [ref=e799]:
+              - link "AI for Recruitment" [ref=e800] [cursor=pointer]:
+                - /url: /ai-recruitment
+            - listitem [ref=e801]:
+              - link "AI for Accounting" [ref=e802] [cursor=pointer]:
+                - /url: /ai-accounting
+            - listitem [ref=e803]:
+              - link "AI for Insurance" [ref=e804] [cursor=pointer]:
+                - /url: /ai-insurance
+            - listitem [ref=e805]:
+              - link "AI for Marketing" [ref=e806] [cursor=pointer]:
+                - /url: /ai-marketing
+            - listitem [ref=e807]:
+              - link "AI for Hospitality" [ref=e808] [cursor=pointer]:
+                - /url: /ai-hospitality
+            - listitem [ref=e809]:
+              - link "AI for Logistics" [ref=e810] [cursor=pointer]:
+                - /url: /ai-logistics
+            - listitem [ref=e811]:
+              - link "AI for Construction" [ref=e812] [cursor=pointer]:
+                - /url: /ai-construction
+            - listitem [ref=e813]:
+              - link "AI for Nonprofits" [ref=e814] [cursor=pointer]:
+                - /url: /ai-nonprofit
+            - listitem [ref=e815]:
+              - link "AI for Fitness" [ref=e816] [cursor=pointer]:
+                - /url: /ai-fitness
+          - generic [ref=e817]:
+            - heading "Latest Posts" [level=4] [ref=e818]:
+              - link "Latest Posts" [ref=e819] [cursor=pointer]:
+                - /url: /blog
+            - list [ref=e820]:
+              - listitem [ref=e821]:
+                - 'link "AI Liability for SaaS: When Your AI Feature Breaks Something, Who Pays?" [ref=e822] [cursor=pointer]':
+                  - /url: /blog/ai-liability-saas-feature-breaks-who-pays-2026
+              - listitem [ref=e823]:
+                - 'link "CISA''s 3-Day Patching Mandate: What AI-Accelerated Threats Mean for Your CI/CD" [ref=e824] [cursor=pointer]':
+                  - /url: /blog/cisa-3-day-patching-mandate-ai-threats-ci-cd-2026
+              - listitem [ref=e825]:
+                - 'link "The FCC Burner Phone Ban: Privacy, Security, and What Developers Should Know" [ref=e826] [cursor=pointer]':
+                  - /url: /blog/fcc-burner-phone-ban-privacy-security-developers-2026
+              - listitem [ref=e827]:
+                - 'link "On-Device AI Without NVIDIA: Apple Silicon, Intel Crescent, and the Alternatives" [ref=e828] [cursor=pointer]':
+                  - /url: /blog/on-device-ai-without-nvidia-apple-silicon-intel-alternatives-2026
+              - listitem [ref=e829]:
+                - 'link "Accessible Color Systems: Building Design Tokens That Pass WCAG Contrast Automatically" [ref=e830] [cursor=pointer]':
+                  - /url: /blog/accessible-color-systems-design-tokens-wcag-contrast-2026
+              - listitem [ref=e831]:
+                - 'link "Designing for AI-First Products: The UX Patterns That Work (and the Dark Patterns That Don’t)" [ref=e832] [cursor=pointer]':
+                  - /url: /blog/ai-first-product-ux-patterns-dark-patterns-2026
+              - listitem [ref=e833]:
+                - 'link "The App Clip Strategy: Why Lightweight Slices Convert Better Than Full Downloads" [ref=e834] [cursor=pointer]':
+                  - /url: /blog/app-clip-strategy-lightweight-conversion-download-2026
+              - listitem [ref=e835]:
+                - 'link "Apple visionOS 26 for Web Developers: Building Spatial Experiences with Web Tech" [ref=e836] [cursor=pointer]':
+                  - /url: /blog/apple-visionos-web-developers-spatial-pwa-2026
+              - listitem [ref=e837]:
+                - 'link "Architecture Diagram Mistakes: The 14 Most Common Errors Engineers Make" [ref=e838] [cursor=pointer]':
+                  - /url: /blog/architecture-diagram-mistakes-common-errors-engineers-2026
+              - listitem [ref=e839]:
+                - 'link "Cookie Consent for SaaS: What the New EU/UK Rules Actually Require in 2026" [ref=e840] [cursor=pointer]':
+                  - /url: /blog/cookie-consent-saas-eu-uk-rules-2026
+              - listitem [ref=e841]:
+                - 'link "Expo SDK 57: What to Expect and How to Prepare" [ref=e842] [cursor=pointer]':
+                  - /url: /blog/expo-sdk-57-what-to-expect-how-to-prepare-2026
+              - listitem [ref=e843]:
+                - 'link "The Death of Infinite Scroll: Why Pagination Is Coming Back" [ref=e844] [cursor=pointer]':
+                  - /url: /blog/infinite-scroll-dead-pagination-comeback-ux-2026
+              - listitem [ref=e845]:
+                - link "PR Got You Into Inc. Magazine. Zero Traffic Came From It. Is Media Coverage Just Social Proof?" [ref=e846] [cursor=pointer]:
+                  - /url: /blog/pr-media-coverage-zero-traffic-social-proof-founder-2026
+              - listitem [ref=e847]:
+                - 'link "Push Notification Strategy for SaaS Mobile Apps: Timing, Copy, and What Gets Muted" [ref=e848] [cursor=pointer]':
+                  - /url: /blog/push-notification-strategy-saas-mobile-timing-copy-muted-2026
+              - listitem [ref=e849]:
+                - 'link "SwiftUI vs UIKit in 2026: When to Use Which (and When to Use Both)" [ref=e850] [cursor=pointer]':
+                  - /url: /blog/swiftui-vs-uikit-2026-when-to-use-which
+          - generic [ref=e851]:
+            - heading "Popular Posts" [level=4] [ref=e852]:
+              - link "Popular Posts" [ref=e853] [cursor=pointer]:
+                - /url: /blog
+            - list [ref=e854]:
+              - listitem [ref=e855]:
+                - link "Agentic AI Trends for Autonomous Software" [ref=e856] [cursor=pointer]:
+                  - /url: /blog/agentic-ai-trends-autonomous-software-2026
+              - listitem [ref=e857]:
+                - link "Top 10 AI App Ideas for Your Startup MVP" [ref=e858] [cursor=pointer]:
+                  - /url: /blog/ai-app-ideas-launch-startup-mvp-2026
+              - listitem [ref=e859]:
+                - link "10 Best Generative AI Tools for Content Marketing" [ref=e860] [cursor=pointer]:
+                  - /url: /blog/best-generative-ai-tools-content-marketing-2026
+              - listitem [ref=e861]:
+                - link "Best AI for Customer Support" [ref=e862] [cursor=pointer]:
+                  - /url: /articles/best-llms-2026-guide/customer-support-ai
+              - listitem [ref=e863]:
+                - link "10 Best AI Tools for Marketing Funnels" [ref=e864] [cursor=pointer]:
+                  - /url: /blog/ai-tools-marketing-sales-funnels
+              - listitem [ref=e865]:
+                - link "10 Best Full-Stack Stacks for AI MVPs" [ref=e866] [cursor=pointer]:
+                  - /url: /blog/best-fullstack-stacks-ai-mvps-2026
+              - listitem [ref=e867]:
+                - link "10 Best Agentic AI Apps in 2026" [ref=e868] [cursor=pointer]:
+                  - /url: /blog/best-agentic-ai-apps-2026
+              - listitem [ref=e869]:
+                - link "Top 10 MVP Development Tools in 2026" [ref=e870] [cursor=pointer]:
+                  - /url: /blog/best-mvp-development-tools-2026
+              - listitem [ref=e871]:
+                - link "10 Best No-Code Platforms for Non-Technical Founders" [ref=e872] [cursor=pointer]:
+                  - /url: /blog/best-no-code-platforms-non-technical-founders
+              - listitem [ref=e873]:
+                - link "10 Best Vibe Coding Tools in 2026" [ref=e874] [cursor=pointer]:
+                  - /url: /blog/best-vibe-coding-tools-2026
+              - listitem [ref=e875]:
+                - link "10 Best AI Tools for MVP Development" [ref=e876] [cursor=pointer]:
+                  - /url: /blog/best-ai-tools-mvp-development-2026
+              - listitem [ref=e877]:
+                - link "10 Best Cloud Hosting Services for MVPs" [ref=e878] [cursor=pointer]:
+                  - /url: /blog/best-cloud-services-mvp-hosting-2026
+              - listitem [ref=e879]:
+                - link "10 Best AI Startups to Watch in 2026" [ref=e880] [cursor=pointer]:
+                  - /url: /blog/ai-startups-to-watch-2026
+              - listitem [ref=e881]:
+                - link "10 Free AI Tools Every Indie Hacker Needs" [ref=e882] [cursor=pointer]:
+                  - /url: /blog/free-ai-tools-indie-hackers-2026
+              - listitem [ref=e883]:
+                - link "Top 10 AI Productivity Apps for Solopreneurs" [ref=e884] [cursor=pointer]:
+                  - /url: /blog/best-ai-productivity-apps-solopreneurs-2026
+        - link [ref=e885] [cursor=pointer]:
+          - /url: /api/_int/sitemap-full
+          - text: Site Directory
+        - link [ref=e886] [cursor=pointer]:
+          - /url: /api/_int/pages-index
+          - text: All Pages
+        - link [ref=e887] [cursor=pointer]:
+          - /url: /api/_int/content-feed
+          - text: Content Archive
+        - generic [ref=e888]:
+          - paragraph [ref=e889]: © 2026 BuildMVPFast. All rights reserved.
+          - generic [ref=e890]:
+            - generic [ref=e891]: We accept
+            - img "PayPal" [ref=e892]
+            - img "Bitcoin" [ref=e894]
+            - img "Ethereum" [ref=e896]
+            - img "Solana" [ref=e898]
+            - img "USDT" [ref=e900]
+            - img "UPI" [ref=e902]
+          - link [ref=e908] [cursor=pointer]:
+            - /url: https://x.com/WoCStreet
+            - img [ref=e909]
+      - generic [ref=e911]:
+        - img [ref=e927]
+        - img [ref=e929]
+        - img [ref=e931]
+        - img [ref=e933]
+        - img [ref=e935]
+    - button "Open chat" [ref=e938] [cursor=pointer]:
+      - img [ref=e939]
+  - region "Notifications alt+T"
+  - alert [ref=e953]

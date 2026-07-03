@@ -1,0 +1,71 @@
+- generic [ref=e2]:
+  - region "Saltar al contenido principal":
+    - link "Saltar al contenido principal" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "Principal" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Plan Director de IA" [ref=e7] [cursor=pointer]:
+          - /url: /plan-director-de-ia/
+          - generic [ref=e8]: Plan Director de IA
+        - link "Alfabetización" [ref=e9] [cursor=pointer]:
+          - /url: /plan-director-de-ia/alfabetizacion
+        - link "Plan Director" [ref=e10] [cursor=pointer]:
+          - /url: /plan-director-de-ia/plan-director/parte-1-contexto-y-necesidad
+      - button "Cambiar entre modo oscuro y claro (actualmente system mode)" [ref=e13] [cursor=pointer]:
+        - img [ref=e14]
+  - generic [ref=e16]:
+    - banner [ref=e17]:
+      - generic [ref=e18]:
+        - heading "Plan Director de IA Agéntica" [level=1] [ref=e19]
+        - paragraph [ref=e20]: "Marco de Adopción y Gobierno de IA. Te llevamos del nivel 0 al 4: la adopción te da el valor, el plan director evita que ese valor se convierta en riesgo y coste."
+        - generic [ref=e21]:
+          - link "Empezar por alfabetización" [ref=e22] [cursor=pointer]:
+            - /url: /plan-director-de-ia/alfabetizacion
+          - link "Ir al Plan Director" [ref=e23] [cursor=pointer]:
+            - /url: /plan-director-de-ia/plan-director/parte-1-contexto-y-necesidad
+    - main [ref=e24]:
+      - heading "Modelo de madurez" [level=2] [ref=e25]
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: "0"
+          - generic [ref=e29]:
+            - strong [ref=e30]: Ad hoc
+            - generic [ref=e31]: Uso individual disperso, shadow AI
+            - text: Adopción
+        - generic [ref=e32]:
+          - generic [ref=e33]: "1"
+          - generic [ref=e34]:
+            - strong [ref=e35]: Piloto
+            - generic [ref=e36]: POCs sueltos, medir ROI
+            - text: Adopción
+        - generic [ref=e37]:
+          - generic [ref=e38]: "2"
+          - generic [ref=e39]:
+            - strong [ref=e40]: Escalado
+            - generic [ref=e41]: Varios equipos, empieza el caos
+            - text: Bisagra
+        - generic [ref=e42]:
+          - generic [ref=e43]: "3"
+          - generic [ref=e44]:
+            - strong [ref=e45]: Gobernado
+            - generic [ref=e46]: Uso transversal, Plan Director
+            - text: Gobierno
+        - generic [ref=e47]:
+          - generic [ref=e48]: "4"
+          - generic [ref=e49]:
+            - strong [ref=e50]: Optimizado
+            - generic [ref=e51]: IA como infraestructura crítica
+            - text: Gobierno
+      - heading "Secciones" [level=2] [ref=e52]
+      - generic [ref=e53]:
+        - 'link "Alfabetización Cómo usar la IA agéntica antes de gobernarla: manual por rol, estándares operativos, catálogo de casos y labs." [ref=e54] [cursor=pointer]':
+          - /url: /plan-director-de-ia/alfabetizacion
+          - heading "Alfabetización" [level=3] [ref=e55]
+          - paragraph [ref=e56]: "Cómo usar la IA agéntica antes de gobernarla: manual por rol, estándares operativos, catálogo de casos y labs."
+        - 'link "Plan Director El marco de gobierno: identidad de agentes, seguridad, control de MCP, observabilidad, coste y cumplimiento." [ref=e57] [cursor=pointer]':
+          - /url: /plan-director-de-ia/plan-director/parte-1-contexto-y-necesidad
+          - heading "Plan Director" [level=3] [ref=e58]
+          - paragraph [ref=e59]: "El marco de gobierno: identidad de agentes, seguridad, control de MCP, observabilidad, coste y cumplimiento."
+  - contentinfo [ref=e60]:
+    - generic [ref=e63]: Plan Director de IA Agéntica · Activo de campo Solo.io · Borrador v1 (español).

@@ -1,0 +1,33 @@
+/**
+ * Tema del website del Plan Director.
+ * Paleta alineada a identidad Solo (púrpura), NO copiada del SPA de referencia.
+ * Refinamiento de marca pendiente vía skill `solo-design` (D14/D15).
+ * Fuentes del sistema para evitar dependencias externas.
+ */
+
+:root {
+  --ifm-color-primary: #6c3fc5;
+  --ifm-color-primary-dark: #6139b1;
+  --ifm-color-primary-darker: #5c36a7;
+  --ifm-color-primary-darkest: #4c2c8a;
+  --ifm-color-primary-light: #7a4fcd;
+  --ifm-color-primary-lighter: #8156d1;
+  --ifm-color-primary-lightest: #9a76db;
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --ifm-font-family-monospace: ui-monospace, "SF Mono", "JetBrains Mono", Menlo, monospace;
+  --docusaurus-highlighted-code-line-bg: rgba(108, 63, 197, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #9f7aea;
+  --ifm-color-primary-dark: #8b5cf6;
+  --ifm-color-primary-darker: #7c4fe0;
+  --ifm-color-primary-darkest: #6c3fc5;
+  --ifm-color-primary-light: #b094ef;
+  --ifm-color-primary-lighter: #bda4f2;
+  --ifm-color-primary-lightest: #d4c4f7;
+  --ifm-background-color: #0a0a14;
+  --ifm-background-surface-color: #12122a;
+  --docusaurus-highlighted-code-line-bg: rgba(159, 122, 234, 0.18);
+}
