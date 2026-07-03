@@ -19,9 +19,9 @@ const config = {
   url: 'https://antonioberben.github.io',
   // Sitio de proyecto en GitHub Pages: se sirve bajo /casos-de-uso/.
   // Para servir en local/túnel en la raíz: DOCS_BASEURL=/ npm run build|start
-  baseUrl: process.env.DOCS_BASEURL || '/casos-de-uso/',
+  baseUrl: process.env.DOCS_BASEURL || '/agentic-use-cases/',
   organizationName: 'antonioberben',
-  projectName: 'casos-de-uso',
+  projectName: 'agentic-use-cases',
   trailingSlash: false,
 
   onBrokenLinks: 'warn',

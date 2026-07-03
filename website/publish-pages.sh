@@ -10,11 +10,11 @@
 # Tras el primer push: en el repo → Settings → Pages → Source: rama gh-pages, carpeta / (root).
 set -euo pipefail
 
-REPO="${1:-antonioberben/casos-de-uso}"
+REPO="${1:-antonioberben/agentic-use-cases}"
 cd "$(dirname "$0")"
 
-echo "[publish] build del sitio (baseUrl /casos-de-uso/) → build-pages/"
-DOCS_BASEURL="/casos-de-uso/" npx --yes docusaurus build --out-dir build-pages
+echo "[publish] build del sitio (baseUrl /agentic-use-cases/) → build-pages/"
+DOCS_BASEURL="/agentic-use-cases/" npx --yes docusaurus build --out-dir build-pages
 touch build-pages/.nojekyll
 
 echo "[publish] push del sitio a $REPO (rama gh-pages, historial limpio)"
