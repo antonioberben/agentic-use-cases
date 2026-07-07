@@ -10,12 +10,6 @@
 .spwrap * { box-sizing:border-box; }
 .spwrap h1,.spwrap h3,.spwrap h4 { color:var(--sp-text); margin:0; letter-spacing:-0.01em; }
 
-.spwrap .sp-topbar { display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; margin-bottom:14px; }
-.spwrap .sp-cases { display:flex; gap:8px; flex-wrap:wrap; align-items:center; }
-.spwrap .sp-cases .lbl { font-family:var(--sp-mono); font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--sp-muted); margin-right:2px; }
-.spwrap .cpill { font-size:13px; font-weight:600; color:var(--sp-body); background:var(--sp-card); border:1px solid var(--sp-border2); border-radius:999px; padding:7px 13px; cursor:pointer; transition:.15s; }
-.spwrap .cpill:hover { border-color:var(--sp-purple-light); color:#fff; }
-.spwrap .cpill.on { background:var(--sp-purple); color:#fff; border-color:var(--sp-purple); }
 .spwrap .sp-lang { display:inline-flex; background:var(--sp-card); border:1px solid var(--sp-border); border-radius:9px; padding:3px; gap:2px; }
 .spwrap .sp-lang button { font-family:var(--sp-mono); font-size:12px; color:var(--sp-body); background:transparent; border:0; border-radius:6px; padding:6px 12px; cursor:pointer; }
 .spwrap .sp-lang button.on { background:var(--sp-purple); color:#fff; }
@@ -102,7 +96,8 @@
 
 .spwrap .comps { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--sp-border2); border-top:1px solid var(--sp-border2); }
 .spwrap .comp { background:#10121d; padding:12px 13px; }
-.spwrap .comp .cn { font-family:var(--sp-mono); font-size:11.5px; color:var(--sp-purple-light); font-weight:700; }
+.spwrap .comp .cn { font-family:var(--sp-mono); font-size:11.5px; color:var(--sp-purple-light); font-weight:700; display:flex; align-items:center; gap:6px; }
+.spwrap .comp .cn-ic { width:15px; height:15px; object-fit:contain; flex:0 0 auto; }
 .spwrap .comp .cd { font-size:11px; color:var(--sp-body); margin-top:4px; line-height:1.4; }
 @media (max-width:720px){ .spwrap .comps { grid-template-columns:repeat(2,1fr); } }
 
@@ -147,3 +142,19 @@
 .spwrap .sp-kpinote b { color:var(--sp-text); }
 .spwrap .sp-kpinote b.g { color:var(--sp-green); }
 .spwrap .sp-kpinote b.w { color:var(--sp-amber); }
+
+/* Pestañas de cliente dentro del bloque 2 ("Cómo resolverlo"). */
+.spwrap .sp-tabs { margin-top:8px; }
+.spwrap .sp-tab-strip { display:flex; flex-wrap:wrap; gap:6px; border-bottom:1px solid var(--sp-border); padding-bottom:8px; margin-bottom:14px; }
+.spwrap .sp-tab { font-family:var(--sp-mono); font-size:12px; letter-spacing:.04em; color:var(--sp-body); background:var(--sp-card); border:1px solid var(--sp-border2); border-radius:8px; padding:6px 11px; cursor:pointer; transition:.15s; }
+.spwrap .sp-tab:hover { border-color:var(--sp-purple-light); color:#fff; }
+.spwrap .sp-tab.on { background:var(--sp-purple); color:#fff; border-color:var(--sp-purple); }
+.spwrap .sp-tab-body { color:var(--sp-body); font-size:13.5px; line-height:1.55; }
+.spwrap .sp-tab-body :first-child { margin-top:0; }
+.spwrap .sp-tab-appendix { margin-top:16px; padding-top:14px; border-top:1px dashed var(--sp-border2); color:var(--sp-body); font-size:13px; line-height:1.55; }
+.spwrap .sp-tab-appendix h4 { font-size:13px; color:var(--sp-text); margin:12px 0 6px; letter-spacing:.02em; }
+
+/* CTA único al detalle: sutil en pasos 1-4, enfatizado al llegar al 5. */
+.spwrap .sp-detail-cta { display:block; text-align:center; margin-top:14px; padding:10px 12px; font-size:12.5px; color:var(--sp-sub); border:1px dashed var(--sp-border2); border-radius:8px; cursor:pointer; transition:.15s; text-decoration:none; }
+.spwrap .sp-detail-cta:hover { color:var(--sp-text); border-color:var(--sp-purple-light); }
+.spwrap .sp-detail-cta.emphasis { color:var(--sp-text); border-style:solid; border-color:var(--sp-purple); background:rgba(128,35,195,.10); font-weight:600; font-size:13px; }

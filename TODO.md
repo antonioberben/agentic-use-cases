@@ -1,15 +1,13 @@
 # TODO — Plataforma de capacitación (reproductor + casos de uso)
 
-> Backlog vivo de la Pieza 0: reproductor de escenarios, sistema de labels y nuevos tipos de caso de uso.
+> Backlog vivo del catálogo: reproductor de escenarios, sistema de labels y nuevos tipos de caso de uso.
 > Idioma de entregables: español (contenido bilingüe ES/EN en el sitio). Leyenda: ⬜ pendiente · 🔄 en curso · ✅ hecho.
 > Las convenciones marcadas **(→ skill)** deben plegarse en `.claude/skills/crear-caso-de-uso/SKILL.md` al implementarse.
 
 ## A. Reproductor / UI
 
-- ⬜ **1. Iconos reales de los componentes en los nodos.** El reproductor debe usar los iconos de producto: nodo agente → icono **kagent**; gateway → icono **agentgateway**; servidor MCP → icono **MCP**. Sustituir los recuadros/emoji actuales por los SVG de marca.
-  - Subtarea: conseguir los SVG oficiales (Figma `Product Pages/` de la marca Solo; no están en el skill `solo-design`, que solo trae patrones binarios). Inline como SVG/data-URI (CSP bloquea externos).
-- ⬜ **4. Etiquetar los gateways por su rol** cuando corresponda: **LLM Gateway**, **MCP Gateway**, **AgentGateway**. Un caso puede usar varios a la vez; mostrarlos como tales en la topología y en el bloque 5. **(→ skill)**
-  - Definir estos roles también como **labels de filtrado** del catálogo (ver sección D).
+- ✅ **1. Iconos reales de los componentes (2026-07-07).** Nodos del reproductor con iconos oficiales por tipo: agente→`kagent.png`, gateway→`agw-favicon.svg`, MCP→`mcp.svg`, registry→`agentregistry.png` (ya cableado en `index.jsx` ICON map + `<image>`). Añadido además icono oficial en la **tira de componentes del bloque 5** (`comps`) para agentgateway/kagent/agentregistry (`COMP_ICON` + `.cn-ic`). Nodos sin producto (user/llm/ext/shadow/trace) siguen con glyph SVG dibujado (no existe icono de marca). Pendiente menor: iconos oficiales para agentevals/kgateway/Istio ambient (no hay asset todavía).
+- ✅ **4. Gateways etiquetados por rol (2026-07-07).** Los roles `gw:['LLM Gateway','MCP Gateway','AgentGateway']` se muestran como **chips** en la cabecera del reproductor (`caseline`, `chip gw`) y se nombran en las tablas del **bloque 5** (`agentgateway (LLM Gateway)` etc.). Añadido **eje de filtro "Por gateway"** en el catálogo: el generador `generar-listado-casos.py` parsea `gw:[...]` de `casos.js` (state machine id→gw, tolera multi-línea) y emite `gateways[]` en `casos.json`; `casos-de-uso.jsx` filtra por rol de gateway. Cobertura: **126/126** casos con rol de gateway.
 
 ## B. Convenciones de autoría **(→ skill)**
 
@@ -17,20 +15,20 @@
 
 ## C. Nuevos tipos de caso de uso (contenido)
 
-- ⬜ **3. Casos con _chain de agentes_ (multi-agente / multi-equipo).** Escenarios complejos donde intervienen varios equipos y cada uno aporta un agente distinto que se coordinan (A2A). Ej.: incidente que cruza red + soporte + seguridad. Mostrar la orquestación kagent y la mediación A2A/MCP en agentgateway.
-- ⬜ **5. Casos con _varios LLMs_ y balanceo entre modelos/proveedores.** Enrutado y failover entre modelos para **reducción de costes** y **migración**. Mostrar routing/model-failover en agentgateway.
-- ⬜ **6. Casos de _AgentEvals_ en el mundo real.** Enseñar cómo se usa agentevals: eval sets dorados, evaluación basada en trazas, tracing OTel zero-code, evaluadores personalizados, integración CI/CD. Añadir **label "AgentEvals"** para filtrar estos casos (ver D).
-- ⬜ **7. Casos de _migración de proveedor_ + _semantic router vía ExtProc_.**
-  - Migración de un proveedor de LLM a otro sin cambiar la aplicación (agentgateway como punto de indirección).
-  - Integrar un **semantic router a través de ExtProc** para **selección automática de modelo** según estrategia: coste, relevancia del proyecto y del contexto. Evaluaciones _on the fly_ con el contexto que redirigen a un modelo "caro↔barato" / "más↔menos eficiente".
-- ⬜ **8. Casos con _Judge LLM_ (LLM-as-judge) y evaluación de calidad.** Validar/puntuar salidas de agente con un modelo juez; encaje directo con **agentevals** (evaluadores personalizados + eval sets) y con los prompt guards de agentgateway. Caso limpio y vendor-neutral: priorizar.
-- ⬜ **8b. Casos: sistemas de guardrails externos ("bring your own guardrails").** agentgateway expone una **Guardrail Webhook API**: un servidor externo inspecciona / enmascara / rechaza request y response de forma síncrona (pipeline: regex → moderación externa → webhook personalizado), y **ExtMCP** aplica lo mismo a nivel de método MCP (`tools/call`, `tools/list`) vía servidor gRPC. Caso: enganchar un **sistema de guardrails externo** para detección avanzada, manteniendo agentgateway como plano de aplicación / identidad / routing.
-  - **NeuralTrust (TrustGuard)** encaja aquí como **uno de los proveedores de guardrails externos** conectables por webhook (junto a otras opciones del mercado). Presentarlo **como backend de guardrails vía la Guardrail Webhook API / ExtMCP, no como gateway** — así es complemento, no competidor. Mantener el caso vendor-neutral (NeuralTrust como ejemplo, no como dependencia).
-  - Base real (docs): `agentgateway/latest/llm/guardrails/webhook/` y `agentgateway/latest/mcp/guardrails/` (ExtMCP).
+> ✅ **Tanda 2026-07-07: 7 casos nuevos creados** (ficha 5 bloques + objeto `spec` bilingüe en el reproductor + label de capacidad + rol de gateway). Groundeados contra la KB de Solo (`solo-knowledge-base`). Cubren los items 3, 5, 6, 7, 8, 8b y 9. Build es+en limpio; `casos.json`/`casos-detalle.json` regenerados (126 casos). KPIs marcados `(estimación, T1)`.
+
+- ✅ **3. Chain de agentes (A2A multi-equipo).** `it-seguridad/orquestacion-multiagente-incidente` (A2, capacidad `chain-de-agentes`): incidente cruza red+soporte+seguridad, orquestador kagent + validador A2A, agentgateway proxya A2A con identidad por agente, contención con HITL.
+- ✅ **5. Varios LLMs + balanceo.** `operador/enrutado-y-failover-multi-llm` (A5, `multi-llm-balanceo`): model failover con priority groups + failover por coste cross-provider + rate limit por tokens + `overrides` de max_tokens.
+- ✅ **6. AgentEvals en producción.** `it-seguridad/evaluacion-continua-con-agentevals` (A6, `agentevals`): eval sets dorados, eval basada en trazas OTel zero-code, evaluadores personalizados, LLM-as-judge con traza, gate de release CI/CD.
+- ✅ **7. Migración de proveedor + semantic router ExtProc.** `operador/migracion-proveedor-llm-semantic-router` (A5, `migracion-semantic-routing`): body-based routing como punto de indirección, semantic router vía ExtProc (kgateway), migración canary.
+- ✅ **8. Judge LLM.** `legal/verificacion-con-llm-juez` (A1, `judge-llm`): ejecutor + LLM juez con identidad separada (A2A), eleva lo dudoso al HITL; encaje agentevals.
+- ✅ **8b. Guardrails externos BYO (webhook/ExtMCP).** `it-seguridad/guardrails-externos-byo-webhook` (A7, `guardrails-externos`): Guardrail Webhook API (**Beta**) `/request`+`/response` Pass/Mask/Reject vía `EnterpriseAgentgatewayPolicy.promptGuard`, NeuralTrust como backend vendor-neutral, ExtMCP a nivel de método MCP.
 
 ## D. Sistema de labels / filtros del catálogo (consolidar)
 
-- ⬜ Ampliar los filtros del catálogo más allá de rol y patrón técnico. Ejes de label propuestos:
+> Estado 2026-07-07: filtros vivos en `casos-de-uso.jsx` = **rol · técnica · arquetipo · capacidad · gateway · madurez**. Añadidos esta tanda: **Capacidad destacada** (parseada del marcador `<!-- capacidad: X -->` del README; 7 casos etiquetados) y **Rol de gateway** (`gw:[...]` de `casos.js` → `gateways[]` en `casos.json`; 126/126). Pendientes de D: ejes **Producto Solo**, **Asistente de código**, **Framework de agente**, **Sector** (no implementados aún).
+
+- 🔄 Ampliar los filtros del catálogo más allá de rol y patrón técnico. Ejes de label propuestos:
   - **Patrón técnico**: analítico · triage · código · operacional · asistencia · documentos · generación.
   - **Rol de gateway** (item 4): LLM Gateway · MCP Gateway · AgentGateway.
   - **Producto Solo implicado**: agentgateway · kagent · agentregistry · agentevals · Istio ambient · kgateway.
@@ -42,7 +40,7 @@
 
 ## E. Casos nuevos — ampliación (asistentes, harness, substrate)
 
-- ⬜ **9. Casos: LLM Gateway delante de asistentes de código.** Poner agentgateway como **LLM Gateway** ante **Claude Code, GitHub Copilot, opencode, Codex, Gemini CLI, Goose**: apuntar el endpoint de modelo del asistente al gateway para gobernar coste (rate limit por tokens, semantic caching), seguridad (prompt guard + PII), routing/failover de modelo y observabilidad por invocación. Base real: agentgateway LLM routing + "Body-Based LLM Provider Routing" + proveedores Gemini/Vertex.
+- ✅ **9. LLM Gateway delante de asistentes de código (2026-07-07).** `desarrollador/llm-gateway-asistentes-de-codigo` (A8, capacidad `llm-gateway-codigo`): agentgateway como LLM Gateway ante Claude Code/Copilot/opencode/Codex/Gemini CLI/Goose; rate limit por tokens, semantic caching, prompt guard+PII, routing/failover, observabilidad por invocación; Goose↔agentgateway (GA); push/PR con HITL. (Substrate ACP marcado emergente, no incluido.)
 - ⬜ **10. Casos: enganchar asistentes/harness de agentes con gobernanza (Hermes, OpenClaw, Goose, Codex, Gemini CLI…).** Exponerlos y coordinarlos con otros agentes (A2A) y MCP, con agentgateway mediando y agentregistry inventariando; habilita "usar asistentes de IA" de forma gobernada.
   - **Goose ↔ agentgateway**: integración **documentada (GA)** — `docs.solo.io/agentgateway/latest/integrations/web-uis/goose/`. Empezar por aquí.
   - **Harness en kagent Agent Substrate** (OpenClaw tiene ejemplo en repo `kagent-dev/kagent/examples/substrate-openclaw`; Hermes/Codex/Gemini CLI): la exposición vía **ACP (Agent Client Protocol)** es **propuesta de diseño (EP), no GA** — marcar como **emergente** y verificar antes de redactar. ("nemoclaw" descartado por el usuario.)
@@ -70,6 +68,39 @@ Candidatos con respaldo en la documentación/repos de Solo; al redactar, mapear 
 - ⬜ **Vertex AI en kagent** (Gemini/Claude por Vertex) como proveedor de modelo.
 - ⬜ **Observabilidad**: kagent tracing con Grafana Tempo; tracing OTel zero-code (liga con AgentEvals, item 6).
 - ⬜ Revisar además **Slack interno y repos** (`agentgateway/agentgateway`, `kagent-dev/kagent`, `agentregistry-dev/agentregistry`) para features aún no documentadas antes de cerrar el catálogo ampliado.
+
+## G. Sincronizar fichas README ↔ objeto del reproductor (119 casos)
+
+> **✅ COMPLETADO (2026-07-07).** Los 13 roles (119 casos) sincronizados. Método: **1 subagente por rol**, edita README + `casos.js` directamente, **README primario**, promueve al README cualquier validador/gate útil que solo esté en el spec, corre en serie, build es+en entre roles.
+>
+> **Todos los roles hechos:** legal (11) · finanzas (8) · it-seguridad (10) · operador (10) · frontline (9) · manager (12) · analista (8) · desarrollador (4) · ventas (9) · marketing (9) · soporte (11) · rrhh (10) · ejecutivo (8). Cada uno verificado con build es+en limpio. Cierre: `casos.json` regenerado (119) + `casos-detalle.json` (prebuild) + build es+en final limpio.
+>
+> Reglas aplicadas: alineado `label`/`sub` de MCP al README, `label` del `agent` al bloque 5 (kebab-case), validador A2A solo si el README lo declara (o promovido al README si el spec tenía uno útil), nº nodos MCP = nº MCPs del README (escritura/envío con `gate:true`); NO se tocaron `danger`/`c.risk`/momento del `hitl` (ejes ya diferenciados en §H) salvo contradicción del README (casos read-only → HITL reubicado a `trace` o eliminado); NO se tocaron los alias-piloto de id corto.
+>
+> Pendiente residual (menor): saneado estructural de headings duplicados Fase 2 en algunos README (ej. `ejecutivo/gestion-de-calendario`), y afinar `c.risk` de texto donde el vector cambió — no bloqueante.
+>
+> ---
+> Diagnóstico original (histórico):
+
+Estado: las 119 fichas tienen (a) README largo con bloque 5 y (b) objeto `spec` en `website/src/components/ScenarioPlayer/casos.js`, **autorados por separado** → divergen. Diagnóstico por nombres de MCP en `website/.journal/sync-divergencia.md`: **5 alineados · 89 solape parcial · 25 sin solape**; además divergen nombres de agente/validador y mecanismos del bloque 5 (ej. `legal/due-diligence`: README `dd-analyst`+`clause-verifier` / `mcp-dataroom,mcp-clm,mcp-sharepoint` vs reproductor `dd-agent`+`reference-checker`).
+
+- ⬜ **Fuente de verdad: caso por caso** (decisión 2026-07-06). En cada caso, elegir la mejor de las dos redacciones y alinear la otra; no hay regla global.
+- ⬜ Método: 1 subagente por caso (o por rol) que lee README + objeto, decide y reescribe el que pierda, dejando MCPs/scopes, nombre de agente/validador, gates y mecanismos idénticos en ambos. Regenerar `casos-detalle.json` (prebuild) + build es+en por tanda.
+- ⬜ Priorizar los **25 sin-solape**, luego los 89 parciales.
+- ⬜ Al cerrar, verificar que el bloque 5 escrito y el tab Solo.io del reproductor cuentan la misma historia (mismos componentes, misma identidad SPIFFE/OIDC/OBO, mismas políticas).
+
+## H. Arquetipos dinámicos: diferenciar visualmente los 119 diagramas
+
+> **Bloqueado por presupuesto** (subagentes). Diseño ya hecho: `catalogo-agentico/01-casos-de-uso/arquetipos-dinamicos.md`.
+
+Problema (2026-07-06): los 119 `spec` convergieron a ~1 forma — **70 casos** comparten "agente + validador + 4 MCPs" y **125/125** tienen el HITL en la última etapa (`pass`). Al abrir 3 casos distintos se ven idénticos. El motor (`compiler.js`) **sí soporta** variación (momento del HITL por etapa, `danger` en cualquier nodo, nº de MCPs, kgateway, validador opcional); los specs no la aprovechan.
+
+- ⬜ Diseñada taxonomía extendida `A<N>.<v>` (11+ variantes) en `arquetipos-dinamicos.md`, con 4 ejes de variación: forma, momento del HITL (temprano/tardío/ninguno/doble), vector de vulnerabilidad destacado (`prompt-injection`/`shadow-mcp`/`jailbreak`/`exfiltración`/`excessive-agency`/`cross-tenant`…), y coreografía de aristas.
+- ✅ **Dos ejes diferenciados en los 119 casos del catálogo** (2026-07-06). Vector de vulnerabilidad: **6 formas** de `danger` repartidas — `llm,shadow` 62 · `ext,shadow` 34 · `mcpD,shadow` 12 · `user,shadow` 9 · `mcpC,shadow` 5 (antes 1 forma). Momento del HITL: **25 temprano (`impacto`) / 101 tardío (`pass`)** (antes 125/0). Regla de vector por arquetipo aplicada de forma determinista (A1/A5/A7→`llm`; A2/A6→`ext`+arista `ext→agent`; A3-write→`mcp`-gate; A4→`user`). Quedan 5 objetos genéricos que son **alias piloto con id corto** (`legal`/`finanzas`/`soc`/`ops`/`banca`), no casos del catálogo — solo accesibles por `?case=<id>` directo; sin impacto en la navegación.
+- ⬜ Mapear cada uno de los 119 casos a una variante `A<N>.<v>` según su README (nuevo campo `arqDin` en `casos.json` vía generador). Regla de vector por arquetipo (validada en la muestra): A1→`llm` (alucinación), A2→`ext` (injection) / MCP-acción, A3→`mcp`-write, A4→`user` (jailbreak), A5→`llm`/`mcp`-apply, A6→`ext` (web injection), A7→`llm` (claim), A8→`llm` (secretos). HITL temprano (`impacto`) en A2/A3-write/A5/KYC; tardío (`pass`) en publish; ninguno en A3-RO/A4-deflection.
+- ⬜ Reescribir los `spec` por **tandas por variante** (no por rol): dentro de una variante comparten esqueleto; entre variantes se ven distintos. Mover el `hitl:true` a la etapa correcta (`impacto` para acceso, `pass` para write, ninguno para RO/deflection), fijar `danger` en el nodo del vector real y `c.risk` describiéndolo.
+- ⬜ Verificar con el script de conteo de formas: objetivo **≥ 11 formas** repartidas y HITL NO concentrado en `pass`.
+- ⬜ Plegar la regla en el skill `crear-caso-de-uso` (elegir variante dinámica; no copiar el molde 4-MCP+validador+HITL-en-pass).
 
 ## Notas
 

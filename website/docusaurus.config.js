@@ -2,9 +2,9 @@
 const {themes} = require('prism-react-renderer');
 
 /**
- * Configuración del website del Plan Director de IA Agéntica.
- * El contenido vive en las carpetas ../pieza-* y se sirve sin moverlo
- * mediante instancias de plugin-content-docs (ver D15 en AGENTS.md).
+ * Configuración del website de IA Agéntica (Fundamentos y Casos de uso).
+ * El contenido vive en la carpeta ../catalogo-agentico y se sirve sin
+ * moverlo mediante plugin-content-docs (ver D15 en AGENTS.md).
  *
  * Ajusta `url`, `baseUrl`, `organizationName` y `projectName` al repo real
  * antes de desplegar en GitHub Pages.
@@ -12,14 +12,16 @@ const {themes} = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Plan Director de IA Agéntica',
-  tagline: 'Marco de Adopción y Gobierno de IA',
+  title: 'IA Agéntica',
+  tagline: 'Fundamentos y casos de uso',
   favicon: 'img/favicon.svg',
 
   url: 'https://antonioberben.github.io',
-  // Sitio de proyecto en GitHub Pages: se sirve bajo /casos-de-uso/.
+  // Esta web se sirve bajo /agentic-use-cases/v1/. Una futura web distinta se
+  // publicará en /agentic-use-cases/v2/ (build aparte, con su baseUrl); esta v1
+  // no se toca. Sin lógica de versión: es solo el path donde vive.
   // Para servir en local/túnel en la raíz: DOCS_BASEURL=/ npm run build|start
-  baseUrl: process.env.DOCS_BASEURL || '/agentic-use-cases/',
+  baseUrl: process.env.DOCS_BASEURL || '/agentic-use-cases/v1/',
   organizationName: 'antonioberben',
   projectName: 'agentic-use-cases',
   trailingSlash: false,
@@ -52,12 +54,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          id: 'plan',
-          path: '../pieza-2-plan-director',
-          routeBasePath: 'plan-director',
-          sidebarPath: require.resolve('./sidebars-plan.js'),
-        },
+        docs: false,
         blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -66,24 +63,7 @@ const config = {
     ],
   ],
 
-  plugins: [
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-        id: 'alfabetizacion',
-        path: '../pieza-0-alfabetizacion',
-        routeBasePath: 'capacitacion',
-        sidebarPath: require.resolve('./sidebars-alfabetizacion.js'),
-        // Documentos internos fuera del sitio público (D15).
-        exclude: [
-          '**/inventario-features-referencia.md',
-          '**/labs/**',
-          '**/guia-estandares/**',
-          '**/02-fundamentos/00-capitulo-puente-original.md',
-        ],
-      },
-    ],
-  ],
+  plugins: [],
 
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
@@ -96,33 +76,20 @@ const config = {
         title: '',
         logo: {
           alt: 'solo.io',
-          src: 'img/solo-wordmark-dark.svg',
-          srcDark: 'img/solo-wordmark-white.svg',
+          src: '/img/solo-wordmark-dark.svg',
+          srcDark: '/img/solo-wordmark-white.svg',
           height: 26,
         },
         items: [
-          {to: '/capacitacion', label: 'Capacitación', position: 'left'},
-          {
-            type: 'dropdown',
-            label: 'Casos de uso',
-            position: 'left',
-            items: [
-              {label: 'Legal — redlining', to: '/reproductor?case=legal'},
-              {label: 'Finanzas — varianza P&L', to: '/reproductor?case=finanzas'},
-              {label: 'IT/Seguridad — triage SOC', to: '/reproductor?case=soc'},
-              {label: 'Operaciones — diagnóstico', to: '/reproductor?case=ops'},
-              {label: 'Banca — asistente de oficina', to: '/reproductor?case=banca'},
-              {label: '— Ver todos (reproductor) —', to: '/reproductor'},
-            ],
-          },
-          {to: '/plan-director/parte-1-contexto-y-necesidad', label: 'Plan Director', position: 'left'},
+          {to: '/fundamentos', label: 'Fundamentos', position: 'left'},
+          {to: '/casos-de-uso', label: 'Casos de uso', position: 'left'},
           {type: 'localeDropdown', position: 'right'},
         ],
       },
       footer: {
         style: 'dark',
         copyright:
-          'Plan Director de IA Agéntica · Activo de campo Solo.io · Borrador v1 (español).',
+          'IA Agéntica · Activo de campo Solo.io · Borrador v1 (español).',
       },
       prism: {
         theme: themes.github,

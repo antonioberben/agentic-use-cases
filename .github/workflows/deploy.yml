@@ -5,8 +5,7 @@ on:
     branches: [main]
     paths:
       - 'website/**'
-      - 'pieza-0-alfabetizacion/**'
-      - 'pieza-2-plan-director/**'
+      - 'catalogo-agentico/**'
       - '.github/workflows/deploy.yml'
   workflow_dispatch:
 

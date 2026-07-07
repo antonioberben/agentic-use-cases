@@ -9,7 +9,7 @@ import re
 import shutil
 from pathlib import Path
 
-BASE = Path("pieza-0-alfabetizacion/01-casos-de-uso")
+BASE = Path("catalogo-agentico/01-casos-de-uso")
 CAT = BASE / "catalogo"
 POR_ROL = BASE / "por-rol"
 

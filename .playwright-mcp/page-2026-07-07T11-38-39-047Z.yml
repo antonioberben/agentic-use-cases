@@ -1,0 +1,593 @@
+- generic [active] [ref=e1]:
+  - dialog "This website uses cookies" [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - link "Cookiebot by Usercentrics - opens in a new window" [ref=e6] [cursor=pointer]:
+          - /url: https://www.cookiebot.com/en/what-is-behind-powered-by-cookiebot/?utm_source=banner_cb&utm_medium=referral&utm_content=v2
+          - img [ref=e7]
+        - button "Close banner" [ref=e33] [cursor=pointer]:
+          - img [ref=e34]
+      - tabpanel "Consent" [ref=e37]:
+        - generic [ref=e39]:
+          - heading "This website uses cookies" [level=2] [ref=e40]
+          - paragraph [ref=e42]:
+            - text: This website uses cookies and web beacons to collect information and track interactions. By selecting “Allow all cookies,” you consent to our use of this information for advertising and analytics, as detailed in our
+            - link "Cookies Policy" [ref=e43] [cursor=pointer]:
+              - /url: https://www.netskope.com/cookies-policy
+            - text: . It is possible to disable certain cookies, though this may affect site functionality. For more information on data processing and contact details, please refer to our
+            - link "Privacy Policy" [ref=e44] [cursor=pointer]:
+              - /url: https://www.netskope.com/privacy-policy
+            - text: .
+        - generic [ref=e45]:
+          - group "Consent Selection" [ref=e51]:
+            - generic [ref=e52]: Consent Selection
+            - generic [ref=e53]:
+              - generic [ref=e54]:
+                - strong [ref=e56]: Necessary
+                - generic [ref=e57]:
+                  - checkbox "Necessary" [checked] [disabled]
+              - generic [ref=e58]:
+                - strong [ref=e60] [cursor=pointer]: Preferences
+                - switch "Preferences" [checked] [ref=e62] [cursor=pointer]
+              - generic [ref=e63]:
+                - strong [ref=e65] [cursor=pointer]: Statistics
+                - switch "Statistics" [checked] [ref=e67] [cursor=pointer]
+              - generic [ref=e68]:
+                - strong [ref=e70] [cursor=pointer]: Marketing
+                - switch "Marketing" [checked] [ref=e72] [cursor=pointer]
+          - link "Show details" [ref=e74] [cursor=pointer]:
+            - /url: "#"
+      - generic [ref=e78]:
+        - button "Reject All" [ref=e79] [cursor=pointer]
+        - button "Allow selection" [ref=e80] [cursor=pointer]
+        - button "Allow all cookies" [ref=e81] [cursor=pointer]
+  - generic [ref=e85]:
+    - link "Netskope logo" [ref=e88] [cursor=pointer]:
+      - /url: /
+      - img "Netskope logo" [ref=e89]
+    - list [ref=e91]:
+      - listitem [ref=e92]:
+        - link "Platform" [ref=e93] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e94]:
+        - link "Products" [ref=e95] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e96]:
+        - link "Solutions" [ref=e97] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e98]:
+        - link "Resources" [ref=e99] [cursor=pointer]:
+          - /url: "#"
+      - listitem [ref=e100]:
+        - link "Company" [ref=e101] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=e102]:
+      - link "search" [ref=e104] [cursor=pointer]:
+        - /url: "#"
+        - img "magnifying glass" [ref=e105]
+      - link "Get Started" [ref=e107] [cursor=pointer]:
+        - /url: https://www.netskope.com/get-started
+      - button "chevron" [ref=e108] [cursor=pointer]:
+        - img "chevron" [ref=e109]
+  - generic [ref=e111]:
+    - generic [ref=e112]:
+      - list [ref=e116]:
+        - listitem [ref=e117]:
+          - link "Homepage" [ref=e118] [cursor=pointer]:
+            - /url: https://www.netskope.com
+        - listitem [ref=e119]:
+          - link "Resources" [ref=e120] [cursor=pointer]:
+            - /url: /resources
+        - listitem [ref=e121]:
+          - link "Cloud And Threat Reports" [ref=e122] [cursor=pointer]:
+            - /url: /resources/cloud-and-threat-reports
+        - listitem [ref=e123]:
+          - 'link "Cloud and Threat Report: Shadow AI and Agentic AI 2025"':
+            - /url: https://www.netskope.com/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025
+      - generic [ref=e125]:
+        - generic [ref=e126]: Reports & Guides
+        - 'heading "Cloud and Threat Report: Shadow AI and Agentic AI 2025" [level=1] [ref=e127]':
+          - generic [ref=e128]:
+            - text: "Cloud and Threat Report:"
+            - text: Shadow AI and Agentic AI 2025
+    - generic [ref=e129]:
+      - paragraph [ref=e132]: GenAI adoption is surging, with SaaS AI apps, genAI platforms, on-premises AI infrastructure, and now custom AI agents becoming enterprise mainstays. The newest trends, including on-premises AI infrastructure, genAI platforms, and custom agents, introduce additional data and security risks to the organization while also largely remaining under the radar of security teams. This report will help you shed light on the shadow AI infrastructure in your organization, enabling you to start mitigating those risks.
+      - generic [ref=e133]:
+        - generic [ref=e136]:
+          - generic [ref=e137]: Share via
+          - link "facebook icon" [ref=e139] [cursor=pointer]:
+            - /url: https://www.facebook.com/sharer/sharer.php?u=https://www.netskope.com/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025'
+            - img "facebook icon" [ref=e140]
+          - link "twitter icon" [ref=e142] [cursor=pointer]:
+            - /url: "https://twitter.com/share?text= Cloud and Threat Report: Shadow AI and Agentic AI 2025 @Netskope&url=https%3A%2F%2Fwww.netskope.com%2Fresources%2Fcloud-and-threat-reports%2Fcloud-and-threat-report-shadow-ai-and-agentic-ai-2025"
+            - img "twitter icon" [ref=e143]
+          - link "twitter icon" [ref=e145] [cursor=pointer]:
+            - /url: https://www.linkedin.com/shareArticle?mini=true&url=https://www.netskope.com/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025'
+            - img "twitter icon" [ref=e146]
+        - generic [ref=e147]: Tags
+        - generic [ref=e148]:
+          - link "Cloud and Threat Reports" [ref=e149] [cursor=pointer]:
+            - /url: https://www.netskope.com/resources/cloud-and-threat-reports
+          - generic [ref=e150]: ","
+          - link "Generative AI" [ref=e151] [cursor=pointer]:
+            - /url: https://www.netskope.com/solutions/generative-ai
+          - generic [ref=e152]: ","
+          - link "Next Gen Secure Web Gateway" [ref=e153] [cursor=pointer]:
+            - /url: https://www.netskope.com/platform-products/next-gen-secure-web-gateway
+          - generic [ref=e154]: ","
+          - link "Threat Protection" [ref=e155] [cursor=pointer]:
+            - /url: https://www.netskope.com/solutions/threat-protection
+        - generic [ref=e156]: Change the language
+        - generic [ref=e157]:
+          - link "Deutsch" [ref=e158] [cursor=pointer]:
+            - /url: /de/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025
+          - text: ","
+          - link "English" [ref=e159] [cursor=pointer]:
+            - /url: /resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025
+          - text: ","
+          - link "Español" [ref=e160] [cursor=pointer]:
+            - /url: /es/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025
+          - text: ","
+          - link "Français" [ref=e161] [cursor=pointer]:
+            - /url: /fr/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025
+          - text: ","
+          - link "Português" [ref=e162] [cursor=pointer]:
+            - /url: /pt/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025
+          - text: ","
+          - link "日本語" [ref=e163] [cursor=pointer]:
+            - /url: /jp/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025
+  - generic [ref=e165]:
+    - generic [ref=e166]:
+      - generic [ref=e168]:
+        - generic [ref=e169]: Share this article
+        - generic [ref=e170]:
+          - link "facebook icon" [ref=e172] [cursor=pointer]:
+            - /url: https://www.facebook.com/sharer/sharer.php?u=https://www.netskope.com/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025'
+            - img "facebook icon" [ref=e173]
+          - link "twitter icon" [ref=e175] [cursor=pointer]:
+            - /url: "https://twitter.com/share?text= Cloud and Threat Report: Shadow AI and Agentic AI 2025 @Netskope&url=https%3A%2F%2Fwww.netskope.com%2Fresources%2Fcloud-and-threat-reports%2Fcloud-and-threat-report-shadow-ai-and-agentic-ai-2025"
+            - img "twitter icon" [ref=e176]
+          - link "linkedin icon" [ref=e178] [cursor=pointer]:
+            - /url: https://www.linkedin.com/shareArticle?mini=true&url=https://www.netskope.com/resources/cloud-and-threat-reports/cloud-and-threat-report-shadow-ai-and-agentic-ai-2025'
+            - img "linkedin icon" [ref=e179]
+          - link "email icon" [ref=e181] [cursor=pointer]:
+            - /url: /cdn-cgi/l/email-protection#0b34787e69616e687f364867647e6f206a656f205f63796e6a7f20596e7b64797f2e384a2058636a6f647c204a42206a656f204a6c6e657f6268204a4220393b393e2d69646f7236637f7f7b783124247c7c7c25656e7f7860647b6e2568646624796e78647e79686e78246867647e6f266a656f267f63796e6a7f26796e7b64797f78246867647e6f266a656f267f63796e6a7f26796e7b64797f2678636a6f647c266a62266a656f266a6c6e657f6268266a6226393b393e2c
+            - img "email icon" [ref=e182]
+      - generic [ref=e183]:
+        - generic [ref=e184]:
+          - heading "Cloud and Threat Report Shadow AI and Agentic AI 2025" [level=3] [ref=e185]:
+            - text: Cloud and Threat Report
+            - text: Shadow AI and Agentic AI 2025
+          - separator [ref=e186]
+          - link "Introduction" [ref=e187] [cursor=pointer]:
+            - /url: "#introduction"
+          - link "Highlights" [ref=e188] [cursor=pointer]:
+            - /url: "#highlights"
+          - link "Definitions" [ref=e189] [cursor=pointer]:
+            - /url: "#definitions"
+          - link "Continuing SaaS genAI app growth" [ref=e190] [cursor=pointer]:
+            - /url: "#continuing-saas-genai-app-growth"
+          - link "Increasing adoption of genAI platforms" [ref=e191] [cursor=pointer]:
+            - /url: "#increasing-adoption-of-genai-platforms"
+          - link "Increasing adoption of on-premises genAI" [ref=e192] [cursor=pointer]:
+            - /url: "#increasing-adoption-of-on-premises-genai"
+          - link "AI Agents" [ref=e193] [cursor=pointer]:
+            - /url: "#ai-agents"
+          - link "A CISO perspective" [ref=e194] [cursor=pointer]:
+            - /url: "#a-ciso-perspective"
+          - link "Netskope Threat Labs" [ref=e195] [cursor=pointer]:
+            - /url: "#netskope-threat-labs"
+          - link "About This Report" [ref=e196] [cursor=pointer]:
+            - /url: "#about-this-report"
+        - generic [ref=e198]:
+          - generic [ref=e199]: 18 min read
+          - generic [ref=e200]:
+            - heading "Introduction" [level=2] [ref=e201]
+            - generic [ref=e204]:
+              - paragraph [ref=e205]:
+                - text: This is our fourth Netskope Cloud and Threat Report dedicated to the emerging field of generative AI. Our
+                - link "first report in 2023" [ref=e206] [cursor=pointer]:
+                  - /url: https://www.netskope.com/netskope-threat-labs/cloud-threat-report/ai-apps-in-the-enterprise
+                - text: highlighted the exponential growth in popularity of ChatGPT within the enterprise. Our
+                - link "second report in 2024" [ref=e207] [cursor=pointer]:
+                  - /url: https://www.netskope.com/netskope-threat-labs/cloud-threat-report/july-2024-ai-apps-in-the-enterprise
+                - text: highlighted that nearly all enterprises were using SaaS genAI apps and implementing policies to protect sensitive data. Our
+                - link "most recent report" [ref=e208] [cursor=pointer]:
+                  - /url: https://www.netskope.com/netskope-threat-labs/cloud-threat-report/generative-ai-2025
+                - text: continued that narrative while introducing concepts of shadow AI, indirect genAI use, and local AI. This newest installment examines emerging trends in shadow AI and agentic AI within the enterprise, where some users are shifting toward genAI platforms and on-premises solutions as they build custom apps and autonomous agents, creating a new set of cybersecurity challenges.
+              - paragraph [ref=e209]: This report focuses on shadow AI and agentic AI, exploring how organizations can shed light on the shadows along the way. We begin by examining SaaS genAI apps, where we are still seeing a considerable amount of shadow AI. There is a clear centralization trend emerging, with organizations gravitating toward a few key enterprise-managed ecosystems, especially Gemini and Copilot. However, the majority of users (60%) are still using personal, unmanaged apps, representing a significant amount of shadow AI that continues to span into new apps as they are released.
+              - paragraph [ref=e210]: We continue with genAI platforms, such as Azure OpenAI, Amazon Bedrock, and Google Vertex AI, which are rapidly gaining popularity due to their simplicity, flexibility, customizability, and scalability. They empower users to build custom applications or agents using the models of their choosing. And perhaps most importantly, they provide some security and privacy guarantees that differentiate them from many SaaS apps and on-prem solutions. At this stage, adoption of genAI platforms is led by individuals experimenting with the relatively new technology, making genAI platforms represent the fastest-growing category of shadow AI.
+              - paragraph [ref=e211]: Running AI infrastructure on-premises is also a growing trend, where users are installing tools like Ollama to provide an interface to a wide variety of models or using frameworks like LangChain to build custom agents, creating new on-premises shadow AI infrastructure. On-premises AI is growing at a slower pace than genAI platforms, as the latter are more accessible and offer better off-the-shelf security, as we will explore later in this report.
+              - paragraph [ref=e212]: We conclude the report by examining the area of AI agents, which are systems that use AI to achieve a specific goal with minimal human intervention. This is an area where we are now starting to see significant activity in the enterprise, with users exploring a variety of agent frameworks, both on-premises and in the cloud, and building up even more shadow AI that is tightly intertwined with enterprise data and critical workflows.
+              - paragraph [ref=e213]
+            - generic [ref=e214]:
+              - heading "Highlights" [level=2] [ref=e215]
+              - generic [ref=e218]:
+                - list [ref=e219]:
+                  - listitem [ref=e220]:
+                    - strong [ref=e221]: Shadow AI
+                    - text: represents the majority of AI use in the enterprise, driven by individual adoption of SaaS AI apps, AI platforms, on-premises AI deployments, and now custom AI agents.
+                  - listitem [ref=e222]:
+                    - strong [ref=e223]: SaaS AI
+                    - text: use continues to grow rapidly within the average organization, with 50% more people interacting with AI apps and 6.5% more data being uploaded to SaaS AI apps over the past three months, averaging 8.2 GB per organization per month.
+                  - listitem [ref=e224]:
+                    - strong [ref=e225]: ChatGPT
+                    - text: experienced its first decline in enterprise popularity since we began tracking it in 2023, as SaaS AI use consolidates around purpose-built solutions, such as Gemini and Copilot, that are well-integrated with existing enterprise workflows.
+                  - listitem [ref=e226]:
+                    - strong [ref=e227]: AI platforms
+                    - text: (e.g., Amazon Bedrock, Azure OpenAI, and Google Vertex AI) are rapidly gaining popularity, enabling users to create custom apps and agents that interact directly with enterprise data stores, presenting new shadow AI challenges for enterprises to address.
+                  - listitem [ref=e228]:
+                    - strong [ref=e229]: AI agents
+                    - text: are being developed, tested, and deployed on-premises using agent frameworks like LangChain, creating a particularly challenging new type of shadow AI, as on-premises deployments are typically the most difficult to discover and secure.
+                - paragraph [ref=e230]
+              - generic [ref=e231]:
+                - heading "Definitions" [level=2] [ref=e232]
+                - generic [ref=e235]:
+                  - list [ref=e236]:
+                    - listitem [ref=e237]:
+                      - strong [ref=e238]: Agent frameworks
+                      - text: are software libraries and tools that simplify the creation of autonomous AI agents by providing pre-built components for planning, memory, and tool integration (e.g., LangChain, OpenAI Agent Framework).
+                    - listitem [ref=e239]:
+                      - strong [ref=e240]: Agentic AI
+                      - text: refers to systems where an agent can autonomously plan and execute a series of actions to accomplish a high-level goal, completing complex tasks without step-by-step human guidance.
+                    - listitem [ref=e241]:
+                      - strong [ref=e242]: GenAI platforms
+                      - text: are managed cloud services that provide the foundational models, tools, and infrastructure to build, customize, train, and deploy AI models, applications, and agents (e.g., Amazon Bedrock, Azure OpenAI, Google Vertex AI).
+                    - listitem [ref=e243]:
+                      - strong [ref=e244]: LLM interfaces
+                      - text: are front-end applications that enable users to interact with LLMs and are typically used on-premises (e.g., Ollama, LM Studio).
+                      - text: SaaS genAI apps are purpose-built, cloud-hosted applications that use genAI as a primary feature to create new content or summarize existing content (e.g., ChatGPT, Gemini, Copilot).
+                  - paragraph [ref=e245]
+                - generic [ref=e246]:
+                  - heading "Continuing SaaS genAI app growth" [level=2] [ref=e247]
+                  - generic [ref=e250]:
+                    - paragraph [ref=e251]: SaaS genAI app adoption continues to skyrocket in the enterprise. While the percentage of organizations using SaaS genAI apps has plateaued, with 89% of organizations actively using at least one SaaS genAI app, SaaS genAI adoption growth continues to manifest itself in multiple ways within the enterprise. First, the number of people using SaaS genAI apps within each organization increased by more than 50% with an average of 7.6% of people in each organization using SaaS genAI apps in May, compared to 5% in February (as shown in the figure below). The figure also shows the first and third quartiles, with the third quartile highlighting that 25% of organizations have more than one-quarter (25.6%) of their user population actively using SaaS genAI apps. In the 90th percentile (not pictured), at least 47% of the user population in those organizations is using SaaS genAI apps.
+                    - paragraph [ref=e252]:
+                      - img "Diagram showing GenAI users per month median percentage with shaded area showing 1st and 3rd quartiles" [ref=e253]
+                    - paragraph [ref=e254]:
+                      - text: Second, the number of genAI apps in use continues to grow, reaching an average of 7 per organization, up from 5.6 in February. We saw similar growth in the third quartile, where the organizations are now using 15.4 apps, up from 13.3 in February. We predicted this growth in our
+                      - link "February report" [ref=e255] [cursor=pointer]:
+                        - /url: https://www.netskope.com/netskope-threat-labs/cloud-threat-report/generative-ai-2025#pillar_content_7
+                      - text: because, as aggressive investment in AI startups translates to the release of many new SaaS AI apps, creating even more shadow AI use that needs to be discovered and secured. Today, Netskope is tracking more than 1,550 distinct generative AI SaaS applications, up from just 317 in February, indicating the rapid pace at which new apps are being released and adopted in enterprise environments.
+                    - paragraph [ref=e256]:
+                      - img "Diagram showing GenAI apps per organization median with shaded area showing 1st and 3rd quartiles" [ref=e257]
+                    - paragraph [ref=e258]:
+                      - text: The third way in which the growth of SaaS genAI apps manifests itself in the enterprise is in the amount of data flowing into these apps. For the average organization, the amount of data uploaded each month has increased 6.5% from 7.7 GB to 8.2 GB over the past three months. At the 75th percentile, this increase was even more significant, from 20 GB to 22.8 GB (a 14% increase). At the 90th percentile, the pattern continues, with a 15% increase from 46 GB to 53 GB. At the current rate, we expect the 90th percentile to exceed 100 GB in Q3 2026. Even in organizations that are already seeing a significant amount of data being uploaded to SaaS genAI apps, the rapid growth continues with no signs of slowing down. As covered in our previous
+                      - link "Generative AI Report" [ref=e259] [cursor=pointer]:
+                        - /url: https://www.netskope.com/netskope-threat-labs/cloud-threat-report/generative-ai-2025#pillar_content_2
+                      - text: ", the data users are uploading to genAI apps includes intellectual property, regulated data, source code, and secrets, underscoring the importance of identifying shadow SaaS genAI use and implementing controls to prevent unwanted data leaks."
+                    - paragraph [ref=e260]: Another noteworthy change that has occurred over the past four months is a decrease in the number of organizations using ChatGPT. Since its introduction in November 2022, the percentage of organizations using ChatGPT has never decreased. In February, we reported that nearly 80% of organizations were using ChatGPT, which has now fallen modestly to 78%. This decrease comes as Gemini and Copilot (Microsoft Copilot, Microsoft 365 Copilot, GitHub Copilot) continue to gain traction, thanks to their seamless integration into the Google and Microsoft product ecosystems that are already ubiquitous in the enterprise. ChatGPT was the only one of the top 10 apps to see a decrease since February, as shown in the figure below. Other top 10 apps, including Anthropic Claude, Perplexity AI, Grammarly, and Gamma, all saw enterprise adoption gains.
+                    - paragraph [ref=e261]:
+                      - img "Diagram showing the most popular apps by percentage of organizations" [ref=e262]
+                    - paragraph [ref=e263]:
+                      - text: Another noteworthy change since our last report is that Grok is rapidly gaining popularity, entering the top 10 for the first time in May. Interestingly, Grok is now simultaneously in the top 10 for most-used apps (pictured above) and also in the top 10 for the most-blocked apps (pictured below). Compared to February, fewer organizations are blocking Grok and are instead allowing it for specific (usually personal) use cases. The number of organizations blocking Grok
+                      - link "peaked in April and is trending downward" [ref=e264] [cursor=pointer]:
+                        - /url: https://www.netskope.com/blog/to-grok-or-not-to-grok-for-29-of-enterprises-there-is-no-question
+                      - text: as the number of Grok users continues to rise. This comes as organizations are opting for more granular controls, using DLP and real-time user coaching to prevent any sensitive data from being sent to Grok. That said, the blocks still outnumber the allows, with 25% of organizations blocking all attempts to use Grok in May, while only 8.5% organizations are seeing some Grok use. This is not an unusual trend, as organizations tend to block new apps initially while they perform security reviews and implement controls to restrict their use. On the other hand, there are some SaaS genAI apps, such as DeepSeek, that remain heavily blocked and therefore do not see any significant enterprise use.
+                    - paragraph [ref=e265]:
+                      - img "Diagram of most blocked AI apps by percentage of organizations enacting a blanket ban on the app" [ref=e266]
+                    - paragraph [ref=e267]:
+                      - text: Shadow AI is a relatively new term that describes the use of AI solutions without the knowledge or approval of centralized IT and cybersecurity departments. In the early days, nearly 100% of SaaS genAI use was shadow AI. Over time, organizations began to review and approve specific enterprise solutions (typically ChatGPT, Gemini, or Copilot), and users transitioned to those approved solutions. Real-time coaching policies that remind users who are using an unapproved solution to switch to an approved solution have been instrumental in this transition. Those controls continue to be effective, with only 60% of the enterprise population using personal SaaS genAI apps in May, a
+                      - link "12 percentage point decrease since February" [ref=e268] [cursor=pointer]:
+                        - /url: https://www.netskope.com/netskope-threat-labs/cloud-threat-report/generative-ai-2025#pillar_content_8
+                      - text: . We expect this trend to continue in the coming months, with the rate dipping below 40% by the end of the year. At the same time, new shadow AI challenges (genAI platforms, on-premises genAI, and AI agents) have emerged, which we will explore in more detail in the following sections.
+                    - paragraph [ref=e269]:
+                      - img "Diagram showing GenAI usage personal vs. organization account breakdown" [ref=e270]
+                    - paragraph [ref=e271]:
+                      - text: For readers interested in discovering the extent of SaaS shadow AI use in their environments, Netskope is tracking more than 1,550 distinct generative AI SaaS applications. Netskope customers can identify shadow AI by searching for any app activity categorized as “Generative AI” and focusing on unapproved apps and personal logins. While blocking unapproved apps can be an effective strategy, user coaching policies are a more nuanced way to guide users away from unapproved solutions and toward those managed and approved by the company. Such policies are often coupled with DLP policies to mitigate risks of sensitive data leaking to unapproved SaaS genAI apps, as detailed in our
+                      - link "previous Cloud and Threat Report" [ref=e272] [cursor=pointer]:
+                        - /url: https://www.netskope.com/netskope-threat-labs/cloud-threat-report/generative-ai-2025#pillar_content_11
+                      - text: .
+                    - paragraph [ref=e273]
+                  - generic [ref=e274]:
+                    - heading "Increasing adoption of genAI platforms" [level=2] [ref=e275]
+                    - generic [ref=e278]:
+                      - paragraph [ref=e279]: While SaaS genAI apps gained popularity for their ease of use, genAI platforms are now gaining popularity due to their flexibility and privacy benefits. Their flexibility stems from the fact that you can quickly and easily deploy the models of your choice using a single interface. Their privacy benefits arise from the fact that you host the models yourself and do not share any of your data with a third party. At the same time, the shared responsibility model in a genAI platform shifts more security responsibility to the user compared to a SaaS solution.
+                      - paragraph [ref=e280]: The use of genAI platforms is skyrocketing. We have seen a 50% increase in the number of users and a 73% increase in network traffic on these platforms over the past three months. As of May, 41% of organizations are using at least one genAI platform, while 14% are using at least two, and 2.7% are using at least three. One of the reasons behind the proliferation of multiple solutions is that the adoption of genAI platforms is another shadow AI problem; individuals are choosing whichever frameworks they are most familiar with or that seem best suited to their specific use cases. Using a genAI platform is also nearly as accessible as using a SaaS genAI app, since the major cloud service providers all have their own offerings. The most popular genAI platform is Microsoft Azure OpenAI, used by 29% of organizations. Amazon Bedrock follows closely behind at 22%, with Google Vertex AI in a distant third place at 7.2%. All three platforms are gaining popularity as more users become familiar with them and explore the opportunities they offer.
+                      - paragraph [ref=e281]:
+                        - img "Diagram showing cloud AI framework adoption by percentage of organizations" [ref=e282]
+                      - paragraph [ref=e283]: The rapid growth of shadow AI places the onus on the organization to identify who is creating cloud genAI infrastructure using genAI platforms, where they are building it, and whether they are following best practices for AI security. One of the powerful features of these genAI platforms is that they enable direct connection of enterprise data stores to AI applications, necessitating additional reviews and monitoring to ensure that these applications do not compromise enterprise data security. Netskope customers can gain insights into who is using these tools and how they are using them by reviewing their logs for any of these genAI platforms by name. Knowing who is using them and how they are using them is the first step to ensuring their secure use.
+                      - paragraph [ref=e284]
+                    - generic [ref=e285]:
+                      - heading "Increasing adoption of on-premises genAI" [level=2] [ref=e286]
+                      - generic [ref=e289]:
+                        - paragraph [ref=e290]:
+                          - text: Another practice gaining popularity is the use of genAI on-premises. On-premises genAI use takes multiple forms, ranging from using on-premises GPU resources to train or host models to developing on-premises tools that interact with SaaS genAI applications or genAI platforms. Using genAI locally is a good way for organizations to leverage their existing GPU resource investment or to build tools that interact with on-premises systems and datasets. However, on-premises deployment also means the organization is solely responsible for the security of its genAI infrastructure. Furthermore, understanding and applying frameworks such as the
+                          - link "OWASP Top 10 for Large Language Model Applications" [ref=e291] [cursor=pointer]:
+                            - /url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+                          - text: or
+                          - link "Mitre Atlas" [ref=e292] [cursor=pointer]:
+                            - /url: https://atlas.mitre.org/
+                          - text: is now essential.
+                        - paragraph [ref=e293]: "One of the most popular ways to use genAI locally is to deploy an LLM Interface. Similar to genAI platforms, LLM interfaces enable interaction with various models using a single interface. LLM interfaces are not as widely used as genAI platforms, with only 34% of organizations using LLM interfaces compared to 41% using genAI platforms. Ollama is the most popular framework by a large margin, and also serves as an excellent example of one of the key security differences between working on-prem vs. in a genAI platform: Ollama does not include any built-in authentication. So, if you are using Ollama, you must deploy it behind a reverse proxy or private access solution with appropriate authentication mechanisms in place to protect against unauthorized use. Furthermore, whereas the genAI platforms typically provide an AI guard to protect against the abuse of the models themselves, those using frameworks like Ollama must take extra steps to prevent abuse and misuse. Compared to Ollama, other LLM interfaces, including LM Studio and Ramalama, have a much smaller enterprise user base."
+                        - paragraph [ref=e294]:
+                          - img "Diagram showing the top LLM interfaces by percentage of organizations" [ref=e295]
+                        - paragraph [ref=e296]:
+                          - text: Due to the heightened security concerns surrounding the use of AI interfaces, organizations should proactively work to identify who is using them and where they are being used. Netskope customers can identify the use of popular LLM interfaces by their User-Agent strings in the transaction logs. For example, the top three interfaces’ User-Agent strings begin with
+                          - code [ref=e298]: ollama
+                          - text: ","
+                          - code [ref=e300]: LM Studio
+                          - text: ", and"
+                          - code [ref=e302]: llama-cpp
+                          - text: .
+                        - paragraph [ref=e303]:
+                          - text: Another way to discover who is experimenting with AI tools is to monitor access to AI marketplaces, such as Hugging Face. Hugging Face is a very popular community for sharing AI tools, AI models, and datasets. Users are downloading resources from Hugging Face in 67% of organizations. While the population of users doing so is small (only 0.3% on average), identifying these users is crucial for uncovering shadow AI, as they may be deploying AI infrastructure on-premises or in the cloud. Furthermore, because Hugging Face is a community platform designed to facilitate sharing, organizations must be aware of the supply chain risks associated with resources downloaded from this platform. In addition to the obvious risks of malicious code embedded in tooling, certain high-risk file formats (such as Python Pickles, which are vulnerable to dangerous arbitrary code execution attacks) are commonly shared on Hugging Face. Netskope customers can identify Hugging Face users by searching for the “Hugging Face” app in their logs. They should verify that resources downloaded from Hugging Face are covered by their
+                          - link "Threat Protection" [ref=e304] [cursor=pointer]:
+                            - /url: https://www.netskope.com/resources/data-sheets/netskope-threat-protection
+                          - text: policies.
+                        - paragraph [ref=e305]
+                      - generic [ref=e306]:
+                        - heading "AI Agents" [level=2] [ref=e307]
+                        - generic [ref=e310]:
+                          - paragraph [ref=e311]: "While SaaS genAI app use is consolidating around purpose-built apps that are well-integrated with existing enterprise workflows (i.e., Gemini and Copilot), another trend is emerging, spanning SaaS AI apps, genAI platforms, and on-premises AI use: AI agents. An AI agent is a system tasked with a specific goal and given some limited autonomy to achieve that goal without requiring user interaction. Thanks primarily to advancements in foundation models, we are now starting to see a critical mass of users across multiple organizations building AI agents and using agentic features of SaaS solutions. For example, GitHub Copilot (used in 39% of organizations) offers an agent mode, where you can provide a coding task, and it will iteratively modify your code and test it until it believes it has achieved the goal (or reached another stopping criterion). There are two noteworthy characteristics of an AI agent:"
+                          - list [ref=e312]:
+                            - listitem [ref=e313]: It has access to some data that belongs to the organization.
+                            - listitem [ref=e314]: It can execute some actions autonomously.
+                          - paragraph [ref=e315]: In the case of GitHub Copilot, it has access to your source code and can execute the necessary commands to compile and run that code within your infrastructure. These two characteristics of AI agents underscore the importance of ensuring that their use is adequately secured to protect sensitive data and infrastructure.
+                          - paragraph [ref=e316]: One option for creating AI agents is to use one of the many available agent frameworks. In total, 5.5% of organizations have users running agents created using popular AI agent frameworks on-premises. Among those frameworks, LangChain is the most popular by a large margin (having been around since October 2022), while the OpenAI Agent Framework is rapidly gaining popularity (having just been released in March 2025). While there are many other frameworks available, none of them has yet seen significant enterprise adoption. Pydantic-ai, in third place, is used in 3 out of every 1000 organizations. On-premises AI agents pose a significant shadow AI risk because they are highly accessible (easy to build and run), often have access to sensitive data, and can execute code autonomously. Organizations should proactively work to identify users who create and use AI agents on-premises.
+                          - paragraph [ref=e317]:
+                            - img "Diagram showing the top agent frameworks by percentage of organizations" [ref=e318]
+                          - paragraph [ref=e319]:
+                            - text: While the agent runs on-premises, the actual AI models that underpin the agent can run anywhere, including in SaaS, genAI platforms, or on-premises environments. When on-premises agents access SaaS services, they typically access different API endpoints than the browser. For example, conversations with OpenAI’s ChatGPT in the browser will go to
+                            - code [ref=e321]: chatgpt.com
+                            - text: ", while programmatic interaction with OpenAI’s models will go to"
+                            - code [ref=e323]: api.openai.com
+                            - text: ". The figure below shows the top SaaS AI app API domains by the percentage of organizations using them. The data interpretation is as follows: 66% of organizations have users making API calls to api.openai.com, indicating some non-browser interaction with OpenAI services. This interaction could be from third-party tools, custom tools, or AI agents. OpenAI has a significant lead over other SaaS services in this regard, and given the rapid growth in popularity of the OpenAI Agent Framework, we anticipate this trend will intensify in the coming months."
+                          - paragraph [ref=e324]:
+                            - img "Diagram showing the top 10 SaaS AI API domains by percentage of organizations" [ref=e325]
+                          - paragraph [ref=e326]:
+                            - text: Netskope customers can identify who is using the popular agent frameworks by searching their logs for the relevant User-Agent strings. For example, the top three frameworks have User-Agent strings beginning with
+                            - code [ref=e328]: langchain
+                            - text: ","
+                            - code [ref=e330]: Agents/Python
+                            - text: ", and"
+                            - code [ref=e332]: pydantic-ai
+                            - text: . They can find non-browser interaction with SaaS AI applications by searching their transaction logs for the relevant domains. The User-Agent strings and the process names will provide clues as to the nature of the interaction. More broadly, Netskope customers should look for any GenAI interactions coming from outside the web browser.
+                          - paragraph [ref=e333]: Another option for building AI agents is to use one of the genAI platforms. For this discussion, we will focus specifically on Amazon Bedrock, as it provides distinct service endpoints for managing models, managing agents, making inference requests to models, and invoking agents. Earlier in this report, we reported that 22% of organizations are using Amazon Bedrock. When we break this number down further, we find that all 22% are using it for managing models and running inference against models, while 14% are using it to develop, deploy, or invoke agents. We also stated earlier in this section that 5.5% of organizations are running AI agents on-premises, which means that 2.5x more organizations are using Amazon Bedrock for AI agents compared to on-premises agents.
+                          - paragraph [ref=e334]: Why are frameworks like Bedrock more popular for agentic AI than on-premises frameworks?
+                          - list [ref=e335]:
+                            - listitem [ref=e336]: They streamline development, especially for those already invested in the AWS ecosystem.
+                            - listitem [ref=e337]: They reduce operational overhead by being a managed service.
+                            - listitem [ref=e338]: They come with the built-in scalability of a mature IaaS platform.
+                          - paragraph [ref=e339]: In other words, a stable, managed environment with built-in security and support is more appealing to organizations than having to handle all these aspects independently. Based on current trends, we expect this divide to widen, with an even greater number of organizations favoring genAI platforms over on-premises solutions in the coming months. On-premises solutions will still make sense to some organizations, especially those with specific high-volume, predictable, continuous, and long-term use cases where on-premises might be more cost-effective. And, of course, anyone within the organization may start developing and using agents on premises during development or for personal use, underscoring the need for organizations to monitor continuously for shadow AI.
+                          - paragraph [ref=e340]:
+                            - text: Netskope users looking to discover who is using Amazon Bedrock to deploy or invoke agents should search their transaction logs for the Bedrock build-time domains (
+                            - code [ref=e342]: bedrock-agent.*.amazonaws.com
+                            - text: ) and the Bedrock run-time domains (
+                            - code [ref=e344]: bedrock-agent-runtime.*.amazonaws.com
+                            - text: ).
+                        - generic [ref=e345]:
+                          - heading "A CISO perspective" [level=2] [ref=e346]
+                          - generic [ref=e349]:
+                            - paragraph [ref=e350]: "To effectively manage the data security risks posed by the increasing use of generative AI technologies, CISOs and security leaders should implement the following actionable guidance:"
+                            - list [ref=e351]:
+                              - listitem [ref=e352]:
+                                - strong [ref=e353]: "Assess your genAI landscape:"
+                                - list [ref=e354]:
+                                  - listitem [ref=e355]:
+                                    - strong [ref=e356]: "Identify usage:"
+                                    - text: Determine which SaaS genAI applications, genAI platforms, and locally hosted genAI tools are in use across your organization.
+                                  - listitem [ref=e357]:
+                                    - strong [ref=e358]: "User identification:"
+                                    - text: Pinpoint who is using these tools and how they are being leveraged within different departments and workflows.
+                              - listitem [ref=e359]:
+                                - strong [ref=e360]: "Bolster genAI app controls:"
+                                - list [ref=e361]:
+                                  - listitem [ref=e362]:
+                                    - strong [ref=e363]: "Approved apps:"
+                                    - text: Establish and enforce a policy that only allows the use of company-approved genAI applications.
+                                  - listitem [ref=e364]:
+                                    - strong [ref=e365]: "Block unapproved apps:"
+                                    - text: Implement robust blocking mechanisms to prevent the use of unapproved genAI apps.
+                                  - listitem [ref=e366]:
+                                    - strong [ref=e367]: "DLP for sensitive data:"
+                                    - text: Use data loss prevention (DLP) policies to prevent sensitive data from being shared with unauthorized genAI applications.
+                                  - listitem [ref=e368]:
+                                    - strong [ref=e369]: "Real-time user coaching:"
+                                    - text: Deploy real-time user coaching to guide users towards approved solutions and educate them on secure genAI practices. Regularly benchmark these controls against industry best practices.
+                              - listitem [ref=e370]:
+                                - strong [ref=e371]: "Inventory local genAI infrastructure:"
+                                - list [ref=e372]:
+                                  - listitem [ref=e373]:
+                                    - strong [ref=e374]: "Security frameworks:"
+                                    - text: "If your organization is running any genAI infrastructure locally, review and apply relevant security frameworks such as:"
+                                    - list [ref=e375]:
+                                      - listitem [ref=e376]:
+                                        - link "OWASP Top 10 for Large Language Model Applications" [ref=e377] [cursor=pointer]:
+                                          - /url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
+                                      - listitem [ref=e378]:
+                                        - link "NIST AI Risk Management Framework" [ref=e379] [cursor=pointer]:
+                                          - /url: https://www.nist.gov/itl/ai-risk-management-framework
+                                      - listitem [ref=e380]:
+                                        - link "Mitre Atlas" [ref=e381] [cursor=pointer]:
+                                          - /url: https://atlas.mitre.org/
+                                  - listitem [ref=e382]:
+                                    - strong [ref=e383]: "Protection measures:"
+                                    - text: Ensure that adequate protection is in place for data, users, and networks interacting with local genAI infrastructure.
+                              - listitem [ref=e384]:
+                                - strong [ref=e385]: "Continuous monitoring and awareness:"
+                                - list [ref=e386]:
+                                  - listitem [ref=e387]:
+                                    - strong [ref=e388]: "Monitor genAI use:"
+                                    - text: Implement continuous monitoring of genAI use within your organization to detect new shadow AI instances, whether through SaaS apps, genAI platforms, or on-premises deployments.
+                                  - listitem [ref=e389]:
+                                    - strong [ref=e390]: "Stay informed:"
+                                    - text: Stay updated on new developments in AI ethics, regulatory changes, and adversarial attacks to adjust your security posture proactively.
+                              - listitem [ref=e391]:
+                                - strong [ref=e392]: "Understanding and proposing the risk of agentic shadow AI:"
+                                - list [ref=e393]:
+                                  - listitem [ref=e394]:
+                                    - strong [ref=e395]: "Unverified employee:"
+                                    - text: Agentic shadow AI is like a person coming into your office every day, handling data, taking actions on systems, and all while not being background-checked or having security monitoring in place.
+                                  - listitem [ref=e396]:
+                                    - strong [ref=e397]: "Set guidance:"
+                                    - text: Establish guidelines for the organization and its members. Use the detections outlined in this report to identify those who are leading the charge in the adoption of agentic AI and partner with them to develop an actionable and realistic policy, standard, or guideline.
+                            - paragraph [ref=e398]: By taking these proactive steps, organizations can effectively manage the evolving challenges presented by genAI technologies and ensure their safe and responsible adoption.
+                            - paragraph [ref=e399]
+                          - generic [ref=e400]:
+                            - heading "Netskope Threat Labs" [level=2] [ref=e401]
+                            - generic [ref=e404]:
+                              - paragraph [ref=e405]:
+                                - text: Staffed by the industry’s foremost cloud threat and malware researchers,
+                                - link "Netskope Threat Labs" [ref=e406] [cursor=pointer]:
+                                  - /url: https://www.netskope.com/netskope-threat-labs
+                                - text: discovers, analyzes, and designs defenses against the latest cloud threats affecting enterprises. Our researchers are regular presenters and volunteers at top security conferences, including DefCon, BlackHat, and RSA.
+                              - paragraph [ref=e407]
+                            - generic [ref=e408]:
+                              - heading "About This Report" [level=2] [ref=e409]
+                              - generic [ref=e412]:
+                                - paragraph [ref=e413]:
+                                  - text: Netskope provides threat protection to millions of users worldwide. Information presented in this report is based on anonymized usage data collected by the
+                                  - link "Netskope One platform" [ref=e414] [cursor=pointer]:
+                                    - /url: https://www.netskope.com/netskope-one
+                                  - text: relating to a subset of Netskope customers with prior authorization.
+                                - paragraph [ref=e415]:
+                                  - text: This report contains information about detections raised by the
+                                  - link "Netskope One Next Generation Secure Web Gateway (NG-SWG)" [ref=e416] [cursor=pointer]:
+                                    - /url: https://www.netskope.com/products/next-gen-swg
+                                  - text: ", not considering the significance of the impact of each individual threat. The statistics in this report are based on the period from February 1, 2025, through May 31, 2025. Stats reflect attacker tactics, user behavior, and organization policy."
+    - generic [ref=e417]:
+      - generic [ref=e419]:
+        - heading "Related resources" [level=3] [ref=e421]
+        - generic [ref=e424]: Results
+        - generic [ref=e426]:
+          - button "list List" [ref=e427] [cursor=pointer]:
+            - img "list" [ref=e428]
+            - text: List
+          - button "grid Grid" [ref=e429] [cursor=pointer]:
+            - img "grid" [ref=e430]
+            - text: Grid
+      - button "Show more" [ref=e433] [cursor=pointer]
+    - contentinfo [ref=e434]:
+      - generic [ref=e435]:
+        - list [ref=e439]:
+          - listitem [ref=e440]:
+            - link "Explore" [ref=e441] [cursor=pointer]:
+              - /url: /why-netskope
+            - list [ref=e442]:
+              - listitem [ref=e443]:
+                - link "Why Netskope" [ref=e444] [cursor=pointer]:
+                  - /url: https://www.netskope.com/why-netskope
+              - listitem [ref=e445]:
+                - link "Products" [ref=e446] [cursor=pointer]:
+                  - /url: https://www.netskope.com/products
+              - listitem [ref=e447]:
+                - link "Solutions" [ref=e448] [cursor=pointer]:
+                  - /url: https://www.netskope.com/solutions
+              - listitem [ref=e449]:
+                - link "What is SASE?" [ref=e450] [cursor=pointer]:
+                  - /url: https://www.netskope.com/security-defined/what-is-sase
+              - listitem [ref=e451]:
+                - link "What is SSE?" [ref=e452] [cursor=pointer]:
+                  - /url: https://www.netskope.com/security-defined/security-service-edge-sse
+              - listitem [ref=e453]:
+                - link "What is Zero Trust?" [ref=e454] [cursor=pointer]:
+                  - /url: https://www.netskope.com/security-defined/what-is-zero-trust
+              - listitem [ref=e455]:
+                - link "What is ZTNA?" [ref=e456] [cursor=pointer]:
+                  - /url: https://www.netskope.com/security-defined/what-is-zero-trust-network-access
+              - listitem [ref=e457]:
+                - link "What is a CASB?" [ref=e458] [cursor=pointer]:
+                  - /url: https://www.netskope.com/security-defined/what-is-casb
+          - listitem [ref=e459]:
+            - link "Resources" [ref=e460] [cursor=pointer]:
+              - /url: /resources
+            - list [ref=e461]:
+              - listitem [ref=e462]:
+                - link "Blog" [ref=e463] [cursor=pointer]:
+                  - /url: https://www.netskope.com/blog
+              - listitem [ref=e464]:
+                - link "Netskope Community" [ref=e465] [cursor=pointer]:
+                  - /url: https://community.netskope.com/
+              - listitem [ref=e466]:
+                - link "Resource Library" [ref=e467] [cursor=pointer]:
+                  - /url: https://www.netskope.com/resources
+              - listitem [ref=e468]:
+                - link "Security Defined" [ref=e469] [cursor=pointer]:
+                  - /url: https://www.netskope.com/security-defined
+              - listitem [ref=e470]:
+                - link "Technical Support" [ref=e471] [cursor=pointer]:
+                  - /url: https://www.netskope.com/netskope-technical-support
+              - listitem [ref=e472]:
+                - link "Threat Labs" [ref=e473] [cursor=pointer]:
+                  - /url: https://www.netskope.com/netskope-threat-labs
+              - listitem [ref=e474]:
+                - link "Trust Portal" [ref=e475] [cursor=pointer]:
+                  - /url: https://trust.netskope.com/
+              - listitem [ref=e476]:
+                - link "URL Lookup" [ref=e477] [cursor=pointer]:
+                  - /url: https://www.netskope.com/url-lookup
+          - listitem [ref=e478]:
+            - link "Company" [ref=e479] [cursor=pointer]:
+              - /url: /company
+            - list [ref=e480]:
+              - listitem [ref=e481]:
+                - link "About Netskope" [ref=e482] [cursor=pointer]:
+                  - /url: https://www.netskope.com/company
+              - listitem [ref=e483]:
+                - link "Careers" [ref=e484] [cursor=pointer]:
+                  - /url: https://www.netskope.com/company/careers
+              - listitem [ref=e485]:
+                - link "Events" [ref=e486] [cursor=pointer]:
+                  - /url: https://www.netskope.com/company/events
+              - listitem [ref=e487]:
+                - link "Investor Relations" [ref=e488] [cursor=pointer]:
+                  - /url: https://investors.netskope.com
+              - listitem [ref=e489]:
+                - link "Newsroom" [ref=e490] [cursor=pointer]:
+                  - /url: https://www.netskope.com/company/newsroom
+              - listitem [ref=e491]:
+                - link "Our Customers" [ref=e492] [cursor=pointer]:
+                  - /url: https://www.netskope.com/customers
+              - listitem [ref=e493]:
+                - link "Partners" [ref=e494] [cursor=pointer]:
+                  - /url: https://www.netskope.com/partners
+              - listitem [ref=e495]:
+                - link "Partner portal" [ref=e496] [cursor=pointer]:
+                  - /url: https://partners.netskope.com/English/
+          - listitem [ref=e497]:
+            - link "Contact" [ref=e498] [cursor=pointer]:
+              - /url: /get-started#contact
+            - list [ref=e499]:
+              - listitem [ref=e500]:
+                - link "Contact Us" [ref=e501] [cursor=pointer]:
+                  - /url: https://www.netskope.com/get-started#contact
+              - listitem [ref=e502]:
+                - link "1-800-979-6988" [ref=e503] [cursor=pointer]:
+                  - /url: /get-started#contact
+              - listitem [ref=e504]:
+                - link "2445 Augustine Dr. 3rd floor, Santa Clara, CA 95054" [ref=e505] [cursor=pointer]:
+                  - /url: /company/careers#locations
+                  - text: 2445 Augustine Dr. 3rd floor,
+                  - text: Santa Clara, CA 95054
+              - listitem [ref=e506]:
+                - link "Subscribe to Netskope" [ref=e507] [cursor=pointer]:
+                  - /url: https://go.netskope.com/lp-subscribe-to-netskope
+                  - paragraph [ref=e508]: Subscribe to Netskope
+        - generic [ref=e510]:
+          - link "twitter icon" [ref=e512] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/netskope
+            - img "twitter icon" [ref=e513]
+          - link "twitter icon" [ref=e515] [cursor=pointer]:
+            - /url: https://x.com/netskope
+            - img "twitter icon" [ref=e516]
+          - link "instagram icon" [ref=e518] [cursor=pointer]:
+            - /url: https://www.instagram.com/netskope/
+            - img "instagram icon" [ref=e519]
+        - generic [ref=e520]:
+          - list [ref=e521]:
+            - listitem [ref=e522]:
+              - link "Privacy" [ref=e523] [cursor=pointer]:
+                - /url: https://www.netskope.com/privacy
+            - listitem [ref=e524]:
+              - link "Vulnerability Disclosure Policy" [ref=e525] [cursor=pointer]:
+                - /url: https://www.netskope.com/vulnerability-disclosure-policy
+            - listitem [ref=e526]:
+              - link "Terms of Use" [ref=e527] [cursor=pointer]:
+                - /url: https://www.netskope.com/terms-of-use
+            - listitem [ref=e528]:
+              - link "CCPA Compliance Statement" [ref=e529] [cursor=pointer]:
+                - /url: https://www.netskope.com/ccpa-compliance-statement
+          - generic [ref=e530]: © 2026, All rights reserved.
+  - iframe [ref=e531]:
+    

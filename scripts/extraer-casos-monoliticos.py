@@ -7,7 +7,7 @@ import re
 import unicodedata
 from pathlib import Path
 
-POR_ROL = Path("pieza-0-alfabetizacion/01-casos-de-uso/por-rol")
+POR_ROL = Path("catalogo-agentico/01-casos-de-uso/por-rol")
 
 BLOQUE_5 = """
 ## 5. Arquitectura de remediación con gobernanza de IA

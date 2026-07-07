@@ -2,7 +2,7 @@
 """Genera README.md por rol listando los casos redistribuidos."""
 from pathlib import Path
 
-POR_ROL = Path("pieza-0-alfabetizacion/01-casos-de-uso/por-rol")
+POR_ROL = Path("catalogo-agentico/01-casos-de-uso/por-rol")
 
 ROLES = {
     "01-manager": "Manager",

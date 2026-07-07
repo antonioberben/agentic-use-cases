@@ -9,8 +9,8 @@
 - **Patrón técnico / Technical pattern**: <analítico | triage | código | operacional | asistencia | documentos | generación>
 - **Madurez recomendada / Recommended maturity**: <nivel piloto / gobernado>
 
-> Aviso permanente: la capa de gobierno vive en la **Pieza 2 — Plan Director de IA**.
-> Permanent notice: the governance layer lives in **Piece 2 — AI Plan Director**.
+> Aviso permanente: la capa de gobierno vive en el **bloque 5 (arquitectura de remediación)**.
+> Permanent notice: the governance layer lives in **block 5 (remediation architecture)**.
 
 ## 1. Caso de uso / Use case  · etapa: Contexto
 
@@ -59,7 +59,7 @@ Fórmula / Formula: *(<ahorro> · estimación, T1)*
 **Riesgos típicos / Typical risks:** MCP no auditado · agente sin identidad · prompt injection desde <fuente> · shadow AI · coste descontrolado · fuga de PII · decisión automatizada sin gate.
 **Normativa / Regulation:** <EU AI Act art. X · GDPR/AEPD · NIS2 · DORA · MiFID II/MAR/SOX/MiCA/secreto profesional según caso>.
 
-> Estas vulnerabilidades se cubren con la capa de gobernanza de la **Pieza 2**. No llevar a producción sin ella. / Covered by the governance layer in **Piece 2**. Do not ship without it.
+> Estas vulnerabilidades se cubren con la capa de gobernanza descrita en el **bloque 5 (arquitectura de remediación)**. No llevar a producción sin ella. / Covered by the governance layer described in **block 5 (remediation architecture)**. Do not ship without it.
 
 ## 5. Arquitectura de remediación con gobernanza de IA / Remediation  · etapa: Remediación
 

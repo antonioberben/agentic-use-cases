@@ -1,0 +1,14 @@
+{
+  "item.label.Fundamentos": {
+    "message": "Fundamentals",
+    "description": "Navbar item with label Fundamentos"
+  },
+  "item.label.Casos de uso": {
+    "message": "Use cases",
+    "description": "Navbar item with label Casos de uso"
+  },
+  "logo.alt": {
+    "message": "solo.io",
+    "description": "The alt text of navbar logo"
+  }
+}

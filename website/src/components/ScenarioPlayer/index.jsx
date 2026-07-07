@@ -2,11 +2,18 @@ import React, {useState, useEffect} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import {useLocation} from '@docusaurus/router';
-import {CASES, LAYOUT, STEP_META, UI, stageN, accents, kindLbl, NW, NH} from './casos';
+import {CASES, LAYOUT, STEP_META, UI, stageN, accents, kindLbl, NW, NH, PILOT_MAP, buildGenericCase} from './casos';
+import {withSpec} from './compiler';
+import detalle from '@site/src/data/casos-detalle.json';
 import './styles.css';
 
-const pos = {};
-LAYOUT.forEach((n) => {pos[n.id] = {x: n.x, y: n.y, cx: n.x + NW / 2, cy: n.y + NH / 2};});
+// `pos` se recomputa por caso (cada caso puede tener su propio LAYOUT).
+let pos = {};
+function buildPos(layout) {
+  pos = {};
+  layout.forEach((n) => {pos[n.id] = {x: n.x, y: n.y, cx: n.x + NW / 2, cy: n.y + NH / 2};});
+}
+buildPos(LAYOUT);
 
 const GLYPH = {
   user: '<circle cx="9" cy="6" r="3.1"/><path d="M2.5 16 C2.5 11,15.5 11,15.5 16"/>',
@@ -75,11 +82,33 @@ const EDGE_STATES = [
   ['gate', 'var(--sp-amber)'],
 ];
 
+function ClientTabs({data}) {
+  const [i, setI] = useState(0);
+  if (!data || !data.tabs || data.tabs.length === 0) return null;
+  return (
+    <div className="sp-tabs">
+      <div className="sp-tab-strip" role="tablist">
+        {data.tabs.map((t, idx) => (
+          <button key={idx} role="tab" aria-selected={i === idx}
+            className={'sp-tab' + (i === idx ? ' on' : '')} onClick={() => setI(idx)}>
+            {t.name}
+          </button>
+        ))}
+      </div>
+      <div className="sp-tab-body" dangerouslySetInnerHTML={{__html: data.tabs[i].html}} />
+      {data.appendix ? (
+        <div className="sp-tab-appendix" dangerouslySetInnerHTML={{__html: data.appendix}} />
+      ) : null}
+    </div>
+  );
+}
+
 export default function ScenarioPlayer() {
   const {i18n} = useDocusaurusContext();
   const lang = i18n.currentLocale === 'en' ? 'en' : 'es'; // sigue el idioma del sitio
   const location = useLocation();
   const [ci, setCi] = useState(0);
+  const [genericCase, setGenericCase] = useState(null);
   const [cur, setCur] = useState(0);
   const [idResolved, setIdResolved] = useState(false);
   const [decision, setDecision] = useState('pending'); // HITL: pending | approved | denied
@@ -92,9 +121,27 @@ export default function ScenarioPlayer() {
     registry: useBaseUrl('/img/agentregistry.png'),
   };
 
+  // Iconos oficiales por componente Solo en la tira de remediación (bloque 5).
+  const COMP_ICON = {
+    agentgateway: useBaseUrl('/img/agw-favicon.svg'),
+    kagent: useBaseUrl('/img/kagent.png'),
+    agentregistry: useBaseUrl('/img/agentregistry.png'),
+  };
+  const compIcon = (cn) => {
+    const key = String(cn || '').toLowerCase();
+    for (const k of Object.keys(COMP_ICON)) if (key.includes(k)) return COMP_ICON[k];
+    return null;
+  };
+
   const t = UI[lang];
-  const c = CASES[ci];
-  const step = STEP_META[cur];
+  // Si el caso trae `spec`, compilamos zonas → layout+steps+viewBox dinámicos.
+  const c = withSpec(genericCase || CASES[ci]);
+  // Un caso puede sobreescribir la topología (LAYOUT) y la coreografía (STEP_META).
+  const activeLayout = c.layout || LAYOUT;
+  const activeSteps = c.steps || STEP_META;
+  const vb = c.viewBox || {w: 940, h: 400};
+  buildPos(activeLayout);
+  const step = activeSteps[cur];
   const P = (v) => (v && typeof v === 'object' && ('es' in v || 'en' in v)) ? v[lang] : v;
 
   useEffect(() => {
@@ -107,15 +154,25 @@ export default function ScenarioPlayer() {
     return undefined;
   }, [ci, cur, lang, step.badge]);
 
-  // Deep-link por caso: ?case=<id> selecciona el caso (menú de la navbar / enlaces compartibles).
+  // Deep-link por caso: ?case=<id>. Acepta:
+  //  · id piloto corto ("legal") o largo ("legal/revision-de-contratos-redlining")
+  //  · id de catálogo ("rol/slug"): construye caso genérico desde el README parseado.
   useEffect(() => {
     const id = new URLSearchParams(location.search).get('case');
-    const idx = CASES.findIndex((c) => c.id === id);
-    if (idx >= 0) { setCi(idx); setCur(0); }
+    if (!id) return;
+    // 1) piloto directo por id de CASES
+    const idxDirect = CASES.findIndex((c) => c.id === id);
+    if (idxDirect >= 0) { setGenericCase(null); setCi(idxDirect); setCur(0); return; }
+    // 2) alias piloto (PILOT_MAP)
+    if (PILOT_MAP[id] != null) { setGenericCase(null); setCi(PILOT_MAP[id]); setCur(0); return; }
+    // 3) genérico: id de catálogo → detalle parseado
+    if (detalle[id]) { setGenericCase(buildGenericCase(id, detalle[id])); setCur(0); return; }
+    // fallback: primer piloto
+    setGenericCase(null); setCi(0); setCur(0);
   }, [location.search]);
 
   const vis = (id) => {
-    const nd = LAYOUT.find((n) => n.id === id);
+    const nd = activeLayout.find((n) => n.id === id);
     return nd && cur >= nd.ap;
   };
   const goto = (i) => setCur(i);
@@ -123,15 +180,6 @@ export default function ScenarioPlayer() {
     if (typeof document === 'undefined') return;
     const elx = document.getElementById(id);
     if (elx) elx.scrollIntoView({behavior: 'smooth', block: 'start'});
-  };
-  const selectCase = (i) => {
-    setCi(i); setCur(0);
-    if (typeof window !== 'undefined') {
-      const u = new URL(window.location.href);
-      u.searchParams.set('case', CASES[i].id);
-      window.history.replaceState(null, '', u.toString());
-    }
-    scrollTo('sp-player');
   };
 
   // ---- badge ----
@@ -144,10 +192,12 @@ export default function ScenarioPlayer() {
   else if (step.badge === 'risk') badge = {cls: 'danger', icon: '!', cap: P(c.risk)};
   else if (step.badge === 'ok') badge = {cls: 'ok', icon: '✓', cap: t.okCap};
 
-  // ---- edges (HITL: la acción sensible gw→mcpB refleja la decisión) ----
+  // ---- edges (HITL: la acción sensible refleja la decisión) ----
+  // Por caso se puede sobreescribir la arista del gate con c.hitlEdge = ['from', 'to'].
+  const hEdge = c.hitlEdge || ['gw', 'mcpB'];
   const renderEdges = step.hitl
-    ? (step.edges || []).map((e) => (e[0] === 'gw' && e[1] === 'mcpB')
-        ? ['gw', 'mcpB', decision === 'pending' ? 'gate' : decision === 'approved' ? 'pass' : 'block']
+    ? (step.edges || []).map((e) => (e[0] === hEdge[0] && e[1] === hEdge[1])
+        ? [hEdge[0], hEdge[1], decision === 'pending' ? 'gate' : decision === 'approved' ? 'pass' : 'block']
         : e)
     : (step.edges || []);
   const visEdges = renderEdges.filter((e) => vis(e[0]) && vis(e[1]));
@@ -167,15 +217,6 @@ export default function ScenarioPlayer() {
 
   return (
     <div className="spwrap">
-      <div className="sp-topbar">
-        <div className="sp-cases">
-          <span className="lbl">{t.caseLbl}</span>
-          {CASES.map((cs, i) => (
-            <button key={cs.id} className={'cpill' + (i === ci ? ' on' : '')}
-              onClick={() => selectCase(i)}>{P(cs.role)}</button>
-          ))}
-        </div>
-      </div>
 
       <div className="caseline">
         <span className="role">{P(c.role)}</span>
@@ -223,7 +264,7 @@ export default function ScenarioPlayer() {
         </div>
 
         <div className="scene-wrap">
-          <svg className="scene" viewBox="0 0 940 400" role="img" aria-label="Scenario">
+          <svg className="scene" viewBox={`0 0 ${vb.w} ${vb.h}`} role="img" aria-label="Scenario">
             <defs>
               {EDGE_STATES.map(([st, color]) => (
                 <marker key={st} id={'sp-arrow-' + st} viewBox="0 0 10 10" refX="9" refY="5"
@@ -238,7 +279,7 @@ export default function ScenarioPlayer() {
               ))}
             </g>
             <g>
-              {LAYOUT.filter((nd) => vis(nd.id)).map((nd) => {
+              {activeLayout.filter((nd) => vis(nd.id)).map((nd) => {
                 const isOn = on.indexOf(nd.id) >= 0;
                 const isDanger = danger.indexOf(nd.id) >= 0 || nd.id === 'shadow';
                 let cls = 'nb';
@@ -279,15 +320,20 @@ export default function ScenarioPlayer() {
                 {decision === 'approved' ? t.approvedCap : decision === 'denied' ? t.deniedCap : t.awaitingCap}
               </div>
             )}
-            <a className="detail-link" onClick={() => scrollTo('sp-block-' + cur)}>{t.detail + ': ' + P(c.blocks[cur].h) + ' ↓'}</a>
           </div>
         </div>
 
-        {step.gw && (
+        {step.gw && c.comps && c.comps.length > 0 && (
           <div className="comps">
-            {c.comps.map((co) => (
-              <div key={co.cn} className="comp"><div className="cn">{co.cn}</div><div className="cd">{P(co.cd)}</div></div>
-            ))}
+            {c.comps.map((co) => {
+              const ic = compIcon(co.cn);
+              return (
+                <div key={co.cn} className="comp">
+                  <div className="cn">{ic ? <img className="cn-ic" src={ic} alt="" aria-hidden="true" /> : null}{co.cn}</div>
+                  <div className="cd">{P(co.cd)}</div>
+                </div>
+              );
+            })}
           </div>
         )}
 
@@ -296,6 +342,13 @@ export default function ScenarioPlayer() {
           <button className="btn" disabled={cur === 0} onClick={() => cur > 0 && goto(cur - 1)}>{t.prev}</button>
           <button className="btn primary" disabled={cur === 4} onClick={() => cur < 4 && goto(cur + 1)}>{t.next}</button>
         </div>
+
+        <a className={'sp-detail-cta' + (cur === 4 ? ' emphasis' : '')}
+           onClick={() => scrollTo('sp-block-0')}>
+          {cur === 4
+            ? (lang === 'es' ? 'Has recorrido las 5 etapas · leer el detalle completo ↓' : 'You have covered the 5 stages · read the full detail ↓')
+            : (lang === 'es' ? '¿Quieres profundizar? Ver los 5 bloques completos ↓' : 'Want to dig deeper? See the 5 full blocks ↓')}
+        </a>
       </div>
 
       <div className="blocks">
@@ -306,7 +359,9 @@ export default function ScenarioPlayer() {
               <a className="backlink" onClick={() => scrollTo('sp-player')}>{t.back}</a>
             </div>
             <h3>{P(b.h)}</h3>
-            <div dangerouslySetInnerHTML={{__html: P(b.body)}} />
+            {b.tabs
+              ? <ClientTabs data={P(b.tabs)} />
+              : <div dangerouslySetInnerHTML={{__html: P(b.body)}} />}
             {idx === 2 && <div className="sp-kpinote" dangerouslySetInnerHTML={{__html: t.kpiNote}} />}
           </div>
         ))}

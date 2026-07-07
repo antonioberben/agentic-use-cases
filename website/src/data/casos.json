@@ -1,0 +1,3434 @@
+[
+  {
+    "id": "manager/analisis-de-dashboard-bi",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Análisis de dashboard / BI",
+    "slug": "analisis-de-dashboard-bi",
+    "tecnica": "asistencia",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis de dashboard / BI",
+      "en": "Dashboard / BI analysis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/analisis-de-dashboard-bi/README.md"
+  },
+  {
+    "id": "manager/borrador-de-comunicacion-a-stakeholders",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Borrador de comunicación a stakeholders",
+    "slug": "borrador-de-comunicacion-a-stakeholders",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de comunicación a stakeholders",
+      "en": "Stakeholder communication draft"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/borrador-de-comunicacion-a-stakeholders/README.md"
+  },
+  {
+    "id": "manager/gestion-documental-proyecto",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "SP03 — Gestión documental de proyecto",
+    "slug": "gestion-documental-proyecto",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Gestión documental de proyecto",
+      "en": "Project document management"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/gestion-documental-proyecto/README.md"
+  },
+  {
+    "id": "manager/lectura-critica-planes",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "T15 — Lectura crítica de planes y business cases",
+    "slug": "lectura-critica-planes",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Lectura crítica de planes y business cases",
+      "en": "Critical review of plans and business cases"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/lectura-critica-planes/README.md"
+  },
+  {
+    "id": "manager/memoria-personal-del-trabajo",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Memoria personal del trabajo",
+    "slug": "memoria-personal-del-trabajo",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Memoria personal del trabajo",
+      "en": "Personal work memory"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/memoria-personal-del-trabajo/README.md"
+  },
+  {
+    "id": "manager/notas-a-mano-digital-y-buscable",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Notas a mano → digital y buscable",
+    "slug": "notas-a-mano-digital-y-buscable",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Notas a mano → digital y buscable",
+      "en": "Handwritten notes → searchable digital"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/notas-a-mano-digital-y-buscable/README.md"
+  },
+  {
+    "id": "manager/preparar-un-1-1",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Preparar un 1:1",
+    "slug": "preparar-un-1-1",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Preparar un 1:1",
+      "en": "Prepare a 1:1"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/preparar-un-1-1/README.md"
+  },
+  {
+    "id": "manager/presentaciones-documentos-largos-e-imagenes",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Presentaciones, documentos largos e imágenes",
+    "slug": "presentaciones-documentos-largos-e-imagenes",
+    "tecnica": "documentos",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Presentaciones, documentos largos e imágenes",
+      "en": "Decks, long documents and images"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/presentaciones-documentos-largos-e-imagenes/README.md"
+  },
+  {
+    "id": "manager/priorizacion-del-backlog",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Priorización del backlog",
+    "slug": "priorizacion-del-backlog",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Priorización del backlog",
+      "en": "Backlog prioritization"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/priorizacion-del-backlog/README.md"
+  },
+  {
+    "id": "manager/reporte-semanal-de-equipo",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Reporte semanal de equipo",
+    "slug": "reporte-semanal-de-equipo",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway"
+    ],
+    "tituloI18n": {
+      "es": "Reporte semanal de equipo",
+      "en": "Weekly team report"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/reporte-semanal-de-equipo/README.md"
+  },
+  {
+    "id": "manager/resumen-reuniones-acciones",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "T11 — Resumen de reuniones + extracción de acciones",
+    "slug": "resumen-reuniones-acciones",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Resumen de reuniones + acciones",
+      "en": "Meeting recap + action items"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/resumen-reuniones-acciones/README.md"
+  },
+  {
+    "id": "manager/triage-de-bandeja-email-chat",
+    "rol": "manager",
+    "rolLabel": "MANAGER",
+    "titulo": "Triage de bandeja (email + chat)",
+    "slug": "triage-de-bandeja-email-chat",
+    "tecnica": "triage",
+    "madurez": "1+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de bandeja (email + chat)",
+      "en": "Inbox triage (email + chat)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/01-manager/triage-de-bandeja-email-chat/README.md"
+  },
+  {
+    "id": "analista/analisis-exploratorio-inicial-eda",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "Análisis exploratorio inicial (EDA)",
+    "slug": "analisis-exploratorio-inicial-eda",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis exploratorio inicial (EDA)",
+      "en": "Initial exploratory data analysis (EDA)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/analisis-exploratorio-inicial-eda/README.md"
+  },
+  {
+    "id": "analista/de-pregunta-de-negocio-a-sql",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "De pregunta de negocio a SQL",
+    "slug": "de-pregunta-de-negocio-a-sql",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "De pregunta de negocio a SQL",
+      "en": "From business question to SQL"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/de-pregunta-de-negocio-a-sql/README.md"
+  },
+  {
+    "id": "analista/deteccion-de-anomalias",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "Detección de anomalías",
+    "slug": "deteccion-de-anomalias",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Detección de anomalías",
+      "en": "Anomaly detection"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/deteccion-de-anomalias/README.md"
+  },
+  {
+    "id": "analista/documentacion-del-analisis",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "Documentación del análisis",
+    "slug": "documentacion-del-analisis",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Documentación del análisis",
+      "en": "Analysis documentation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/documentacion-del-analisis/README.md"
+  },
+  {
+    "id": "analista/limpiar-y-normalizar-un-dataset",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "Limpiar y normalizar un dataset",
+    "slug": "limpiar-y-normalizar-un-dataset",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Limpiar y normalizar un dataset",
+      "en": "Clean and normalize a dataset"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/limpiar-y-normalizar-un-dataset/README.md"
+  },
+  {
+    "id": "analista/resumir-hallazgos-para-no-tecnicos",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "Resumir hallazgos para no-técnicos",
+    "slug": "resumir-hallazgos-para-no-tecnicos",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Resumir hallazgos para no-técnicos",
+      "en": "Summarize findings for non-technical readers"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/resumir-hallazgos-para-no-tecnicos/README.md"
+  },
+  {
+    "id": "analista/segunda-opinion-sobre-tu-propio-analisis",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "Segunda opinión sobre tu propio análisis",
+    "slug": "segunda-opinion-sobre-tu-propio-analisis",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Segunda opinión sobre tu propio análisis",
+      "en": "Second opinion on your own analysis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/segunda-opinion-sobre-tu-propio-analisis/README.md"
+  },
+  {
+    "id": "analista/visualizaciones-rapidas",
+    "rol": "analista",
+    "rolLabel": "ANALISTA",
+    "titulo": "Visualizaciones rápidas",
+    "slug": "visualizaciones-rapidas",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Visualizaciones rápidas",
+      "en": "Fast visualizations"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/02-analista/visualizaciones-rapidas/README.md"
+  },
+  {
+    "id": "desarrollador/asistente-desarrollador-agents-md",
+    "rol": "desarrollador",
+    "rolLabel": "DESARROLLADOR",
+    "titulo": "T04 — Asistente al desarrollador con AGENTS.md",
+    "slug": "asistente-desarrollador-agents-md",
+    "tecnica": "código",
+    "madurez": "1+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Asistente de código con AGENTS.md",
+      "en": "Coding assistant with AGENTS.md"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/03-desarrollador/asistente-desarrollador-agents-md/README.md"
+  },
+  {
+    "id": "desarrollador/llm-gateway-asistentes-de-codigo",
+    "rol": "desarrollador",
+    "rolLabel": "DESARROLLADOR",
+    "titulo": "LLM Gateway delante de los asistentes de código del equipo",
+    "slug": "llm-gateway-asistentes-de-codigo",
+    "tecnica": "código",
+    "madurez": "1+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [
+      "llm-gateway-codigo"
+    ],
+    "capacidadesLabel": [
+      "LLM Gateway para código"
+    ],
+    "gateways": [
+      "LLM Gateway"
+    ],
+    "tituloI18n": {
+      "es": "LLM Gateway delante de los asistentes de código",
+      "en": "LLM Gateway in front of the team code assistants"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/03-desarrollador/llm-gateway-asistentes-de-codigo/README.md"
+  },
+  {
+    "id": "desarrollador/refactor-estructurado-de-un-modulo",
+    "rol": "desarrollador",
+    "rolLabel": "DESARROLLADOR",
+    "titulo": "Refactor estructurado de un módulo",
+    "slug": "refactor-estructurado-de-un-modulo",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Refactor estructurado de un módulo",
+      "en": "Structured module refactor"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/03-desarrollador/refactor-estructurado-de-un-modulo/README.md"
+  },
+  {
+    "id": "desarrollador/revision-asistida-de-pr-ajenos",
+    "rol": "desarrollador",
+    "rolLabel": "DESARROLLADOR",
+    "titulo": "Revisión asistida de PR ajenos",
+    "slug": "revision-asistida-de-pr-ajenos",
+    "tecnica": "código",
+    "madurez": "1+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Revisión asistida de PR ajenos",
+      "en": "Assisted review of third-party PRs"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/03-desarrollador/revision-asistida-de-pr-ajenos/README.md"
+  },
+  {
+    "id": "desarrollador/triage-de-incidentes-a-partir-de",
+    "rol": "desarrollador",
+    "rolLabel": "DESARROLLADOR",
+    "titulo": "Triage de incidentes a partir de logs y trazas",
+    "slug": "triage-de-incidentes-a-partir-de",
+    "tecnica": "triage",
+    "madurez": "3+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de incidentes desde logs y trazas",
+      "en": "Incident triage from logs and traces"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/03-desarrollador/triage-de-incidentes-a-partir-de/README.md"
+  },
+  {
+    "id": "operador/analisis-de-trazas-distributed-tracing",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Análisis de trazas (distributed tracing)",
+    "slug": "analisis-de-trazas-distributed-tracing",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis de trazas (distributed tracing)",
+      "en": "Trace analysis (distributed tracing)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/analisis-de-trazas-distributed-tracing/README.md"
+  },
+  {
+    "id": "operador/asistente-en-on-call",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Asistente en on-call",
+    "slug": "asistente-en-on-call",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Asistente en on-call",
+      "en": "On-call assistant"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/asistente-en-on-call/README.md"
+  },
+  {
+    "id": "operador/borrador-de-postmortem",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Borrador de postmortem",
+    "slug": "borrador-de-postmortem",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de postmortem",
+      "en": "Postmortem draft"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/borrador-de-postmortem/README.md"
+  },
+  {
+    "id": "operador/busqueda-en-documentacion-y-agents-md",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Búsqueda en documentación y AGENTS.md de plataforma",
+    "slug": "busqueda-en-documentacion-y-agents-md",
+    "tecnica": "código",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Búsqueda en documentación y AGENTS.md",
+      "en": "Search across docs and AGENTS.md"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/busqueda-en-documentacion-y-agents-md/README.md"
+  },
+  {
+    "id": "operador/diagnostico-incidente-operacional",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "T05 — Diagnóstico de incidente operacional",
+    "slug": "diagnostico-incidente-operacional",
+    "tecnica": "código",
+    "madurez": "1+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Diagnóstico de incidente operacional",
+      "en": "Operational incident diagnosis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/diagnostico-incidente-operacional/README.md"
+  },
+  {
+    "id": "operador/enrutado-y-failover-multi-llm",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Enrutado y failover entre varios LLMs",
+    "slug": "enrutado-y-failover-multi-llm",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [
+      "multi-llm-balanceo"
+    ],
+    "capacidadesLabel": [
+      "Multi-LLM / balanceo"
+    ],
+    "gateways": [
+      "LLM Gateway"
+    ],
+    "tituloI18n": {
+      "es": "Enrutado y failover entre varios LLMs",
+      "en": "Multi-LLM routing and failover"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/enrutado-y-failover-multi-llm/README.md"
+  },
+  {
+    "id": "operador/generacion-de-manifiestos-e-iac",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Generación de manifiestos e IaC",
+    "slug": "generacion-de-manifiestos-e-iac",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Generación de manifiestos e IaC",
+      "en": "Manifest & IaC generation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/generacion-de-manifiestos-e-iac/README.md"
+  },
+  {
+    "id": "operador/generacion-y-mantenimiento-de-runbooks",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Generación y mantenimiento de runbooks",
+    "slug": "generacion-y-mantenimiento-de-runbooks",
+    "tecnica": "operacional",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7",
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails",
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Generación y mantenimiento de runbooks",
+      "en": "Runbook generation & maintenance"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/generacion-y-mantenimiento-de-runbooks/README.md"
+  },
+  {
+    "id": "operador/lectura-masiva-de-logs",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Lectura masiva de logs",
+    "slug": "lectura-masiva-de-logs",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Lectura masiva de logs",
+      "en": "Bulk log analysis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/lectura-masiva-de-logs/README.md"
+  },
+  {
+    "id": "operador/migracion-proveedor-llm-semantic-router",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Migración de proveedor de LLM sin cambiar la app + selección de modelo con semantic router (ExtProc)",
+    "slug": "migracion-proveedor-llm-semantic-router",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [
+      "migracion-semantic-routing"
+    ],
+    "capacidadesLabel": [
+      "Migración / semantic routing"
+    ],
+    "gateways": [
+      "LLM Gateway"
+    ],
+    "tituloI18n": {
+      "es": "Migración de proveedor de LLM sin tocar la app + semantic router (ExtProc)",
+      "en": "LLM provider migration without touching the app + semantic router (ExtProc)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/migracion-proveedor-llm-semantic-router/README.md"
+  },
+  {
+    "id": "operador/triage-de-alertas-e-incidentes",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "Triage de alertas e incidentes",
+    "slug": "triage-de-alertas-e-incidentes",
+    "tecnica": "triage",
+    "madurez": "1+",
+    "arquetipos": [
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de alertas e incidentes",
+      "en": "Alert and incident triage"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/triage-de-alertas-e-incidentes/README.md"
+  },
+  {
+    "id": "operador/triage-incidencias-red",
+    "rol": "operador",
+    "rolLabel": "OPERADOR",
+    "titulo": "TL01 — Triage de incidencias de red",
+    "slug": "triage-incidencias-red",
+    "tecnica": "triage",
+    "madurez": "1+",
+    "arquetipos": [
+      "A2",
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated",
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de incidencias de red",
+      "en": "Network incident triage"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/04-operador/triage-incidencias-red/README.md"
+  },
+  {
+    "id": "finanzas/analisis-varianza-pl",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "T01 — Análisis de varianza P&L (real vs presupuesto)",
+    "slug": "analisis-varianza-pl",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis de varianza P&L (real vs presupuesto)",
+      "en": "P&L variance analysis (actual vs budget)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/analisis-varianza-pl/README.md"
+  },
+  {
+    "id": "finanzas/benchmarks-y-analisis-competitivo",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "Benchmarks y análisis competitivo",
+    "slug": "benchmarks-y-analisis-competitivo",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Benchmarks y análisis competitivo",
+      "en": "Benchmarks and competitive analysis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/benchmarks-y-analisis-competitivo/README.md"
+  },
+  {
+    "id": "finanzas/borrador-de-informe-para-comite-o",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "Borrador de informe para comité o auditoría",
+    "slug": "borrador-de-informe-para-comite-o",
+    "tecnica": "generación",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de informe para comité o auditoría",
+      "en": "Committee or audit report draft"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/borrador-de-informe-para-comite-o/README.md"
+  },
+  {
+    "id": "finanzas/categorizacion-de-gastos-y-deteccion-de",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "Categorización de gastos y detección de duplicados",
+    "slug": "categorizacion-de-gastos-y-deteccion-de",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Categorización de gastos y detección de anomalías",
+      "en": "Expense categorization & anomaly detection"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/categorizacion-de-gastos-y-deteccion-de/README.md"
+  },
+  {
+    "id": "finanzas/conciliacion-bancaria",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "T08 — Conciliación bancaria / cierre mensual",
+    "slug": "conciliacion-bancaria",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Finanzas · Conciliación bancaria diaria",
+      "en": "Finance · Daily bank reconciliation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/conciliacion-bancaria/README.md"
+  },
+  {
+    "id": "finanzas/forecast-y-presupuesto",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "Forecast y presupuesto",
+    "slug": "forecast-y-presupuesto",
+    "tecnica": "asistencia",
+    "madurez": "3+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Forecast y presupuesto",
+      "en": "Forecast & budget"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/forecast-y-presupuesto/README.md"
+  },
+  {
+    "id": "finanzas/lectura-de-contratos-financieros",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "Lectura de contratos financieros",
+    "slug": "lectura-de-contratos-financieros",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Lectura de contratos financieros",
+      "en": "Financial contract reading"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/lectura-de-contratos-financieros/README.md"
+  },
+  {
+    "id": "finanzas/modelado-en-excel-formulas-complejas",
+    "rol": "finanzas",
+    "rolLabel": "FINANZAS",
+    "titulo": "Modelado en Excel (fórmulas complejas)",
+    "slug": "modelado-en-excel-formulas-complejas",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Modelado en Excel (fórmulas complejas)",
+      "en": "Excel modeling (complex formulas)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/05-finanzas/modelado-en-excel-formulas-complejas/README.md"
+  },
+  {
+    "id": "legal/analisis-y-comparativa-jurisprudencial",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "Análisis y comparativa jurisprudencial",
+    "slug": "analisis-y-comparativa-jurisprudencial",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis y comparativa jurisprudencial",
+      "en": "Case-law analysis and comparison"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/analisis-y-comparativa-jurisprudencial/README.md"
+  },
+  {
+    "id": "legal/apoyo-en-discovery-e-investigaciones-internas",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "Apoyo en *discovery* e investigaciones internas",
+    "slug": "apoyo-en-discovery-e-investigaciones-internas",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Apoyo en discovery e investigaciones internas",
+      "en": "Discovery and internal investigation support"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/apoyo-en-discovery-e-investigaciones-internas/README.md"
+  },
+  {
+    "id": "legal/apoyo-kyc-onboarding",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "B02 — Apoyo KYC / onboarding de cliente",
+    "slug": "apoyo-kyc-onboarding",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Apoyo KYC / onboarding de cliente",
+      "en": "KYC / client onboarding support"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/apoyo-kyc-onboarding/README.md"
+  },
+  {
+    "id": "legal/apoyo-regulatorio",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "T09 — Apoyo regulatorio (AEPD, EU AI Act, NIS2)",
+    "slug": "apoyo-regulatorio",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Apoyo regulatorio (EU AI Act, NIS2, AEPD)",
+      "en": "Regulatory support (EU AI Act, NIS2, AEPD)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/apoyo-regulatorio/README.md"
+  },
+  {
+    "id": "legal/borrador-de-dictamenes-notas-y-memorandos",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "Borrador de dictámenes, notas y memorandos",
+    "slug": "borrador-de-dictamenes-notas-y-memorandos",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de dictámenes, notas y memorandos",
+      "en": "Drafting opinions, notes and memoranda"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/borrador-de-dictamenes-notas-y-memorandos/README.md"
+  },
+  {
+    "id": "legal/due-diligence",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "SP01 — Due diligence asistida",
+    "slug": "due-diligence",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Due diligence de data room (M&A)",
+      "en": "Data-room due diligence (M&A)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/due-diligence/README.md"
+  },
+  {
+    "id": "legal/lectura-dora-eba",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "B03 — Lectura asistida de DORA / EBA / Banco de España",
+    "slug": "lectura-dora-eba",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Lectura asistida de DORA / EBA / Banco de España",
+      "en": "Assisted reading of DORA / EBA / Bank of Spain"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/lectura-dora-eba/README.md"
+  },
+  {
+    "id": "legal/monitoring-regulatorio",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "*Monitoring* regulatorio",
+    "slug": "monitoring-regulatorio",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Monitoring regulatorio",
+      "en": "Regulatory monitoring"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/monitoring-regulatorio/README.md"
+  },
+  {
+    "id": "legal/privacidad-y-dpias",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "Privacidad y DPIAs",
+    "slug": "privacidad-y-dpias",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Privacidad y DPIAs",
+      "en": "Privacy & DPIAs"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/privacidad-y-dpias/README.md"
+  },
+  {
+    "id": "legal/redaccion-de-politicas-internas",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "Redacción de políticas internas",
+    "slug": "redaccion-de-politicas-internas",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Redacción de políticas internas",
+      "en": "Internal policy drafting"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/redaccion-de-politicas-internas/README.md"
+  },
+  {
+    "id": "legal/revision-contratos-redlining",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "T03 — Revisión de contratos (redlining)",
+    "slug": "revision-contratos-redlining",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Revisión de contratos (redlining)",
+      "en": "Contract review (redlining)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/revision-contratos-redlining/README.md"
+  },
+  {
+    "id": "legal/verificacion-con-llm-juez",
+    "rol": "legal",
+    "rolLabel": "LEGAL",
+    "titulo": "Verificación de salidas con un LLM juez (LLM-as-judge)",
+    "slug": "verificacion-con-llm-juez",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [
+      "judge-llm"
+    ],
+    "capacidadesLabel": [
+      "Judge LLM"
+    ],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Verificación de salidas con un LLM juez (LLM-as-judge)",
+      "en": "Output verification with an LLM judge (LLM-as-judge)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/06-legal/verificacion-con-llm-juez/README.md"
+  },
+  {
+    "id": "rrhh/apoyo-en-evaluacion-del-desempeno",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "Apoyo en evaluación del desempeño",
+    "slug": "apoyo-en-evaluacion-del-desempeno",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Apoyo en evaluación del desempeño",
+      "en": "Performance review support"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/apoyo-en-evaluacion-del-desempeno/README.md"
+  },
+  {
+    "id": "rrhh/asistente-empleado-politicas",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "T13 — Asistente al empleado para políticas internas",
+    "slug": "asistente-empleado-politicas",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Asistente al empleado para políticas internas",
+      "en": "Employee assistant for internal policies"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/asistente-empleado-politicas/README.md"
+  },
+  {
+    "id": "rrhh/borrador-de-comunicacion-interna",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "Borrador de comunicación interna",
+    "slug": "borrador-de-comunicacion-interna",
+    "tecnica": "generación",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de comunicación interna",
+      "en": "Internal communication draft"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/borrador-de-comunicacion-interna/README.md"
+  },
+  {
+    "id": "rrhh/cribado-de-candidatos-con-cuidado",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "Cribado de candidatos (con cuidado)",
+    "slug": "cribado-de-candidatos-con-cuidado",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7",
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails",
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Cribado de candidatos (con cuidado)",
+      "en": "Candidate screening (done carefully)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/cribado-de-candidatos-con-cuidado/README.md"
+  },
+  {
+    "id": "rrhh/documentacion-y-faq-del-empleado",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "Documentación y FAQ del empleado",
+    "slug": "documentacion-y-faq-del-empleado",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Documentación y FAQ del empleado",
+      "en": "Employee documentation & FAQ"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/documentacion-y-faq-del-empleado/README.md"
+  },
+  {
+    "id": "rrhh/people-analytics",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "People analytics",
+    "slug": "people-analytics",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "People analytics",
+      "en": "People analytics"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/people-analytics/README.md"
+  },
+  {
+    "id": "rrhh/preparacion-de-entrevistas",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "Preparación de entrevistas",
+    "slug": "preparacion-de-entrevistas",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Preparación de entrevistas",
+      "en": "Interview preparation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/preparacion-de-entrevistas/README.md"
+  },
+  {
+    "id": "rrhh/redaccion-de-ofertas-de-empleo",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "Redacción de ofertas de empleo",
+    "slug": "redaccion-de-ofertas-de-empleo",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Redacción de ofertas de empleo",
+      "en": "Job posting drafting"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/redaccion-de-ofertas-de-empleo/README.md"
+  },
+  {
+    "id": "rrhh/resumen-de-encuestas-de-clima",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "Resumen de encuestas de clima",
+    "slug": "resumen-de-encuestas-de-clima",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Resumen de encuestas de clima",
+      "en": "Climate survey summarization"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/resumen-de-encuestas-de-clima/README.md"
+  },
+  {
+    "id": "rrhh/voz-empleado",
+    "rol": "rrhh",
+    "rolLabel": "RRHH",
+    "titulo": "T07 — Voz del empleado / encuesta de clima",
+    "slug": "voz-empleado",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Voz del empleado / encuesta de clima",
+      "en": "Voice of the employee / climate survey"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/07-rrhh/voz-empleado/README.md"
+  },
+  {
+    "id": "ventas/borrador-de-correo-personalizado-de-seguimiento",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "Borrador de correo personalizado de seguimiento",
+    "slug": "borrador-de-correo-personalizado-de-seguimiento",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Correo personalizado de seguimiento",
+      "en": "Personalized follow-up email"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/borrador-de-correo-personalizado-de-seguimiento/README.md"
+  },
+  {
+    "id": "ventas/brief-comercial-pre-reunion",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "T10 — Brief comercial pre-reunión",
+    "slug": "brief-comercial-pre-reunion",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Brief comercial pre-reunión",
+      "en": "Pre-meeting sales brief"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/brief-comercial-pre-reunion/README.md"
+  },
+  {
+    "id": "ventas/forecast-y-revision-de-pipeline",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "Forecast y revisión de pipeline",
+    "slug": "forecast-y-revision-de-pipeline",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Forecast y revisión de pipeline",
+      "en": "Forecast and pipeline review"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/forecast-y-revision-de-pipeline/README.md"
+  },
+  {
+    "id": "ventas/investigacion-de-cuenta-antes-de-la",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "Investigación de cuenta antes de la primera reunión",
+    "slug": "investigacion-de-cuenta-antes-de-la",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Investigación de cuenta antes de la reunión",
+      "en": "Account research before the meeting"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/investigacion-de-cuenta-antes-de-la/README.md"
+  },
+  {
+    "id": "ventas/limpieza-y-enriquecimiento-de-crm",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "Limpieza y enriquecimiento de CRM",
+    "slug": "limpieza-y-enriquecimiento-de-crm",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Limpieza y enriquecimiento de CRM",
+      "en": "CRM cleanup and enrichment"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/limpieza-y-enriquecimiento-de-crm/README.md"
+  },
+  {
+    "id": "ventas/preparacion-de-qbr-business-review",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "Preparación de QBR / business review",
+    "slug": "preparacion-de-qbr-business-review",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6",
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis",
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Preparación de QBR / business review",
+      "en": "QBR / business review prep"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/preparacion-de-qbr-business-review/README.md"
+  },
+  {
+    "id": "ventas/respuesta-rfp",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "SP02 — Respuesta a RFP / cuestionario",
+    "slug": "respuesta-rfp",
+    "tecnica": "documentos",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Respuesta a RFP / cuestionario",
+      "en": "RFP / questionnaire response"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/respuesta-rfp/README.md"
+  },
+  {
+    "id": "ventas/resumen-y-next-steps-de-llamadas",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "Resumen y *next steps* de llamadas",
+    "slug": "resumen-y-next-steps-de-llamadas",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1",
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador",
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Resumen y next steps de llamadas",
+      "en": "Call summaries and next steps"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/resumen-y-next-steps-de-llamadas/README.md"
+  },
+  {
+    "id": "ventas/talk-track-y-simulacion-de-objeciones",
+    "rol": "ventas",
+    "rolLabel": "VENTAS",
+    "titulo": "*Talk track* y simulación de objeciones",
+    "slug": "talk-track-y-simulacion-de-objeciones",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Talk track y simulación de objeciones",
+      "en": "Talk track and objection simulation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/08-ventas/talk-track-y-simulacion-de-objeciones/README.md"
+  },
+  {
+    "id": "marketing/analisis-de-campana-y-reporting",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "Análisis de campaña y *reporting*",
+    "slug": "analisis-de-campana-y-reporting",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis de campaña y reporting",
+      "en": "Campaign analysis & reporting"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/analisis-de-campana-y-reporting/README.md"
+  },
+  {
+    "id": "marketing/borrador-campana-guardarrailes",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "T12 — Borrador de campaña con guardarraíles",
+    "slug": "borrador-campana-guardarrailes",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de campaña con guardarraíles",
+      "en": "Campaign draft with guardrails"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/borrador-campana-guardarrailes/README.md"
+  },
+  {
+    "id": "marketing/borrador-de-contenido-blog-post-landing",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "Borrador de contenido (blog, post, landing)",
+    "slug": "borrador-de-contenido-blog-post-landing",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de contenido (blog, post, landing)",
+      "en": "Content draft (blog, post, landing)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/borrador-de-contenido-blog-post-landing/README.md"
+  },
+  {
+    "id": "marketing/briefs-creativos-y-de-agencia",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "Briefs creativos y de agencia",
+    "slug": "briefs-creativos-y-de-agencia",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Briefs creativos y de agencia",
+      "en": "Creative and agency briefs"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/briefs-creativos-y-de-agencia/README.md"
+  },
+  {
+    "id": "marketing/gestion-de-comunidad-y-social-listening",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "Gestión de comunidad y *social listening*",
+    "slug": "gestion-de-comunidad-y-social-listening",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6",
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis",
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Gestión de comunidad y social listening",
+      "en": "Community management & social listening"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/gestion-de-comunidad-y-social-listening/README.md"
+  },
+  {
+    "id": "marketing/imagenes-videos-y-diseno",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "Imágenes, vídeos y diseño",
+    "slug": "imagenes-videos-y-diseno",
+    "tecnica": "código",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Imágenes, vídeos y diseño",
+      "en": "Images, video and design"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/imagenes-videos-y-diseno/README.md"
+  },
+  {
+    "id": "marketing/investigacion-de-audiencia-y-mensajes",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "Investigación de audiencia y mensajes",
+    "slug": "investigacion-de-audiencia-y-mensajes",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Investigación de audiencia y mensajes",
+      "en": "Audience research and messaging"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/investigacion-de-audiencia-y-mensajes/README.md"
+  },
+  {
+    "id": "marketing/seo-y-content-gap",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "SEO y *content gap*",
+    "slug": "seo-y-content-gap",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "SEO y content gap",
+      "en": "SEO and content gap"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/seo-y-content-gap/README.md"
+  },
+  {
+    "id": "marketing/variantes-y-testing-a-b",
+    "rol": "marketing",
+    "rolLabel": "MARKETING",
+    "titulo": "Variantes y *testing* A/B",
+    "slug": "variantes-y-testing-a-b",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Variantes y testing A/B",
+      "en": "Variants and A/B testing"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/09-marketing/variantes-y-testing-a-b/README.md"
+  },
+  {
+    "id": "soporte/asistente-cara-al-cliente-chatbot-deflection",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "Asistente cara al cliente (chatbot / *deflection*)",
+    "slug": "asistente-cara-al-cliente-chatbot-deflection",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Asistente cara al cliente (chatbot / deflection)",
+      "en": "Customer-facing assistant (chatbot / deflection)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/asistente-cara-al-cliente-chatbot-deflection/README.md"
+  },
+  {
+    "id": "soporte/atencion-cliente-plan",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "TL02 — Atención a cliente con plan estandarizado (contact center telco)",
+    "slug": "atencion-cliente-plan",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Atención a cliente con plan estandarizado",
+      "en": "Customer service with standardized plan"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/atencion-cliente-plan/README.md"
+  },
+  {
+    "id": "soporte/borrador-de-respuesta-personalizada",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "Borrador de respuesta personalizada",
+    "slug": "borrador-de-respuesta-personalizada",
+    "tecnica": "generación",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de respuesta personalizada",
+      "en": "Personalized reply draft"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/borrador-de-respuesta-personalizada/README.md"
+  },
+  {
+    "id": "soporte/diagnostico-inicial-sobre-logs-y-trazas",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "Diagnóstico inicial sobre logs y trazas",
+    "slug": "diagnostico-inicial-sobre-logs-y-trazas",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A2",
+      "A5"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated",
+      "A5 · Operacional sobre infra"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Diagnóstico inicial sobre logs y trazas",
+      "en": "Initial diagnosis over logs and traces"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/diagnostico-inicial-sobre-logs-y-trazas/README.md"
+  },
+  {
+    "id": "soporte/kb-soporte",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "T14 — Generación y mantenimiento de KB de soporte",
+    "slug": "kb-soporte",
+    "tecnica": "documentos",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Generación y mantenimiento de KB de soporte",
+      "en": "Support KB generation and upkeep"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/kb-soporte/README.md"
+  },
+  {
+    "id": "soporte/knowledge-mining-generar-y-mantener-kb",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "*Knowledge mining*: generar y mantener KB",
+    "slug": "knowledge-mining-generar-y-mantener-kb",
+    "tecnica": "documentos",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Knowledge mining: generar y mantener la KB",
+      "en": "Knowledge mining: build and maintain the KB"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/knowledge-mining-generar-y-mantener-kb/README.md"
+  },
+  {
+    "id": "soporte/sugerencia-de-respuesta-a-partir-de",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "Sugerencia de respuesta a partir de KB",
+    "slug": "sugerencia-de-respuesta-a-partir-de",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Sugerencia de respuesta desde KB",
+      "en": "Reply suggestion from KB"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/sugerencia-de-respuesta-a-partir-de/README.md"
+  },
+  {
+    "id": "soporte/traduccion-y-adaptacion-cultural",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "Traducción y adaptación cultural",
+    "slug": "traduccion-y-adaptacion-cultural",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Traducción y adaptación cultural",
+      "en": "Translation and cultural adaptation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/traduccion-y-adaptacion-cultural/README.md"
+  },
+  {
+    "id": "soporte/triage-de-ticket-entrante",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "Triage de ticket entrante",
+    "slug": "triage-de-ticket-entrante",
+    "tecnica": "triage",
+    "madurez": "1+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de ticket entrante",
+      "en": "Incoming ticket triage"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/triage-de-ticket-entrante/README.md"
+  },
+  {
+    "id": "soporte/triage-tickets-soporte",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "T02 — Triage de tickets de soporte",
+    "slug": "triage-tickets-soporte",
+    "tecnica": "triage",
+    "madurez": "1+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de tickets de soporte",
+      "en": "Support ticket triage"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/triage-tickets-soporte/README.md"
+  },
+  {
+    "id": "soporte/voz-del-cliente-y-analisis-de",
+    "rol": "soporte",
+    "rolLabel": "SOPORTE",
+    "titulo": "Voz del cliente y análisis de sentimiento",
+    "slug": "voz-del-cliente-y-analisis-de",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Voz del cliente y análisis de sentimiento",
+      "en": "Voice of customer and sentiment analysis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/10-soporte/voz-del-cliente-y-analisis-de/README.md"
+  },
+  {
+    "id": "it-seguridad/analisis-de-phishing-y-malware-sospechoso",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Análisis de *phishing* y malware sospechoso",
+    "slug": "analisis-de-phishing-y-malware-sospechoso",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis de phishing y malware sospechoso",
+      "en": "Phishing and suspicious malware analysis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/analisis-de-phishing-y-malware-sospechoso/README.md"
+  },
+  {
+    "id": "it-seguridad/asistente-del-equipo-de-grc-auditoria",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Asistente del equipo de GRC / auditoría",
+    "slug": "asistente-del-equipo-de-grc-auditoria",
+    "tecnica": "asistencia",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Asistente del equipo de GRC / auditoría",
+      "en": "GRC / audit team assistant"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/asistente-del-equipo-de-grc-auditoria/README.md"
+  },
+  {
+    "id": "it-seguridad/borrador-de-politicas-runbooks-y-procedimientos",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Borrador de políticas, *runbooks* y procedimientos",
+    "slug": "borrador-de-politicas-runbooks-y-procedimientos",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de políticas, runbooks y procedimientos",
+      "en": "Drafting policies, runbooks and procedures"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/borrador-de-politicas-runbooks-y-procedimientos/README.md"
+  },
+  {
+    "id": "it-seguridad/caza-de-amenazas-threat-hunting",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Caza de amenazas (*threat hunting*)",
+    "slug": "caza-de-amenazas-threat-hunting",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A8",
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código",
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Caza de amenazas (threat hunting)",
+      "en": "Threat hunting"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/caza-de-amenazas-threat-hunting/README.md"
+  },
+  {
+    "id": "it-seguridad/cumplimiento-nis2",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "TL03 — Cumplimiento NIS2 / reporte al regulador",
+    "slug": "cumplimiento-nis2",
+    "tecnica": "documentos",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Cumplimiento NIS2 / reporte al regulador",
+      "en": "NIS2 compliance / regulator reporting"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/cumplimiento-nis2/README.md"
+  },
+  {
+    "id": "it-seguridad/evaluacion-continua-con-agentevals",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Evaluación continua de agentes en producción con agentevals",
+    "slug": "evaluacion-continua-con-agentevals",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [
+      "agentevals"
+    ],
+    "capacidadesLabel": [
+      "AgentEvals"
+    ],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Evaluación continua de agentes en producción",
+      "en": "Continuous evaluation of production agents"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/evaluacion-continua-con-agentevals/README.md"
+  },
+  {
+    "id": "it-seguridad/gobierno-del-shadow-ai-en-la",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Gobierno del *shadow AI* en la propia organización",
+    "slug": "gobierno-del-shadow-ai-en-la",
+    "tecnica": "shadow AI",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Gobierno del shadow AI en la organización",
+      "en": "Shadow AI governance across the org"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/gobierno-del-shadow-ai-en-la/README.md"
+  },
+  {
+    "id": "it-seguridad/guardrails-externos-byo-webhook",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Guardrails externos \"bring your own\" vía Guardrail Webhook API / ExtMCP",
+    "slug": "guardrails-externos-byo-webhook",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [
+      "guardrails-externos"
+    ],
+    "capacidadesLabel": [
+      "Guardrails externos"
+    ],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Guardrails externos BYO vía Webhook API / ExtMCP",
+      "en": "Bring-your-own external guardrails via Webhook API / ExtMCP"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/guardrails-externos-byo-webhook/README.md"
+  },
+  {
+    "id": "it-seguridad/investigacion-de-incidente",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Investigación de incidente",
+    "slug": "investigacion-de-incidente",
+    "tecnica": "código",
+    "madurez": "3+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Investigación de incidente",
+      "en": "Incident investigation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/investigacion-de-incidente/README.md"
+  },
+  {
+    "id": "it-seguridad/orquestacion-multiagente-incidente",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Orquestación multi-agente de un incidente que cruza equipos (A2A)",
+    "slug": "orquestacion-multiagente-incidente",
+    "tecnica": "código",
+    "madurez": "3+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [
+      "chain-de-agentes"
+    ],
+    "capacidadesLabel": [
+      "Chain de agentes"
+    ],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Orquestación multi-agente de un incidente que cruza equipos (A2A)",
+      "en": "Multi-agent orchestration of a cross-team incident (A2A)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/orquestacion-multiagente-incidente/README.md"
+  },
+  {
+    "id": "it-seguridad/revision-de-configuraciones-e-iac",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "Revisión de configuraciones e IaC",
+    "slug": "revision-de-configuraciones-e-iac",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A8"
+    ],
+    "arquetiposLabel": [
+      "A8 · Asistente de código"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Revisión de configuraciones e IaC",
+      "en": "Configuration and IaC review"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/revision-de-configuraciones-e-iac/README.md"
+  },
+  {
+    "id": "it-seguridad/triage-phishing-usuario",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "T-NEW-a — Triage de phishing reportado por usuario",
+    "slug": "triage-phishing-usuario",
+    "tecnica": "triage",
+    "madurez": "3+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de phishing reportado por usuario",
+      "en": "User-reported phishing triage"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/triage-phishing-usuario/README.md"
+  },
+  {
+    "id": "it-seguridad/triage-soc",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "T06 — Triage de eventos SOC",
+    "slug": "triage-soc",
+    "tecnica": "triage",
+    "madurez": "3+",
+    "arquetipos": [
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Triage de eventos SOC",
+      "en": "SOC event triage"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/triage-soc/README.md"
+  },
+  {
+    "id": "ejecutivo/analisis-competitivo-y-de-mercado",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Análisis competitivo y de mercado",
+    "slug": "analisis-competitivo-y-de-mercado",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Análisis competitivo y de mercado",
+      "en": "Competitive & market analysis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/analisis-competitivo-y-de-mercado/README.md"
+  },
+  {
+    "id": "ejecutivo/borrador-de-comunicacion-interna-o-externa",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Borrador de comunicación interna o externa",
+    "slug": "borrador-de-comunicacion-interna-o-externa",
+    "tecnica": "generación",
+    "madurez": "3+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Borrador de comunicación (interna/externa)",
+      "en": "Communication drafting (internal/external)"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/borrador-de-comunicacion-interna-o-externa/README.md"
+  },
+  {
+    "id": "ejecutivo/briefing-para-reuniones",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Briefing para reuniones",
+    "slug": "briefing-para-reuniones",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Briefing para reuniones",
+      "en": "Meeting briefing"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/briefing-para-reuniones/README.md"
+  },
+  {
+    "id": "ejecutivo/decision-making-estructurar-opciones-y-trade",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Decision making: estructurar opciones y trade-offs",
+    "slug": "decision-making-estructurar-opciones-y-trade",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Decisión: estructurar opciones y trade-offs",
+      "en": "Decision-making: structure options and trade-offs"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/decision-making-estructurar-opciones-y-trade/README.md"
+  },
+  {
+    "id": "ejecutivo/gestion-de-calendario-y-comunicacion-operativa",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Gestión de calendario y comunicación operativa",
+    "slug": "gestion-de-calendario-y-comunicacion-operativa",
+    "tecnica": "asistencia",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Gestión de calendario y comunicación operativa",
+      "en": "Calendar and operational communication"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/gestion-de-calendario-y-comunicacion-operativa/README.md"
+  },
+  {
+    "id": "ejecutivo/lectura-critica-de-planes-y-propuestas",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Lectura crítica de planes y propuestas",
+    "slug": "lectura-critica-de-planes-y-propuestas",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Lectura crítica de planes y propuestas",
+      "en": "Critical reading of plans and proposals"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/lectura-critica-de-planes-y-propuestas/README.md"
+  },
+  {
+    "id": "ejecutivo/preparacion-de-comite",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Preparación de comité",
+    "slug": "preparacion-de-comite",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A1"
+    ],
+    "arquetiposLabel": [
+      "A1 · Documental + validador"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Preparación de comité",
+      "en": "Board meeting prep"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/preparacion-de-comite/README.md"
+  },
+  {
+    "id": "ejecutivo/sintesis-de-informacion-estrategica",
+    "rol": "ejecutivo",
+    "rolLabel": "EJECUTIVO",
+    "titulo": "Síntesis de información estratégica",
+    "slug": "sintesis-de-informacion-estrategica",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Síntesis de información estratégica",
+      "en": "Strategic information synthesis"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/12-ejecutivo/sintesis-de-informacion-estrategica/README.md"
+  },
+  {
+    "id": "frontline/apoyo-en-emergencias-o-situaciones-dificiles",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Apoyo en emergencias o situaciones difíciles",
+    "slug": "apoyo-en-emergencias-o-situaciones-dificiles",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Apoyo en emergencias o situaciones difíciles",
+      "en": "Support in emergencies or difficult situations"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/apoyo-en-emergencias-o-situaciones-dificiles/README.md"
+  },
+  {
+    "id": "frontline/aprendizaje-y-formacion-continua",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Aprendizaje y formación continua",
+    "slug": "aprendizaje-y-formacion-continua",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Aprendizaje y formación continua",
+      "en": "Continuous learning & training"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/aprendizaje-y-formacion-continua/README.md"
+  },
+  {
+    "id": "frontline/asistente-puesto-banca",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "B01 — Asistente al puesto en oficina bancaria",
+    "slug": "asistente-puesto-banca",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Asistente al puesto en oficina bancaria",
+      "en": "Branch desk assistant"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/asistente-puesto-banca/README.md"
+  },
+  {
+    "id": "frontline/comunicacion-con-el-cliente",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Comunicación con el cliente",
+    "slug": "comunicacion-con-el-cliente",
+    "tecnica": "asistencia",
+    "madurez": "1+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Comunicación con el cliente",
+      "en": "Customer communication"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/comunicacion-con-el-cliente/README.md"
+  },
+  {
+    "id": "frontline/encontrar-la-respuesta-al-instante",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Encontrar la respuesta al instante",
+    "slug": "encontrar-la-respuesta-al-instante",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A6"
+    ],
+    "arquetiposLabel": [
+      "A6 · Investigación + síntesis"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Encontrar la respuesta al instante",
+      "en": "Find the answer instantly"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/encontrar-la-respuesta-al-instante/README.md"
+  },
+  {
+    "id": "frontline/imagenes-y-fotos-del-servicio",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Imágenes y fotos del servicio",
+    "slug": "imagenes-y-fotos-del-servicio",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A7"
+    ],
+    "arquetiposLabel": [
+      "A7 · Generación con guardrails"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Imágenes y fotos del servicio",
+      "en": "Service images and photos"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/imagenes-y-fotos-del-servicio/README.md"
+  },
+  {
+    "id": "frontline/notas-y-registro-de-la-atencion",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Notas y registro de la atención",
+    "slug": "notas-y-registro-de-la-atencion",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A3"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Notas y registro de la atención",
+      "en": "Service notes and record"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/notas-y-registro-de-la-atencion/README.md"
+  },
+  {
+    "id": "frontline/sugerencia-de-producto-o-servicio",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Sugerencia de producto o servicio",
+    "slug": "sugerencia-de-producto-o-servicio",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Sugerencia de producto o servicio",
+      "en": "Product or service recommendation"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/sugerencia-de-producto-o-servicio/README.md"
+  },
+  {
+    "id": "frontline/traduccion-y-atencion-multilingue",
+    "rol": "frontline",
+    "rolLabel": "FRONTLINE",
+    "titulo": "Traducción y atención multilingüe",
+    "slug": "traduccion-y-atencion-multilingue",
+    "tecnica": "analítico",
+    "madurez": "1+",
+    "arquetipos": [
+      "A4"
+    ],
+    "arquetiposLabel": [
+      "A4 · Chatbot cara al cliente"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway",
+      "AgentGateway"
+    ],
+    "tituloI18n": {
+      "es": "Traducción y atención multilingüe",
+      "en": "Translation and multilingual service"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/13-frontline/traduccion-y-atencion-multilingue/README.md"
+  }
+]

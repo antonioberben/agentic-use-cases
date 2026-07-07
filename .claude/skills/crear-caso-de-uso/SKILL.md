@@ -1,8 +1,8 @@
 ---
 name: crear-caso-de-uso
 description: >
-  Crear o revisar una ficha de caso de uso de la Pieza 0 (plataforma de capacitación
-  en IA agéntica). Contiene TODO lo necesario: estructura fija de 5 bloques, autoría
+  Crear o revisar una ficha de caso de uso del catálogo de IA agéntica con gobierno
+  Solo. Contiene TODO lo necesario: estructura fija de 5 bloques, autoría
   bilingüe ES/EN, convenciones de MCP y scopes, KPIs con marcado de estimación,
   patrón de riesgos + shadow AI, mapeo de remediación a componentes Solo (identidad
   SPIFFE/OIDC/OBO y dónde se aplican las políticas), y el modelo de datos del
@@ -11,7 +11,7 @@ description: >
   del reproductor", "caso de <rol> <tarea>".
 ---
 
-# Crear un caso de uso (Pieza 0 — capacitación)
+# Crear un caso de uso (catálogo de IA agéntica)
 
 Cada caso de uso es una **ficha independiente** que enseña a un rol a resolver una tarea real con IA y muestra los riesgos y su remediación con gobierno. En el website se recorre como un **escenario de 5 etapas** (reproductor arriba) sobre el **mismo texto de 5 bloques** (abajo). No hay dos contenidos: las 5 etapas del reproductor **son** los 5 bloques.
 
@@ -29,7 +29,7 @@ Cada caso de uso es una **ficha independiente** que enseña a un rol a resolver 
 ## Ubicación y nombres
 
 ```
-pieza-0-alfabetizacion/01-casos-de-uso/por-rol/<NN-rol>/<slug-del-caso>/README.md
+catalogo-agentico/01-casos-de-uso/por-rol/<NN-rol>/<slug-del-caso>/README.md
 ```
 
 - `<NN-rol>`: uno de los 13 — `01-manager 02-analista 03-desarrollador 04-operador 05-finanzas 06-legal 07-rrhh 08-ventas 09-marketing 10-soporte 11-it-seguridad 12-ejecutivo 13-frontline`.
@@ -42,7 +42,7 @@ pieza-0-alfabetizacion/01-casos-de-uso/por-rol/<NN-rol>/<slug-del-caso>/README.m
 Copia `plantilla-caso.md` (en esta carpeta) y rellénala. Encabezados exactos:
 
 ### Identificación
-Rol principal · sectores · patrón técnico (uno de los labs) · madurez recomendada. Más el aviso permanente de que la capa de gobierno vive en la Pieza 2.
+Rol principal · sectores · patrón técnico (uno de los labs) · madurez recomendada. Más el aviso permanente de que la capa de gobierno vive en el bloque 5 (arquitectura de remediación).
 
 Patrones técnicos (elige uno): `analítico · triage · código · operacional · asistencia (frontline) · documentos (regulatorio/legal) · generación (creativo con control)`.
 
@@ -61,7 +61,7 @@ Configuración concreta en cada entorno, en este orden:
 Tabla de 3-5 KPIs (tiempo/unidad, tasa de error, throughput, coste, calidad) con base vs. con agente. Fórmula simple de ahorro. **Cifras en cursiva marcadas `*(estimación, T1)*`.**
 
 ### 4 · Vulnerabilidades y riesgos → gobernanza  → etapa **Riesgo**
-Ejemplos concretos en primera persona con el patrón **"Si trabajo desde X…"**. Cubrir según el caso: MCP no auditado, agente sin identidad propia, prompt injection desde fuente externa, **shadow AI** (herramienta/MCP no registrado), coste descontrolado, fuga de PII, decisión automatizada sin gate humano. Citar la normativa aplicable (EU AI Act, GDPR/AEPD, NIS2, DORA + MiFID II/MAR/SOX/MiCA/secreto profesional donde toque). Cierre fijo: estas vulnerabilidades se cubren con la capa de gobernanza de la Pieza 2; no llevar a producción sin ella.
+Ejemplos concretos en primera persona con el patrón **"Si trabajo desde X…"**. Cubrir según el caso: MCP no auditado, agente sin identidad propia, prompt injection desde fuente externa, **shadow AI** (herramienta/MCP no registrado), coste descontrolado, fuga de PII, decisión automatizada sin gate humano. Citar la normativa aplicable (EU AI Act, GDPR/AEPD, NIS2, DORA + MiFID II/MAR/SOX/MiCA/secreto profesional donde toque). Cierre fijo: estas vulnerabilidades se cubren con la capa de gobernanza descrita en el bloque 5 (arquitectura de remediación); no llevar a producción sin ella.
 
 ### 5 · Arquitectura de remediación con gobernanza de IA  → etapa **Remediación**
 Tabla **riesgo (del bloque 4) → componente Solo → mecanismo (dónde/cómo)** + dos apartados: **cómo se consigue la identidad** y **dónde se aplican las políticas**. Usar solo los mecanismos verificados de la sección siguiente. Cada fila debe cerrar un riesgo concreto del bloque 4.
@@ -132,9 +132,13 @@ Reglas de `blocks` (los 5 bloques = las 5 etapas, `body` es HTML bilingüe):
 - Aviso de cierre del bloque 4 con `class='sp-warn'`; subtítulo "Shadow AI" con `class='sp-sh'`.
 - El bloque de **riesgo** lleva `sh: true`.
 
-### Roles de gateway (item 4 — label + chip)
+### Roles de gateway (item 4 — label + chip + filtro)
 
-En `gw` marca el rol que juega el gateway en el caso: **LLM Gateway**, **MCP Gateway**, **AgentGateway** (puede haber varios). Es también un eje de filtro del catálogo.
+En `gw` marca el rol que juega el gateway en el caso: **LLM Gateway**, **MCP Gateway**, **AgentGateway** (puede haber varios). Se muestran como chips en la cabecera del reproductor y se nombran en las tablas del bloque 5. El generador `scripts/generar-listado-casos.py` parsea este `gw:[...]` de `casos.js` y lo emite como `gateways[]` en `casos.json` → **eje de filtro "Por gateway"** del catálogo. No hace falta marcarlo en el README: sale del objeto del reproductor.
+
+### Capacidad destacada (item D — marcador + filtro)
+
+Si el caso ejemplifica una capacidad de plataforma concreta, añade en la identificación del README un marcador HTML `<!-- capacidad: <slug> -->` (además de una línea `**Capacidad destacada:** ...` legible). Slugs vigentes: `chain-de-agentes`, `multi-llm-balanceo`, `agentevals`, `migracion-semantic-routing`, `judge-llm`, `guardrails-externos`, `llm-gateway-codigo`. El generador lo parsea a `capacidades[]`/`capacidadesLabel[]` en `casos.json` → **eje de filtro "Por capacidad"**. Si añades un slug nuevo, regístralo en `CAP_LABEL` (generador) y en `CAPACIDADES` (`casos-de-uso.jsx`).
 
 ### Extensión multiagente (item 12 — opcional, casos que lo justifiquen)
 
@@ -159,7 +163,7 @@ Tras añadir/editar un caso: `cd website && npm run build` (es + en, 0 errores).
 
 ## Dos artefactos por caso (no confundir)
 
-1. **Ficha markdown** (`pieza-0-alfabetizacion/.../por-rol/<rol>/<slug>/README.md`) — el desarrollo largo escrito, para docs y PDF. Es donde viven las 119 fichas.
+1. **Ficha markdown** (`catalogo-agentico/.../por-rol/<rol>/<slug>/README.md`) — el desarrollo largo escrito, para docs y PDF. Es donde viven las 119 fichas.
 2. **Objeto del reproductor** (`CASES` en `casos.js`) — la versión **condensada** que anima el escenario y muestra los 5 bloques en la web. Solo los casos con reproductor lo tienen.
 
 Pueden divergir en extensión (el reproductor es más breve), pero **el fondo debe coincidir**: mismos MCPs/scopes, mismos riesgos, misma remediación.
@@ -167,4 +171,4 @@ Pueden divergir en extensión (el reproductor es más breve), pero **el fondo de
 ## Ejemplos de referencia (patrón canónico ejecutado)
 
 - **Reproductor**: los 5 casos piloto en `website/src/components/ScenarioPlayer/casos.js` (`legal`, `finanzas`, `soc`, `ops`, `banca`) — molde del objeto y del tono. `legal` (redlining) es el más completo.
-- **Ficha markdown**: `pieza-0-alfabetizacion/01-casos-de-uso/por-rol/06-legal/revision-contratos-redlining/README.md`.
+- **Ficha markdown**: `catalogo-agentico/01-casos-de-uso/por-rol/06-legal/revision-contratos-redlining/README.md`.

@@ -1,9 +1,14 @@
 {
-  "name": "plan-director-ia-website",
+  "name": "ia-agentica-website",
   "version": "0.1.0",
   "private": true,
-  "description": "Website del Plan Director de IA Agéntica (kit modular)",
+  "description": "Website de IA Agéntica: fundamentos y casos de uso",
   "scripts": {
+    "build:cases": "node scripts/build-cases-data.js",
+    "build:fundamentos": "node scripts/build-fundamentos-data.js",
+    "build:data": "npm run build:cases && npm run build:fundamentos",
+    "prestart": "npm run build:data",
+    "prebuild": "npm run build:data",
     "start": "docusaurus start",
     "build": "docusaurus build",
     "serve": "docusaurus serve",
@@ -17,6 +22,7 @@
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.1.0",
     "framer-motion": "^11.0.0",
+    "marked": "^13.0.3",
     "prism-react-renderer": "^2.3.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"

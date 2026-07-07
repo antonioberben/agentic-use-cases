@@ -85,3 +85,19 @@
   text-decoration: none;
   color: inherit;
 }
+
+.seccionKicker {
+  font-family: ui-monospace, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ifm-color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.footnote {
+  margin-top: 2.5rem;
+  opacity: 0.75;
+  font-size: 0.95rem;
+  text-align: center;
+}

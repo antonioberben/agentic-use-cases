@@ -28,11 +28,12 @@ trap cleanup INT TERM
 
 MODE="${MODE:-start}"
 if [[ "$MODE" == "serve" ]]; then
-  echo "[dev-tunnel] sirviendo build/ en :$PORT (multi-idioma es+en; sin hot reload)..."
-  npx --yes docusaurus serve --port "$PORT" --host 0.0.0.0 --no-open &
+  echo "[dev-tunnel] build (baseUrl raíz, es+en) + serve en :$PORT (sin hot reload)..."
+  DOCS_BASEURL=/ npx --yes docusaurus build
+  DOCS_BASEURL=/ npx --yes docusaurus serve --port "$PORT" --host 0.0.0.0 --no-open &
 else
-  echo "[dev-tunnel] arrancando docusaurus en :$PORT (hot reload, solo idioma por defecto)..."
-  npx --yes docusaurus start --port "$PORT" --host 0.0.0.0 --no-open &
+  echo "[dev-tunnel] arrancando docusaurus en :$PORT (hot reload, baseUrl=/, solo idioma por defecto)..."
+  DOCS_BASEURL=/ npx --yes docusaurus start --port "$PORT" --host 0.0.0.0 --no-open &
 fi
 DOCS_PID=$!
 

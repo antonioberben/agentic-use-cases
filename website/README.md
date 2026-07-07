@@ -1,20 +1,20 @@
-# Website del Plan Director de IA Agéntica
+# Website de IA Agéntica (Fundamentos y Casos de uso)
 
-Sitio único (Docusaurus) que publica todo el kit modular del Plan Director. Decisión D15 en [`../AGENTS.md`](../AGENTS.md).
+Sitio único (Docusaurus) que publica los fundamentos y el catálogo de casos de uso. Decisión D15 en [`../AGENTS.md`](../AGENTS.md).
 
 ## Cómo funciona
 
-El contenido **no vive aquí**: vive en las carpetas `../pieza-*` y se sirve sin moverlo ni duplicarlo, mediante instancias de `plugin-content-docs`:
+El contenido **no vive aquí**: vive en `../catalogo-agentico` y se sirve sin moverlo ni duplicarlo, mediante `plugin-content-docs`:
 
 | Ruta | Origen | Instancia |
 |------|--------|-----------|
-| `/capacitacion` | `../pieza-0-alfabetizacion` | plugin `alfabetizacion` |
-| `/plan-director` | `../pieza-2-plan-director` | preset docs `plan` |
+| `/capacitacion` | `../catalogo-agentico` | plugin `alfabetizacion` |
+| `/fundamentos` | `src/pages/fundamentos.jsx` | catálogo |
+| `/casos-de-uso` | `src/pages/casos-de-uso.jsx` | catálogo |
+| `/casos-de-uso/detalle` | `src/pages/casos-de-uso/detalle.jsx` | reproductor |
 | `/` | `src/pages/index.js` | landing |
 
 Documentos internos de tracking (`AGENTS.md`, `inventario-features-referencia.md`) quedan excluidos del sitio público.
-
-Piezas pendientes de añadir como nuevas instancias cuando se redacten: Pieza 1 (resumen ejecutivo), Pieza 3 (scorecard, como página React interactiva), Pieza 4 (anexos).
 
 ## Desarrollo local
 
@@ -31,7 +31,21 @@ npm run build      # genera ./build
 npm run serve      # sirve el build localmente
 ```
 
-Despliegue automático a GitHub Pages vía `../.github/workflows/deploy.yml` al hacer push a `main`. **Antes de desplegar**, ajusta en `docusaurus.config.js`: `url`, `baseUrl`, `organizationName`, `projectName`, y habilita Pages (Settings → Pages → Source: GitHub Actions) en el repo.
+## Versionado por path (v1, v2, …)
+
+Esta web se sirve bajo **`/agentic-use-cases/v1/`** — `baseUrl` fijo en `docusaurus.config.js`, sin lógica de versión. `npm run build` ya produce un sitio que apunta a `/v1/`.
+
+Cuando haya una web distinta, será una **v2 independiente** (otro build con `baseUrl` `/agentic-use-cases/v2/`) que se publica **junto** a v1; la v1 ya publicada **no se toca**. Cada versión es una carpeta estática autónoma bajo la rama `gh-pages` (`v1/`, `v2/`, …), servidas por separado.
+
+### Desplegar (preserva otras versiones)
+
+```bash
+./publish-pages.sh          # build baseUrl /agentic-use-cases/v1/ + push a gh-pages/v1/
+```
+
+El script recupera la `gh-pages` existente, reemplaza **solo** la carpeta `v1/` y conserva el resto (p. ej. `v2/`). Activa Pages una vez: Settings → Pages → Source: rama `gh-pages`, carpeta `/` (root). URL: `https://antonioberben.github.io/agentic-use-cases/v1/`.
+
+> El workflow `../.github/workflows/deploy.yml` (Actions → `upload-pages-artifact`) **sustituye toda la publicación** en cada push, por lo que NO preserva otras versiones. Para convivencia v1+v2 usa `publish-pages.sh`. Para servir en local/túnel en la raíz: `DOCS_BASEURL=/ npm run build`.
 
 ## Pendiente
 
