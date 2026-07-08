@@ -1,12 +1,10 @@
 name: Deploy website (GitHub Pages)
 
+# NOTA: la publicación oficial es rama gh-pages + custom domain (usecases.emea.solo.io),
+# vía website/publish-pages.sh. Este workflow (Source = GitHub Actions) publica en la
+# RAIZ del dominio y PISA ese esquema, dejando /v1/ en 404. Por eso NO se dispara en
+# push: solo manual (workflow_dispatch), y únicamente si se decide volver a Actions.
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'website/**'
-      - 'catalogo-agentico/**'
-      - '.github/workflows/deploy.yml'
   workflow_dispatch:
 
 permissions:
