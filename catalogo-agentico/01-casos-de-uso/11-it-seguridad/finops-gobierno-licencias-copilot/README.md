@@ -99,7 +99,7 @@ Fórmula: *1,5 h/día × 220 días ≈ 330 h/año solo en consolidación, más e
 
 ### Cómo se consigue la identidad
 
-`finops-copilot-agent` recibe SPIFFE `spiffe://finops.igae.es/copilot-gov` en **ztunnel** vía mTLS emitido por istiod. **agentgateway** valida además el OIDC/JWT del responsable que invoca la acción (JWKS del IdP corporativo). Cuando el agente va a **cambiar un presupuesto o reasignar una licencia**, **kagent** hace **OBO token exchange** con el token del responsable presupuestario aprobado tras HITL: la escritura contra la API de GitHub se firma con el token del humano, no con la credencial de administración compartida. Esto reconstruye la cadena de responsabilidad que la gestión presupuestaria pública exige.
+`finops-copilot-agent` recibe SPIFFE `spiffe://finops.example.org/copilot-gov` en **ztunnel** vía mTLS emitido por istiod. **agentgateway** valida además el OIDC/JWT del responsable que invoca la acción (JWKS del IdP corporativo). Cuando el agente va a **cambiar un presupuesto o reasignar una licencia**, **kagent** hace **OBO token exchange** con el token del responsable presupuestario aprobado tras HITL: la escritura contra la API de GitHub se firma con el token del humano, no con la credencial de administración compartida. Esto reconstruye la cadena de responsabilidad que la gestión presupuestaria pública exige.
 
 ### Dónde se aplican las políticas
 
@@ -108,4 +108,4 @@ En el **plano de datos de agentgateway** vía `AgentgatewayPolicy`: allowlist de
 ## Referencias
 
 - EU AI Act (art. 4, art. 50), GDPR/AEPD (art. 9, art. 22), ENS (Esquema Nacional de Seguridad), OWASP LLM Top 10, OWASP Agentic (Identity and Privilege Abuse). *Citas T1.*
-- Input cliente: correo de Ana Cañabate Gil (IGAE), caso de gobierno de tenants GitHub Copilot Business.
+- Input cliente: caso de gobierno de tenants de GitHub Copilot Business en una organización del sector público.
