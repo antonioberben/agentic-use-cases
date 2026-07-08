@@ -16,12 +16,14 @@ const config = {
   tagline: 'Fundamentos y casos de uso',
   favicon: 'img/favicon.svg',
 
-  url: 'https://antonioberben.github.io',
-  // Esta web se sirve bajo /agentic-use-cases/v1/. Una futura web distinta se
-  // publicará en /agentic-use-cases/v2/ (build aparte, con su baseUrl); esta v1
-  // no se toca. Sin lógica de versión: es solo el path donde vive.
+  // Custom domain (GitHub Pages): el sitio se sirve en la raíz del dominio, sin
+  // el prefijo del repo. La versión sigue siendo una carpeta bajo la raíz.
+  url: 'https://usecases.emea.solo.io',
+  // Esta web se sirve bajo /v1/. Una futura web distinta se publicará en /v2/
+  // (build aparte, con su baseUrl); esta v1 no se toca. Sin lógica de versión:
+  // es solo el path donde vive.
   // Para servir en local/túnel en la raíz: DOCS_BASEURL=/ npm run build|start
-  baseUrl: process.env.DOCS_BASEURL || '/agentic-use-cases/v1/',
+  baseUrl: process.env.DOCS_BASEURL || '/v1/',
   organizationName: 'antonioberben',
   projectName: 'agentic-use-cases',
   trailingSlash: false,

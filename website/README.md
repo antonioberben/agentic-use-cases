@@ -31,19 +31,27 @@ npm run build      # genera ./build
 npm run serve      # sirve el build localmente
 ```
 
-## Versionado por path (v1, v2, …)
+## Versionado por path (v1, v2, …) y dominio propio
 
-Esta web se sirve bajo **`/agentic-use-cases/v1/`** — `baseUrl` fijo en `docusaurus.config.js`, sin lógica de versión. `npm run build` ya produce un sitio que apunta a `/v1/`.
+La web se sirve en el **custom domain `usecases.emea.solo.io`** (raíz del dominio), bajo el path **`/v1/`** — `baseUrl` fijo en `docusaurus.config.js`, sin lógica de versión. `npm run build` ya produce un sitio que apunta a `/v1/`.
 
-Cuando haya una web distinta, será una **v2 independiente** (otro build con `baseUrl` `/agentic-use-cases/v2/`) que se publica **junto** a v1; la v1 ya publicada **no se toca**. Cada versión es una carpeta estática autónoma bajo la rama `gh-pages` (`v1/`, `v2/`, …), servidas por separado.
+Cuando haya una web distinta, será una **v2 independiente** (otro build con `baseUrl` `/v2/`) que se publica **junto** a v1; la v1 ya publicada **no se toca**. Cada versión es una carpeta estática autónoma bajo la rama `gh-pages` (`v1/`, `v2/`, …), servidas por separado.
+
+### DNS (Route53, zona emea.solo.io)
+
+```
+usecases.emea.solo.io.  CNAME  antonioberben.github.io.
+```
+
+(Subdominio → CNAME al apex de Pages `antonioberben.github.io`, no a la URL del proyecto.)
 
 ### Desplegar (preserva otras versiones)
 
 ```bash
-./publish-pages.sh          # build baseUrl /agentic-use-cases/v1/ + push a gh-pages/v1/
+./publish-pages.sh          # build baseUrl /v1/ + push a gh-pages/v1/ (mantiene CNAME)
 ```
 
-El script recupera la `gh-pages` existente, reemplaza **solo** la carpeta `v1/` y conserva el resto (p. ej. `v2/`). Activa Pages una vez: Settings → Pages → Source: rama `gh-pages`, carpeta `/` (root). URL: `https://antonioberben.github.io/agentic-use-cases/v1/`.
+El script recupera la `gh-pages` existente, reemplaza **solo** la carpeta `v1/`, conserva el resto (p. ej. `v2/`) y reescribe el fichero `CNAME` (`usecases.emea.solo.io`) en la raíz. Activar Pages una vez: Settings → Pages → Source: rama `gh-pages`, carpeta `/` (root); Custom domain: `usecases.emea.solo.io`; Enforce HTTPS. URL: `https://usecases.emea.solo.io/v1/`.
 
 > El workflow `../.github/workflows/deploy.yml` (Actions → `upload-pages-artifact`) **sustituye toda la publicación** en cada push, por lo que NO preserva otras versiones. Para convivencia v1+v2 usa `publish-pages.sh`. Para servir en local/túnel en la raíz: `DOCS_BASEURL=/ npm run build`.
 

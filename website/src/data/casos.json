@@ -2779,6 +2779,34 @@
     "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/evaluacion-continua-con-agentevals/README.md"
   },
   {
+    "id": "it-seguridad/finops-gobierno-licencias-copilot",
+    "rol": "it-seguridad",
+    "rolLabel": "IT / SEGURIDAD",
+    "titulo": "IT-SEG — FinOps de IA: gobierno de consumo y licencias de GitHub Copilot",
+    "slug": "finops-gobierno-licencias-copilot",
+    "tecnica": "analítico",
+    "madurez": "3+",
+    "arquetipos": [
+      "A3",
+      "A2"
+    ],
+    "arquetiposLabel": [
+      "A3 · Analítico write-back gated",
+      "A2 · Triage con acción gated"
+    ],
+    "capacidades": [],
+    "capacidadesLabel": [],
+    "gateways": [
+      "LLM Gateway",
+      "MCP Gateway"
+    ],
+    "tituloI18n": {
+      "es": "Gobierno de consumo y licencias de Copilot",
+      "en": "Copilot spend & license governance"
+    },
+    "path": "catalogo-agentico/01-casos-de-uso/11-it-seguridad/finops-gobierno-licencias-copilot/README.md"
+  },
+  {
     "id": "it-seguridad/gobierno-del-shadow-ai-en-la",
     "rol": "it-seguridad",
     "rolLabel": "IT / SEGURIDAD",
